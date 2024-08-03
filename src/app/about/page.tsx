@@ -66,39 +66,36 @@ function Values() {
         title="Balancing reliability and innovation"
       >
         <p>
-          We strive to stay at the forefront of emerging trends and
-          technologies, while completely ignoring them and forking that old
-          Rails project we feel comfortable using. We stand by our core values
-          to justify that decision.
+        At Grupa Krayr, we balance staying updated with emerging trends and relying on proven methods. 
+        Our commitment to core values ensures top-quality workforce solutions.
         </p>
       </SectionIntro>
 
       <Container className="mt-24">
         <GridList>
           <GridListItem title="Meticulous">
-            The first part of any partnership is getting our designer to put
-            your logo in our template. The second step is getting them to do the
-            colors.
+          Understanding your needs is our priority. We meticulously match your requirements with the perfect candidates, 
+          ensuring a seamless fit with your company culture.
           </GridListItem>
           <GridListItem title="Efficient">
-            We pride ourselves on never missing a deadline which is easy because
-            most of the work was done years ago.
+          We never miss deadlines. Our efficient processes ensure your staffing needs are met promptly,
+          delivering top talent without delays.
           </GridListItem>
           <GridListItem title="Adaptable">
-            Every business has unique needs and our greatest challenge is
-            shoe-horning those needs into something we already built.
+          We offer tailor-made solutions for your unique business needs, 
+          guaranteeing personalized recruitment that exceeds your expectations.
           </GridListItem>
           <GridListItem title="Honest">
-            We are transparent about all of our processes, banking on the simple
-            fact our clients never actually read anything.
+          Transparency is key. We keep you informed throughout the recruitment process, 
+          ensuring clarity and trust in our partnership.
           </GridListItem>
           <GridListItem title="Loyal">
-            We foster long-term relationships with our clients that go beyond
-            just delivering a product, allowing us to invoice them for decades.
+          We build long-term relationships, providing ongoing support 
+          and workforce solutions that evolve with your business.
           </GridListItem>
           <GridListItem title="Innovative">
-            The technological landscape is always evolving and so are we. We are
-            constantly on the lookout for new open source projects to clone.
+          We continuously seek new ways to improve our services, leveraging the 
+          latest advancements to enhance our recruitment process.
           </GridListItem>
         </GridList>
       </Container>
@@ -143,8 +140,8 @@ const team = [
         image: { src: imageLeonardKrasner },
       },
       {
-        name: 'Blake Reid',
-        role: 'Consultant',
+        name: 'Maciej Zieliński',
+        role: 'Accountant / Financial Advisor',
         image: { src: imageBlakeReid },
       },
       {
@@ -153,8 +150,8 @@ const team = [
         image: { src: imageKathrynMurphy },
       },
       {
-        name: 'Maciej Zieliński',
-        role: 'Accountant / Financial Advisor',
+        name: 'Blake Reid',
+        role: 'Senior Recruiter',
         image: { src: imageMichaelFoster },
       },
 
@@ -259,7 +256,7 @@ export default async function About() {
       <PageLinks
         className="mt-24 sm:mt-32 lg:mt-40"
         title="From the blog"
-        intro="Our team of experienced designers and developers has just one thing on their mind; working on your ideas to draw a smile on the face of your users worldwide. From conducting Brand Sprints to UX Design."
+        intro="Stay informed with the latest industry updates as our team explores innovative solutions and shares insights on workforce trends and staffing strategies."
         pages={blogArticles}
       />
 

@@ -234,7 +234,7 @@ function Block2() {
         <TagListItem>Assembly line workers</TagListItem>
         <TagListItem>Packers</TagListItem>
         <TagListItem>Production helpers</TagListItem>
-        <TagListItem>Quality contrl inspectors</TagListItem>
+        <TagListItem>Quality control inspectors</TagListItem>
       </TagList>
 
 

@@ -91,15 +91,24 @@ function Section({
 
 function ExpertiseInOverseasHire() {
   return (
-    <Container className="mt-24 sm:mt-32 lg:mt-40">
+    <div className="relative mt-24 pt-24 sm:mt-32 sm:pt-32 lg:mt-40 lg:pt-40">
+    <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-gradient-to-b from-neutral-50">
+      <GridPattern
+        className="absolute inset-0 h-full w-full fill-neutral-100 stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
+        yOffset={-270}
+      />
+    </div>
+
       <SectionIntro
         eyebrow="Our Expertise"
         title="Comprehensive Services for Overseas Hiring"
       >
-        <p>
+        <p className=''>
           Our expertise in overseas hiring ensures that both companies and international workers receive the support they need for a seamless experience.
         </p>
-      </SectionIntro>
+        </SectionIntro>
+        <Container className="mt-24">
+
       <GridList>
         <FadeIn>
           <GridListItem title="Recruitment">
@@ -118,6 +127,7 @@ function ExpertiseInOverseasHire() {
         </FadeIn>
       </GridList>
     </Container>
+    </div>
   );
 }
 
@@ -165,6 +175,7 @@ function LegalizationServices() {
 import { StylizedImage } from '@/components/StylizedImage';
 import { JobCard } from '@/components/JobCard';
 import { JobListings } from '@/components/JobListings';
+import { GridPattern } from '@/components/GridPattern';
   
   // Define the job opening type
   type JobOpening = {

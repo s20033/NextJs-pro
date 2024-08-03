@@ -24,8 +24,7 @@ export default async function Blog() {
     <>
       <PageIntro eyebrow="Blog" title="The latest articles and news">
         <p>
-          Stay up-to-date with the latest industry news as our marketing teams
-          finds new ways to re-purpose old CSS tricks articles.
+        Stay informed with our latest insights on industry trends, workforce strategies, and staffing solutions to keep your business ahead.
         </p>
       </PageIntro>
 

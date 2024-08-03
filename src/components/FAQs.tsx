@@ -179,7 +179,7 @@ const FAQSection: React.FC = () => {
               onClick={prevPage}
               className="px-4 py-2 bg-teal-950 text-white rounded hover:bg-neutral-800"
             >
-              Previous
+              Prev
               </Button>
               <Button 
               onClick={nextPage}

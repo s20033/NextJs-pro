@@ -131,6 +131,30 @@ function ContactDetails() {
       </Border>
 
       <Border className="mt-16 pt-16">
+      <h2 className="font-display text-base font-semibold text-neutral-950">
+        Reach by Phone
+      </h2>
+      <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
+        {[
+          ['Poland', '+48728987991'],
+          ['Bulgaria', '+359886243448'],
+        ].map(([label, phone]) => (
+          <div key={phone}>
+            <dt className="font-semibold text-neutral-950">{label}</dt>
+            <dd>
+              <Link
+                href={`tel:${phone.replace(/\s+/g, '')}`}
+                className="text-neutral-600 hover:text-neutral-950"
+              >
+                {phone}
+              </Link>
+            </dd>
+          </div>
+        ))}
+      </dl>
+    </Border>
+
+      <Border className="mt-16 pt-16">
         <h2 className="font-display text-base font-semibold text-neutral-950">
           Follow us
         </h2>
