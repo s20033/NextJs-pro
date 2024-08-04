@@ -21,10 +21,12 @@ import logoUnseal from "@/images/clients/unseal/logo-dark.svg";
 import { formatDate } from "@/lib/formatDate";
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from "@/lib/mdx";
 import { StylizedImage } from "@/components/StylizedImage";
-import imageLaptop from "@/images/laptop.jpg";
+import imageLaptop from "@/images/services/welding.jpg";
 import { List, ListItem } from "@/components/List";
-import imageMeeting from "@/images/meeting.jpg";
-import imageWhiteboard from "@/images/whiteboard.jpg";
+import imageMeeting from "@/images/services/production.jpg";
+import imageWhiteboard from "@/images/services/warehouse.jpg";
+import imageHospitality from "@/images/services/hospitality.jpg";
+import imageAgriculture from "@/images/services/farm.jpg";
 import { TagList, TagListItem } from "@/components/TagList";
 import { SectionIntro } from "@/components/SectionIntro";
 import { GridList, GridListItem } from "@/components/GridList";
@@ -299,7 +301,7 @@ function Block4() {
   return (
     <Section
       title="Excellence in Hospitality Staffing"
-      image={{ src: imageLaptop, shape: 1 }}
+      image={{ src: imageHospitality, shape: 1 }}
     >
       <div className="space-y-6 text-base text-neutral-600">
         <p>
@@ -329,7 +331,7 @@ function Block5() {
     return (
       <Section
         title="Agricultural Workforce Solutions"
-        image={{ src: imageLaptop, shape: 1 }}
+        image={{ src: imageAgriculture, shape: 1 }}
       >
         <div className="space-y-6 text-base text-neutral-600">
           <p>
