@@ -56,7 +56,7 @@ function LinkedInIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 export const socialMediaProfiles = [
   { title: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61554260161917', icon: FacebookIcon },
   { title: 'Instagram', href: 'https://www.instagram.com/grupakrayr?igsh=MW5tdHZxbHRlODJsdg==', icon: InstagramIcon },
-  { title: 'TikTok', href: 'https://tiktok.com', icon: TikTokIcon },
+  { title: 'TikTok', href: 'https://www.tiktok.com/@grupakrayr.pl?_t=8ocvfWRWjWy&_r=1', icon: TikTokIcon },
   { title: 'LinkedIn', href: 'https://www.linkedin.com/company/grupa-krayr/', icon: LinkedInIcon },
 ]
 
