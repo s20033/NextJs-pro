@@ -57,7 +57,7 @@ export function JobCard({ job }: { job: JobOpening }) {
       <p className="text-gray-700 mb-4 line-clamp-2 flex-grow">{job.description}</p>
       <button
         onClick={() => setShowModal(true)}
-        className="w-full px-4 py-2 bg-teal-950 text-white rounded-lg hover:bg-neutral-800 transition-colors mt-auto"
+        className="w-full px-4 py-2 bg-teal-950 text-white rounded-lg hover:bg-amber-700 transition-colors mt-auto"
       >
         Apply Now
       </button>

@@ -1,6 +1,7 @@
 import { ContactSection } from "@/components/ContactSection";
 import { Container } from "@/components/Container";
 import { FadeIn, FadeInStagger } from "@/components/FadeIn";
+import {CookieConsent} from '@/components/CookieConsent';
 import Image from "next/image";
 import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
 import logoFamilyFund from '@/images/clients/family-fund/logo-light.svg'
@@ -69,7 +70,7 @@ function Services() {
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-        Experience seamless, cost-effective recruitment with Grupa Krayr's innovative platform, connecting you with top international talent without upfront costs. Our "no win, no pay" model ensures you only pay for successful hires, making global recruitment efficient and affordable.   </p>
+        Experience seamless, cost-effective recruitment with Grupa Krayr&apos;s innovative platform, connecting you with top international talent without upfront costs. Our "no win, no pay" model ensures you only pay for successful hires, making global recruitment efficient and affordable.   </p>
       </SectionIntro>
       <Container className="mt-16">
         <div className="lg:flex lg:items-center lg:justify-end">
@@ -158,12 +159,13 @@ function Reasons() {
 export default async function Home() {
   return (
     <>
+    <CookieConsent/>
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
-          <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-          Grupa Krayr: Top Staffing Agency for Poland and Beyond
+          <h1 className="font-display text-5xl font-medium tracking-tight text-emerald-900 [text-wrap:balance] sm:text-7xl">
+          Grupa Krayr: A Top Staffing Agency for Poland and Beyond
           </h1>
-          <p className="mt-6 text-xl text-neutral-600">
+          <p className="mt-6 text-xl text-gray-600">
           We provide flexible, skilled workforce solutions for medium and large companies, specializing in worker leasing, temporary staffing, overseas hiring, and legalization of foreign workers from Eastern Europe and Asia.
           </p>
         </FadeIn>
@@ -173,7 +175,7 @@ export default async function Home() {
       <Reasons/>
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Phobia', logo: logoPhobiaDark }}
+        client={{ name: 'Alstom', logo: logoPhobiaDark }}
       >
         Grupa Krayr&apos;s expertise and personalized approach made our hiring process seamless. We are satisfied with the quality of candidates they&apos;ve provided.
       

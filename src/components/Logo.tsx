@@ -100,8 +100,8 @@ export function Logo({
           className={clsx(
             'transition-all duration-300',
             invert
-            ? 'stroke-white fill-white group-hover/logo:fill-teal-900'
-            : 'stroke-teal-900 fill-transparent group-hover/logo:fill-teal-900'         
+            ? 'stroke-white fill-white group-hover/logo:fill-amber-700'
+            : 'stroke-teal-950 fill-transparent group-hover/logo:fill-amber-700'         
            )}
           strokeWidth="40"
         />

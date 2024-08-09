@@ -129,7 +129,7 @@ const FAQSection: React.FC = () => {
             <div 
               key={actualIndex} 
               className={`border border-gray-200 rounded transition-colors duration-300 ${
-                expandedIndex === actualIndex ? '' : 'hover:bg-teal-950 hover:text-white'
+                expandedIndex === actualIndex ? '' : 'hover:bg-emerald-950 hover:text-white'
               }`}
             >
               <button
@@ -177,13 +177,13 @@ const FAQSection: React.FC = () => {
       <div className="mt-4 flex justify-between">
       <Button 
               onClick={prevPage}
-              className="px-4 py-2 bg-teal-950 text-white rounded hover:bg-neutral-800"
+              className="px-4 py-2 bg-emerald-950 text-white rounded hover:bg-amber-700"
             >
               Prev
               </Button>
               <Button 
               onClick={nextPage}
-              className="px-4 py-2 bg-teal-950 text-white rounded hover:bg-neutral-800"
+              className="px-4 py-2 bg-emerald-950 text-white rounded hover:bg-amber-700"
             >
               Next
               </Button>
