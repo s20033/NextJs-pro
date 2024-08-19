@@ -1,20 +1,21 @@
-import { useId } from 'react'
-import { type Metadata } from 'next'
-import Link from 'next/link'
+import { useId } from "react";
+import { type Metadata } from "next";
+import Link from "next/link";
 
-import { Border } from '@/components/Border'
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
-import { FadeIn } from '@/components/FadeIn'
-import { Offices } from '@/components/Offices'
-import { PageIntro } from '@/components/PageIntro'
-import { SocialMedia } from '@/components/SocialMedia'
+import { Border } from "@/components/Border";
+import { Button } from "@/components/Button";
+import { Container } from "@/components/Container";
+import { FadeIn } from "@/components/FadeIn";
+import { Offices } from "@/components/Offices";
+import { PageIntro } from "@/components/PageIntro";
+import { SocialMedia } from "@/components/SocialMedia";
+import { useTranslations } from "next-intl";
 
 function TextInput({
   label,
   ...props
-}: React.ComponentPropsWithoutRef<'input'> & { label: string }) {
-  let id = useId()
+}: React.ComponentPropsWithoutRef<"input"> & { label: string }) {
+  let id = useId();
 
   return (
     <div className="group relative z-0 transition-all focus-within:z-10">
@@ -32,13 +33,13 @@ function TextInput({
         {label}
       </label>
     </div>
-  )
+  );
 }
 
 function RadioInput({
   label,
   ...props
-}: React.ComponentPropsWithoutRef<'input'> & { label: string }) {
+}: React.ComponentPropsWithoutRef<"input"> & { label: string }) {
   return (
     <label className="flex gap-x-3">
       <input
@@ -48,49 +49,61 @@ function RadioInput({
       />
       <span className="text-base/6 text-neutral-950">{label}</span>
     </label>
-  )
+  );
 }
 
 function ContactForm() {
+  const t = useTranslations("ContactPage");
   return (
     <FadeIn className="lg:order-last">
       <form>
         <h2 className="font-display text-base font-semibold text-neutral-950">
-          Business inquiries
+          {t("business_enquiry")}
         </h2>
         <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
-          <TextInput label="Name" name="name" autoComplete="name" />
+          <TextInput label={t("name")} name="name" autoComplete="name" />
           <TextInput
-            label="Email"
+            label={t("email")}
             type="email"
             name="email"
             autoComplete="email"
           />
           <TextInput
-            label="Company"
+            label={t("company")}
             name="company"
             autoComplete="organization"
           />
-          <TextInput label="Phone" type="tel" name="phone" autoComplete="tel" />
-          <TextInput label="Message" name="message" />
+          <TextInput
+            label={t("phone")}
+            type="tel"
+            name="phone"
+            autoComplete="tel"
+          />
+          <TextInput label={t("message")} name="message" />
           <div className="border border-neutral-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
             <fieldset>
-              <legend className="text-base/6 text-neutral-500">Subject</legend>
+              <legend className="text-base/6 text-neutral-500">
+                {t("subject")}
+              </legend>
               <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2">
-                <RadioInput label="Cooperation" name="budget" value="25" />
-                <RadioInput label="Career" name="budget" value="50" />
-                <RadioInput label="Legalization" name="budget" value="100" />
-                <RadioInput label="offer" name="budget" value="150" />
+                <RadioInput label={t("cooperation")} name="budget" value="25" />
+                <RadioInput label={t("career")} name="budget" value="50" />
+                <RadioInput
+                  label={t("legalization")}
+                  name="budget"
+                  value="100"
+                />
+                <RadioInput label={t("offer")} name="budget" value="150" />
               </div>
             </fieldset>
           </div>
         </div>
         <Button type="submit" className="mt-10">
-          Let’s work together
+          {t("lets_work_together")}
         </Button>
       </form>
     </FadeIn>
-  )
+  );
 }
 
 function ContactDetails() {
@@ -100,8 +113,8 @@ function ContactDetails() {
         Our offices
       </h2>
       <p className="mt-6 text-base text-neutral-600">
-        Prefer doing things in person? We have our office
-        addresses here for your convenience.
+        Prefer doing things in person? We have our office addresses here for
+        your convenience.
       </p>
 
       <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" />
@@ -112,8 +125,8 @@ function ContactDetails() {
         </h2>
         <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
           {[
-            ['careers', 'resume@grupakrayr.pl'],
-            ['Cooperation', 'wspolpraca@grupakrayr.pl'],
+            ["careers", "resume@grupakrayr.pl"],
+            ["Cooperation", "wspolpraca@grupakrayr.pl"],
           ].map(([label, email]) => (
             <div key={email}>
               <dt className="font-semibold text-neutral-950">{label}</dt>
@@ -131,28 +144,28 @@ function ContactDetails() {
       </Border>
 
       <Border className="mt-16 pt-16">
-      <h2 className="font-display text-base font-semibold text-neutral-950">
-        Reach by Phone
-      </h2>
-      <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
-        {[
-          ['Poland', '+48728987991'],
-          ['Bulgaria', '+359886243448'],
-        ].map(([label, phone]) => (
-          <div key={phone}>
-            <dt className="font-semibold text-neutral-950">{label}</dt>
-            <dd>
-              <Link
-                href={`tel:${phone.replace(/\s+/g, '')}`}
-                className="text-neutral-600 hover:text-neutral-950"
-              >
-                {phone}
-              </Link>
-            </dd>
-          </div>
-        ))}
-      </dl>
-    </Border>
+        <h2 className="font-display text-base font-semibold text-neutral-950">
+          Reach by Phone
+        </h2>
+        <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
+          {[
+            ["Poland", "+48728987991"],
+            ["Bulgaria", "+359886243448"],
+          ].map(([label, phone]) => (
+            <div key={phone}>
+              <dt className="font-semibold text-neutral-950">{label}</dt>
+              <dd>
+                <Link
+                  href={`tel:${phone.replace(/\s+/g, "")}`}
+                  className="text-neutral-600 hover:text-neutral-950"
+                >
+                  {phone}
+                </Link>
+              </dd>
+            </div>
+          ))}
+        </dl>
+      </Border>
 
       <Border className="mt-16 pt-16">
         <h2 className="font-display text-base font-semibold text-neutral-950">
@@ -161,19 +174,20 @@ function ContactDetails() {
         <SocialMedia className="mt-6" />
       </Border>
     </FadeIn>
-  )
+  );
 }
 
 export const metadata: Metadata = {
-  title: 'Contact Us',
-  description: 'Let’s work together. We can’t wait to hear from you.',
-}
+  title: "Contact Us",
+  description: "Let’s work together. We can’t wait to hear from you.",
+};
 
 export default function Contact() {
+  const t = useTranslations("ContactPage");
   return (
     <>
-      <PageIntro eyebrow="Contact us" title="Let’s work together">
-        <p>We can’t wait to hear from you.</p>
+      <PageIntro eyebrow={t("eyebrow")} title={t("title")}>
+        <p>{t("description")}</p>
       </PageIntro>
 
       <Container className="mt-24 sm:mt-32 lg:mt-40">
@@ -183,5 +197,5 @@ export default function Contact() {
         </div>
       </Container>
     </>
-  )
+  );
 }

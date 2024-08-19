@@ -1,5 +1,30 @@
 {
   "HomePage": {
     "title": "Hello world! from English!"
+  },
+  "AboutPage": {
+    "hero": "At Grupa Krayr, our culture is built on equality, empathy and Empowerment,ensuring a supportive and inclusive work environment."
+  },
+  "Culture": {
+    "title": "Balance professional excellence with personal well-being"
+  },
+  "ContactPage": {
+    "eyebrow": "Contact Us",
+    "title": "Let’s work together",
+    "description": "We can’t wait to hear from you.",
+    "business_enquiry": "Business inquiries",
+    "name": "Name",
+    "email": "Email",
+    "company": "Company",
+    "phone": "Phone",
+    "message": "Message",
+    "subject": "Subject",
+    "cooperation": "Cooperation",
+    "career": "Career",
+    "legalization": "Legalization",
+    "budget": "Budget",
+    "offer": "Offer",
+    "submit": "Submit",
+    "lets_work_together": "Let’s work together"
   }
 }

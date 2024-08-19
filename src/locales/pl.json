@@ -1,5 +1,44 @@
 {
   "HomePage": {
     "title": "Hello world! Pollish, please write your name!"
+  },
+  "AboutPage": {
+    "hero": "This is in Pollish"
+  },
+  "Culture": {
+    "title": "Balance professional excellence with personal well-being in pollish"
+  },
+  "ContactPage": {
+    "eyebrow": "Skontaktuj się z nami",
+    "title": "Pracujmy razem",
+    "description": "Nie możemy się doczekać, aby usłyszeć od Ciebie.",
+    "business_enquiry": "Zapytania biznesowe",
+    "name": "Imię",
+    "email": "E-mail",
+    "company": "Firma",
+    "phone": "Telefon",
+    "message": "Wiadomość",
+    "subject": "Temat",
+    "cooperation": "Współpraca",
+    "career": "Kariera",
+    "legalization": "Legalizacja",
+    "budget": "Budżet",
+    "offer": "Oferta",
+    "submit": "Wyślij",
+    "lets_work_together": "Pracujmy razem"
+  },
+
+  "ContactDetails": {
+    "ourOfficesTitle": "Our offices",
+    "ourOfficesDescription": "Prefer doing things in person? We have our office addresses here for your convenience.",
+    "emailUsTitle": "Email us",
+    "careersLabel": "careers",
+    "careersEmail": "resume@grupakrayr.pl",
+    "cooperationLabel": "Cooperation",
+    "cooperationEmail": "wspolpraca@grupakrayr.pl",
+    "reachByPhoneTitle": "Reach by Phone",
+    "polandLabel": "Poland",
+    "bulgariaLabel": "Bulgaria",
+    "followUsTitle": "Follow us"
   }
 }

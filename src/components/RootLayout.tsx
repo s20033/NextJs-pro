@@ -21,6 +21,7 @@ import { Logo, Logomark } from "@/components/Logo";
 import { Offices } from "@/components/Offices";
 import { SocialMedia } from "@/components/SocialMedia";
 import ChangeLanguage from "./ChangeLanguage";
+import { useLocale } from "next-intl";
 
 const RootLayoutContext = createContext<{
   logoHovered: boolean;
@@ -60,7 +61,7 @@ function Header({
   invert?: boolean;
 }) {
   let { logoHovered, setLogoHovered } = useContext(RootLayoutContext)!;
-
+  const localActiveLanguage = useLocale();
   return (
     <Container>
       <div className="flex items-center justify-between">
@@ -83,7 +84,7 @@ function Header({
         </Link>
         <div className="flex items-center gap-x-4">
           <ChangeLanguage />
-          <Button href="/contact" invert={invert}>
+          <Button href={`${localActiveLanguage}/contact`} invert={invert}>
             Contact us
           </Button>
 
