@@ -33,7 +33,7 @@ export default function ChangeLanguage() {
             defaultValue={localActiveLanguage}
             onChange={onSelectChange}
             disabled={isPending}
-            className="block w-full rounded-md border border-gray-300 bg-white py-2 pl-3 pr-10 text-gray-900 shadow-sm ring-1 ring-black ring-opacity-5 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 sm:text-sm sm:leading-6"
+            className="block w-full rounded-md border border-gray-300 bg-white py-2 pl-3 pr-2 text-gray-900 shadow-sm ring-1 ring-black ring-opacity-5 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 sm:text-sm sm:leading-6"
           >
             <option value="en">English</option>
             <option value="pl">Polish</option>
