@@ -4,13 +4,13 @@ import { FadeIn, FadeInStagger } from "@/components/FadeIn";
 import {CookieConsent} from '@/components/CookieConsent';
 import Image from "next/image";
 import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-light.svg'
+import logoVedascoLight from '@/images/clients/vedasco/vedascoW.svg'
 import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
 import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
 import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
 import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
-import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
-import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
+import logoPolixnovDark from '@/images/clients/polixnov/polix-dark.svg'
+import logoPolixnovLight from '@/images/clients/polixnov/polix-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { SectionIntro } from "@/components/SectionIntro";
@@ -19,25 +19,27 @@ import { List, ListItem } from "@/components/List";
 import { Testimonial } from "@/components/Testimonial";
 import { GridList, GridListItem } from "@/components/GridList";
 import { GridPattern } from "@/components/GridPattern";
+import { useTranslations } from "next-intl";
 
 
 const industries = [
-  ['Phobia', logoPhobiaLight],
-  ['Family Fund', logoFamilyFund],
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
+  // ['Polixnov Logistics', logoPolixnovLight],
+  // ['Vedasco', logoVedascoLight],
+  // ['Unseal', logoUnseal],
+  // ['Mail Smirk', logoMailSmirk],
   ['Home Work', logoHomeWork],
   ['Green Life', logoGreenLife],
   ['Bright Path', logoBrightPath],
   ['North Adventures', logoNorthAdventures],
 ]
 function Industries() {
+  const t = useTranslations("Industries")
   return (
     <div className="mt-24 rounded-4xl bg-teal-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We work in these industries with our expert team
+          {t("title")}
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -49,7 +51,7 @@ function Industries() {
             {industries.map(([industry, logo]) => (
               <li key={industry}>
                 <FadeIn>
-                  <Image src={logo} alt={industry} unoptimized />
+                  <Image src={logo} alt={industry}  />
                 </FadeIn>
               </li>
             ))}
@@ -62,15 +64,18 @@ function Industries() {
 
 // This is Home Service Section 
 function Services() {
+  const t = useTranslations("Services")
+
   return (
     <>
       <SectionIntro
-        eyebrow="Services"
-        title="Our Comprehensive Services - Recruitment, Temporary-Staffing, and Process Outsourcing"
+        eyebrow={t("eyebrow")}
+        title={t("title")}
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-        Experience seamless, cost-effective recruitment with Grupa Krayr&apos;s innovative platform, connecting you with top international talent without upfront costs. Our "no win, no pay" model ensures you only pay for successful hires, making global recruitment efficient and affordable.   </p>
+        {t("description")}
+        </p>
       </SectionIntro>
       <Container className="mt-16">
         <div className="lg:flex lg:items-center lg:justify-end">
@@ -84,23 +89,17 @@ function Services() {
             </FadeIn>
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-            <ListItem title="Recruitment Services">
-            Grupa Krayr offers specialized recruitment services in Poland to help you find the perfect candidates for high-performing teams. 
-            Our rigorous selection process ensures you get the best talent available.
+            <ListItem title={t("recruitmentTitle")}>
+            {t("recruitmentDescription")}
             </ListItem>
-            <ListItem title="Process Outsourcing">
-            Focus on your core business activities while we handle your projects needs. 
-            Our process outsourcing services provide efficient and compliant workforce solutions tailored to your company.
-            We get you things done while we take care of your projects.
-
+            <ListItem title={t("outsourcingTitle")}>
+            {t("outsourcingDescription")}
             </ListItem>
-            <ListItem title="Temporary Staffing">
-            Need flexible, short-term, and project-based staffing solutions in your business?
-             Our temporary staffing services ensure you have the right personnel exactly when you need them, without the long-term commitment.
+            <ListItem title={t("staffingTitle")}>
+          {t("staffingDescription")}
             </ListItem>
-            <ListItem title="Legalization of Foreigners">
-            Grupa Krayr offers comprehensive legalization services for foreign workers, ensuring a smooth and compliant process for international staffing.
-            We extensively handle the Visa and Work permit assistance complying with the immigration laws.
+            <ListItem title={t("legalizationTitle")}>
+            {t("legalizationDescription")}
             </ListItem>
           </List>
         </div>
@@ -110,6 +109,7 @@ function Services() {
 }
 
 function Reasons() {
+  const t = useTranslations("Reasons");
   return (
     <div className="relative mt-0 pt-24 sm:mt-32 sm:pt-32 lg:mt-0 lg:pt-40">
       <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-gradient-to-b from-neutral-50">
@@ -120,35 +120,33 @@ function Reasons() {
       </div>
 
       <SectionIntro
-        eyebrow="Your reasons"
-        title="Why Choose Grupa Krayr?"
+        eyebrow={t("eyebrow")}
+        title={t("title")}
       >
         <p>
-          Here are the top reasons, why we are the best employment agency
-          and how our services are suitable for you. 
+         {t("description")}
         </p>
       </SectionIntro>
 
       <Container className="mt-24">
         <GridList>
-          <GridListItem title="Global Reach">
-          Our extensive network allows us to source top talent from around the world, meeting your global recruitment needs.
+          <GridListItem title={t("globalReachTitle")}>
+          {t("globalReachDescription")}
           </GridListItem>
-          <GridListItem title="Quick and Efficient">
-          We prioritize speed and efficiency, optimizing our recruitment process to save time and resources for your business.
+          <GridListItem title={t("quickEfficientTitle")}>
+            {t("quickEfficientDescription")}
+        </GridListItem>
+          <GridListItem title={t("laborLawTitle")}>
+          {t("laborLawDescription")}
           </GridListItem>
-          <GridListItem title="Navigating International Labor Law">
-          We expertly navigate international labor laws, ensuring a smooth and compliant recruitment process.
+          <GridListItem title={t("employmentCostTitle")}>
+          {t("employmentCostDescription")}
           </GridListItem>
-          <GridListItem title="Reduced Employment Costs">
-          Our cost-effective solutions help reduce employment costs while providing top-quality talent.
+          <GridListItem title={t("testingTitle")}>
+          {t("testingDescription")}
           </GridListItem>
-          <GridListItem title="Rigorous Candidate Testing">
-          We rigorously test potential employees, ensuring only the most qualified candidates are presented to you.
-          </GridListItem>
-          <GridListItem title="Innovation">
-          We leverage the latest technologies to deliver efficient and effective staffing solutions
-          that keep you ahead of the competition.
+          <GridListItem title={t("innovationTitle")}>
+          {t("innovationDescription")}
           </GridListItem>
         </GridList>
       </Container>
@@ -156,17 +154,19 @@ function Reasons() {
   )
 }
 
-export default async function Home() {
+
+export default  function Home() {
+  const t = useTranslations("Home");
   return (
     <>
     <CookieConsent/>
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
-          <h1 className="font-display text-5xl font-medium tracking-tight text-emerald-900 [text-wrap:balance] sm:text-7xl">
-          Grupa Krayr: A Top Staffing Agency for Poland and Beyond
+          <h1 className="font-display text-5xl font-medium tracking-tight text-teal-900 [text-wrap:balance] sm:text-7xl">
+            {t("headline")}
           </h1>
           <p className="mt-6 text-xl text-gray-600">
-          We provide flexible, skilled workforce solutions for medium and large companies, specializing in worker leasing, temporary staffing, overseas hiring, and legalization of foreign workers from Eastern Europe and Asia.
+          {t("description")}
           </p>
         </FadeIn>
       </Container>
@@ -175,13 +175,14 @@ export default async function Home() {
       <Reasons/>
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Alstom', logo: logoPhobiaDark }}
-      >
-        Grupa Krayr&apos;s expertise and personalized approach made our hiring process seamless. We are satisfied with the quality of candidates they&apos;ve provided.
-      
+        client={{ name: "Pollixnov Logistics", logo: logoPolixnovDark }}>
+          {t("quote")}    
       </Testimonial>
+
       
       <ContactSection/>
+ 
+     
 
 </>
   );

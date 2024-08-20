@@ -22,6 +22,7 @@ import { Border } from "@/components/Border";
 import { GridPattern } from "@/components/GridPattern";
 import { useTranslations } from "next-intl";
 
+// {t("")}
 function Culture() {
   const t = useTranslations("Culture");
   return (
@@ -31,17 +32,14 @@ function Culture() {
       </SectionIntro>
       <Container className="mt-16">
         <GridList>
-          <GridListItem title="Equality" invert>
-            We treat every team member with equal respect and opportunity,
-            fostering a workplace where everyone’s voice is heard and valued.{" "}
+          <GridListItem title={t("Equality")} invert>
+          {t("Equality_description")}
           </GridListItem>
-          <GridListItem title="Empathy" invert>
-            We understand and respect personal challenges, offering support and
-            understanding to maintain a healthy work-life balance
+          <GridListItem title={t("Empathy")} invert>
+          {t("Empathy_description")}
           </GridListItem>
-          <GridListItem title="Empowerment" invert>
-            We empower our employees to manage their own schedules, fostering a
-            culture of trust and responsibility.
+          <GridListItem title={t("Empowerment")} invert>
+          {t("Empowerment_description")}
           </GridListItem>
         </GridList>
       </Container>
@@ -50,6 +48,7 @@ function Culture() {
 }
 
 function Values() {
+  const t = useTranslations("Values")
   return (
     <div className="relative mt-24 pt-24 sm:mt-32 sm:pt-32 lg:mt-40 lg:pt-40">
       <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-gradient-to-b from-neutral-50">
@@ -60,45 +59,40 @@ function Values() {
       </div>
 
       <SectionIntro
-        eyebrow="Our values"
-        title="Balancing reliability and innovation"
+        eyebrow={t("eyebrow")}
+        title={t("title")}
       >
         <p>
-          At Grupa Krayr, we balance staying updated with emerging trends and
-          relying on proven methods. Our commitment to core values ensures
-          top-quality workforce solutions.
+        {t("description")}
+
         </p>
       </SectionIntro>
 
       <Container className="mt-24">
         <GridList>
-          <GridListItem title="Meticulous">
-            Understanding your needs is our priority. We meticulously match your
-            requirements with the perfect candidates, ensuring a seamless fit
-            with your company culture.
+          <GridListItem title={t("Meticulous")}
+          >
+            {t("Meticulous_description")}
           </GridListItem>
-          <GridListItem title="Efficient">
-            We never miss deadlines. Our efficient processes ensure your
-            staffing needs are met promptly, delivering top talent without
-            delays.
+          <GridListItem title={t("Efficient")}
+          >
+           {t("Efficient_description")}
           </GridListItem>
-          <GridListItem title="Adaptable">
-            We offer tailor-made solutions for your unique business needs,
-            guaranteeing personalized recruitment that exceeds your
-            expectations.
+          <GridListItem title={t("Adaptable")} >
+          {t("Adaptable_description")}
           </GridListItem>
-          <GridListItem title="Honest">
-            Transparency is key. We keep you informed throughout the recruitment
-            process, ensuring clarity and trust in our partnership.
+          <GridListItem title={t("Honest")}
+          >
+           {t("Honest_description")}
           </GridListItem>
-          <GridListItem title="Loyal">
-            We build long-term relationships, providing ongoing support and
-            workforce solutions that evolve with your business.
+          <GridListItem title={t("Loyal")}
+          >
+           {t("Loyal_description")}
           </GridListItem>
-          <GridListItem title="Innovative">
-            We continuously seek new ways to improve our services, leveraging
-            the latest advancements to enhance our recruitment process.
-          </GridListItem>
+          <GridListItem title={t("Innovative")}
+          >
+           {t("Innovative_description")}
+        </GridListItem>
         </GridList>
       </Container>
     </div>
@@ -158,6 +152,7 @@ const team = [
   },
 ];
 function Team() {
+  const t = useTranslations("Team")
   return (
     <Container className="mt-24 sm:mt-32 lg:mt-40">
       <div className="space-y-24">
@@ -212,58 +207,42 @@ export const metadata: Metadata = {
     "Grupa Krayr is a leading recruitment agency specializing in worker leasing, temporary staffing, and overseas hiring. We focus on providing skilled workforce solutions for medium and large companies, with expertise in legalizing foreign workers from Eastern Europe and Asia.",
 };
 
-export default async function About() {
-  let blogArticles = (await loadArticles()).slice(0, 2);
+export default  function About() {
+  const t = useTranslations("PageIntro")
+  // let blogArticles = (await loadArticles()).slice(0, 2);
 
   return (
     <>
-      <PageIntro eyebrow="About us" title="Revolutionizing Workforce Solutions">
+      <PageIntro eyebrow={t("eyebrow")} title={t("title")}>
         <p>
-          Our Strength Lies in Innovation and Commitment which puts our clients
-          at the center of everything we do.
+          {t("description")}
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Grupa Krayr was founded by two enthusiastic professionals who
-            recognized Europe&apos;s pressing need for a qualified workforce to
-            sustain its industrial leadership globally. Observing the negative
-            impacts of labor shortages on company growth, coupled with the high
-            costs and limited solutions offered by existing recruitment
-            agencies, we set out to make a difference. Our mission is to provide
-            affordable, diverse, and effective staffing solutions that cater to
-            the dynamic needs of medium and large companies.
+            {t("content1")}
           </p>
           <p>
-            Since our inception, Grupa Krayr has been dedicated to
-            revolutionizing recruitment and staffing solutions by integrating
-            cutting-edge technology, market trends, and industry demands. We
-            specialize in both domestic and international recruitment,
-            addressing domestic unemployment while fulfilling the demand for
-            qualified talent by attracting skilled workers from Eastern Europe
-            and Asia. Our commitment to valuing human assets and leveraging
-            innovative strategies ensures that we deliver exceptional results,
-            positioning us as a reliable and forward-thinking recruitment
-            partner.
+            {t("content2")}
           </p>
         </div>
       </PageIntro>
       <Container className="mt-16">
         <StatList>
-          <StatListItem value="1200+" label="Happy Talents" />
-          <StatListItem value="25+" label="Happy clients" />
-          <StatListItem value="$25M" label="Invoices billed" />
+          <StatListItem value={t("HappyTalents")} label={t("HappyTalentsLabel")} />
+          <StatListItem value={t("HappyClients")} label={t("HappyClientsLabel")} />
+          <StatListItem value={t("InvoicesBilled")} label={t("InvoicesBilledLabel")} />
         </StatList>
       </Container>
       <Culture />
       <Values />
       <Team />
 
-      <PageLinks
+      {/* <PageLinks
         className="mt-24 sm:mt-32 lg:mt-40"
         title="From the blog"
         intro="Stay informed with the latest industry updates as our team explores innovative solutions and shares insights on workforce trends and staffing strategies."
         pages={blogArticles}
-      />
+      /> */}
 
       <ContactSection />
     </>

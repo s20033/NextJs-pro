@@ -1,13 +1,102 @@
 {
-  "HomePage": {
-    "title": "Hello world! Pollish, please write your name!"
-  },
-  "AboutPage": {
-    "hero": "This is in Pollish"
-  },
+  
+    "Home": {
+      "headline": "Grupa Krayr: Czołowa agencja zatrudnienia w Polsce i poza jej granicami",
+      "description": "Zapewniamy elastyczne i wykwalifikowane rozwiązania kadrowe dla średnich i dużych firm, specjalizując się w wynajmie pracowników, zatrudnianiu tymczasowym, zatrudnianiu z zagranicy oraz legalizacji pracowników z Europy Wschodniej i Azji.",
+      "client": "Alstom",
+      "quote": "Ekspertyza Grupy Krayr i spersonalizowane podejście sprawiły, że nasz proces rekrutacji przebiegł bezproblemowo. Jesteśmy zadowoleni z jakości dostarczonych kandydatów."
+   
+    },
+    "Industries": {
+      "title": "Działamy w tych branżach z naszym zespołem ekspertów"
+    },
+    "Services": {
+      "eyebrow": "Usługi",
+      "title": "Nasze kompleksowe usługi - Rekrutacja, Praca Tymczasowa i Outsourcing Procesów",
+      "description": "Doświadcz bezproblemowej, opłacalnej rekrutacji dzięki innowacyjnej platformie Grupy Krayr, która łączy Cię z najlepszymi międzynarodowymi talentami bez kosztów wstępnych. Nasz model \"no win, no pay\" gwarantuje, że płacisz tylko za udane zatrudnienia, co sprawia, że globalna rekrutacja jest efektywna i przystępna cenowo.",
+        "recruitmentTitle": "Usługi Rekrutacyjne",
+        "recruitmentDescription": "Grupa Krayr oferuje specjalistyczne usługi rekrutacyjne w Polsce, aby pomóc Ci znaleźć idealnych kandydatów do wysokowydajnych zespołów. Nasz rygorystyczny proces selekcji zapewnia dostęp do najlepszych talentów.",
+        "outsourcingTitle": "Outsourcing Procesów",
+        "outsourcingDescription": "Skup się na swoich kluczowych działaniach biznesowych, a my zajmiemy się Twoimi projektami. Nasze usługi outsourcingowe zapewniają wydajne i zgodne z przepisami rozwiązania kadrowe dostosowane do potrzeb Twojej firmy.",
+        "staffingTitle": "Praca Tymczasowa",
+        "staffingDescription": "Potrzebujesz elastycznych, krótkoterminowych rozwiązań kadrowych? Nasze usługi pracy tymczasowej zapewniają odpowiedni personel dokładnie wtedy, gdy go potrzebujesz, bez długoterminowych zobowiązań.",
+        "legalizationTitle": "Legalizacja Cudzoziemców",
+        "legalizationDescription": "Grupa Krayr oferuje kompleksowe usługi legalizacji pracowników zagranicznych, zapewniając płynny i zgodny z przepisami proces zatrudnienia międzynarodowego. Zajmujemy się wsparciem w zakresie wiz i zezwoleń na pracę, zgodnie z przepisami imigracyjnymi."
+
+    },
+    "Reasons": {
+      "eyebrow": "Twoje powody",
+      "title": "Dlaczego warto wybrać Grupę Krayr?",
+      "description": "Oto główne powody, dla których jesteśmy najlepszą agencją zatrudnienia i jak nasze usługi są dostosowane do Twoich potrzeb.",
+        "globalReachTitle": "Zasięg Globalny",
+        "globalReachDescription": "Nasza rozbudowana sieć pozwala nam pozyskiwać najlepsze talenty z całego świata, zaspokajając Twoje globalne potrzeby rekrutacyjne.",
+        "quickEfficientTitle": "Szybko i Efektywnie",
+        "quickEfficientDescription": "Priorytetem jest dla nas szybkość i efektywność, optymalizując nasz proces rekrutacji, aby zaoszczędzić czas i zasoby Twojej firmy.",
+        "laborLawTitle": "Nawigacja po Międzynarodowym Prawie Pracy",
+        "laborLawDescription": "Ekspercko poruszamy się po międzynarodowym prawie pracy, zapewniając płynny i zgodny proces rekrutacyjny.",
+        "employmentCostTitle": "Obniżenie Kosztów Zatrudnienia",
+        "employmentCostDescription": "Nasze opłacalne rozwiązania pomagają obniżyć koszty zatrudnienia, zapewniając jednocześnie wysokiej jakości talenty.",
+        "testingTitle": "Rygorystyczne Testowanie Kandydatów",
+        "testingDescription": "Rygorystycznie testujemy potencjalnych pracowników, zapewniając, że prezentujemy tylko najbardziej wykwalifikowanych kandydatów.",
+        "innovationTitle": "Innowacja",
+        "innovationDescription": "Wykorzystujemy najnowsze technologie, aby dostarczać efektywne i skuteczne rozwiązania kadrowe, które utrzymają Cię na czele konkurencji."
+    },
+
+
+
+  
+
   "Culture": {
-    "title": "Balance professional excellence with personal well-being in pollish"
+    "title": "Nasza kultura - 3E",
+    "Equality": "Równość",
+    "Equality_description": "Traktujemy każdego członka zespołu z równym szacunkiem i możliwościami, tworząc miejsce pracy, w którym głos każdego jest słyszalny i ceniony.",
+    "Empathy": "Empatia",
+    "Empathy_description": "Rozumiemy i szanujemy wyzwania osobiste, oferując wsparcie i zrozumienie, aby utrzymać zdrową równowagę między pracą a życiem osobistym.",
+    "Empowerment": "Upoważnienie",
+    "Empowerment_description": "Dajemy naszym pracownikom możliwość zarządzania własnym harmonogramem, tworząc kulturę zaufania i odpowiedzialności."
   },
+  "Values": {
+    "eyebrow": "Nasze wartości",
+    "title": "Równowaga między niezawodnością a innowacją",
+    "description": "W Grupie Krayr łączymy bieżące trendy z wypróbowanymi metodami. Nasze zaangażowanie w kluczowe wartości gwarantuje najwyższej jakości rozwiązania kadrowe.",
+    "Meticulous": "Skrupulatność",
+    "Meticulous_description": "Zrozumienie Twoich potrzeb jest naszym priorytetem. Skrupulatnie dopasowujemy Twoje wymagania do idealnych kandydatów, zapewniając doskonałe dopasowanie do kultury Twojej firmy.",
+    "Efficient": "Efektywność",
+    "Efficient_description": "Nigdy nie przekraczamy terminów. Nasze wydajne procesy gwarantują terminowe zaspokojenie Twoich potrzeb kadrowych, dostarczając najlepszych talentów bez opóźnień.",
+    "Adaptable": "Elastyczność",
+    "Adaptable_description": "Oferujemy rozwiązania dostosowane do Twoich unikalnych potrzeb biznesowych, zapewniając spersonalizowaną rekrutację, która przewyższy Twoje oczekiwania.",
+    "Honest": "Uczciwość",
+    "Honest_description": "Przejrzystość jest kluczowa. Informujemy Cię na bieżąco przez cały proces rekrutacji, zapewniając jasność i zaufanie w naszym partnerstwie.",
+    "Loyal": "Lojalność",
+    "Loyal_description": "Budujemy długotrwałe relacje, zapewniając stałe wsparcie i rozwiązania kadrowe, które rozwijają się razem z Twoją firmą.",
+    "Innovative": "Innowacyjność",
+    "Innovative_description": "Stale szukamy nowych sposobów na poprawę naszych usług, wykorzystując najnowsze osiągnięcia, aby ulepszyć nasz proces rekrutacji."
+  },
+  "Team": {
+    "Leadership": "Przywództwo",
+    "Team": "Zespół"
+  },
+  "PageIntro": {
+    "eyebrow": "O nas",
+    "title": "Rewolucjonizowanie rozwiązań kadrowych",
+    "description": "Nasza siła tkwi w innowacjach i zaangażowaniu, które stawia naszych klientów w centrum wszystkiego, co robimy.",
+    "content1":"Grupa Krayr została założona przez dwóch entuzjastycznych profesjonalistów, którzy dostrzegli pilną potrzebę wykwalifikowanej siły roboczej w Europie, aby utrzymać pozycję lidera przemysłowego na świecie. Obserwując negatywny wpływ niedoborów siły roboczej na rozwój firmy, w połączeniu z wysokimi kosztami i ograniczonymi rozwiązaniami oferowanymi przez istniejące agencje rekrutacyjne, postanowiliśmy coś zmienić. Naszą misją jest dostarczanie przystępnych cenowo, zróżnicowanych i skutecznych rozwiązań kadrowych, które zaspokajają dynamiczne potrzeby średnich i dużych firm,",
+     "content2":"Od momentu powstania Grupa Krayr jest zaangażowana w rewolucjonizowanie rekrutacji i rozwiązań kadrowych poprzez integrację najnowocześniejszych technologii, trendów rynkowych i wymagań branżowych. Specjalizujemy się zarówno w rekrutacji krajowej, jak i międzynarodowej, rozwiązując problem krajowego bezrobocia i zaspokajając zapotrzebowanie na wykwalifikowanych pracowników z Europy Wschodniej i Azji. Nasze zaangażowanie w docenianie zasobów ludzkich i wykorzystywanie innowacyjnych strategii zapewnia, że dostarczamy wyjątkowe wyniki, pozycjonując nas jako wiarygodnego i myślącego przyszłościowo partnera rekrutacyjnego.",
+     "HappyTalents": "1200+",
+     "HappyTalentsLabel": "Zadowoleni pracownicy",
+     "HappyClients": "25+",
+     "HappyClientsLabel": "Zadowoleni klienci",
+     "InvoicesBilled": "$25M",
+     "InvoicesBilledLabel": "Wystawione faktury"
+
+
+  },
+  "PageLinks": {
+    "title": "Z bloga",
+    "intro": "Bądź na bieżąco z najnowszymi aktualizacjami branżowymi, gdy nasz zespół bada innowacyjne rozwiązania i dzieli się spostrzeżeniami na temat trendów na rynku pracy i strategii kadrowych."
+  },
+
+
   "ContactPage": {
     "eyebrow": "Skontaktuj się z nami",
     "title": "Pracujmy razem",
@@ -28,17 +117,118 @@
     "lets_work_together": "Pracujmy razem"
   },
 
-  "ContactDetails": {
-    "ourOfficesTitle": "Our offices",
-    "ourOfficesDescription": "Prefer doing things in person? We have our office addresses here for your convenience.",
-    "emailUsTitle": "Email us",
-    "careersLabel": "careers",
+"ContactDetails": {
+    "ourOfficesTitle": "Nasze biura",
+    "ourOfficesDescription": "Preferujesz załatwiać sprawy osobiście? Mamy dla Ciebie nasze adresy biurowe.",
+    "emailUsTitle": "Napisz do nas",
+    "careersLabel": "Kariera",
     "careersEmail": "resume@grupakrayr.pl",
-    "cooperationLabel": "Cooperation",
+    "cooperationLabel": "Współpraca",
     "cooperationEmail": "wspolpraca@grupakrayr.pl",
-    "reachByPhoneTitle": "Reach by Phone",
-    "polandLabel": "Poland",
-    "bulgariaLabel": "Bulgaria",
-    "followUsTitle": "Follow us"
-  }
+    "reachByPhoneTitle": "Kontakt telefoniczny",
+    "polandLabel": "Polska",
+    "bulgariaLabel": "Bułgaria",
+    "followUsTitle": "podążaj za nami"
+  },
+  
+
+
+    "career": {
+      "introEyebrow": "Kariera",
+      "introTitle": "Dołącz do naszego zespołu w Grupie Krayr",
+      "introText": "W Grupie Krayr oferujemy unikalną możliwość dołączenia do zespołu, który jest zaangażowany w rewolucjonizowanie branży rekrutacyjnej. Dowiedz się, jak możesz wnieść swój wkład i rozwijać się razem z nami."
+    },
+
+      "expertiseSection": {
+        "eyebrow": "Nasza wiedza",
+        "title": "Kompleksowe usługi w zakresie zatrudniania zagranicznego",
+        "text": "Nasza wiedza w zakresie zatrudniania zagranicznego gwarantuje, że zarówno firmy, jak i pracownicy międzynarodowi otrzymują wsparcie niezbędne do płynnej współpracy.",
+        "recruitmentTitle": "Rekrutacja",
+        "recruitmentText": "Pomagamy w znalezieniu najlepszych globalnych talentów, aby spełnić potrzeby Twojej firmy.",
+        "onboardingTitle": "Wdrożenie i wsparcie",
+        "onboardingText": "Zapewniamy kompleksowe wsparcie, aby zapewnić płynne wdrożenie nowych pracowników.",
+        "visaTitle": "Wiza i imigracja",
+        "visaText": "Nasz zespół pomaga w nawigowaniu po złożonym procesie wizowym i imigracyjnym w Twoim imieniu."
+      },
+      "legalizationSection": {
+        "eyebrow": "Usługi legalizacyjne",
+        "title": "Płynna i zgodna legalizacja dla pracowników zagranicznych",
+        "text": "Grupa Krayr oferuje kompleksowe usługi legalizacyjne, aby zapewnić, że Twoja międzynarodowa kadra jest zgodna z przepisami i bezproblemowa.",
+        "visaAssistanceTitle": "Pomoc w uzyskaniu wizy i pozwolenia na pracę",
+        "visaAssistanceText": "Zajmujemy się aplikacją i odnowieniem wiz oraz pozwoleń na pracę, zapewniając zgodność z wymogami prawnymi, aby Twoi pracownicy mogli pracować legalnie i efektywnie.",
+        "complianceTitle": "Zgodność z przepisami imigracyjnymi",
+        "complianceText": "Nasz zespół dba o przestrzeganie przepisów imigracyjnych, nawigując po złożonych ramach prawnych, aby Twoje operacje były zgodne z przepisami i bezstresowe.",
+        "documentVerificationTitle": "Weryfikacja dokumentów",
+        "documentVerificationText": "Pomagamy w weryfikacji i tłumaczeniu niezbędnych dokumentów, aby zapewnić płynne wdrożenie, zapewniając autentyczność i legalność.",
+        "ongoingSupportTitle": "Stałe wsparcie",
+        "ongoingSupportText": "Zapewniamy ciągłe wsparcie w rozwiązywaniu wszelkich kwestii prawnych lub biurokratycznych, które mogą się pojawić, aby Twoja kadra była zgodna z przepisami i produktywna."
+      },
+      "currentOpportunitiesSection": {
+        "eyebrow": "Aktualne oferty",
+        "title": "Poznaj nasze oferty pracy",
+        "text": "Odkryj ekscytujące możliwości kariery dostępne w Grupie Krayr. Dołącz do naszego zespołu i zrób różnicę w świecie rekrutacji i zatrudniania."
+      },
+
+
+    
+      
+        "process": {
+          "pageTitle": "Nasz Proces",
+          "pageDescription": "Wierzymy w efektywność i skuteczność zasobów, aby zapewnić najwyższej jakości rozwiązania kadrowe naszym klientom.",
+          "introEyebrow": "Nasz proces",
+          "introTitle": "Jak pracujemy",
+          "introText": "Wierzymy w efektywność i skuteczność zasobów, aby zapewnić najwyższej jakości rozwiązania kadrowe naszym klientom. Robimy to, wykorzystując nasz sprawdzony model, nad którym pracujemy od 7 lat.",
+          "needsSection": {
+            "title": "Zrozumieć potrzeby",
+            "description": "Ściśle współpracujemy z naszymi klientami, aby zrozumieć ich potrzeby, integrując się z ich codziennymi operacjami, aby zrozumieć ich potrzeby kadrowe. Zatrudnianie pracowników nie zawsze jest rozwiązaniem, zatrudnianie odpowiedniej osoby to to, co oferujemy, aby Twoja firma mogła się rozwijać.",
+            "approachTitle": "Nasze podejście obejmuje:",
+            "detailedQuestionnaires": "Szczegółowe Kwestionariusze",
+            "detailedQuestionnairesText": "Zbieramy wszystkie kwestionariusze związane z Twoimi potrzebami kadrowymi i wymaganiami dotyczącymi umiejętności.",
+            "employeeSurveys": "Ankiety Pracownicze",
+            "employeeSurveysText": "Zbieramy wszystkie kwestionariusze związane z Twoimi potrzebami kadrowymi i wymaganiami dotyczącymi umiejętności.",
+            "feasibilityStudies": "Studia Wykonalności",
+            "feasibilityStudiesText": "Zbieramy wszystkie kwestionariusze związane z Twoimi potrzebami kadrowymi i wymaganiami dotyczącymi umiejętności.",
+            "costEffectiveSolution": "Gdy w pełni zrozumiemy Twoje potrzeby, oferujemy kompleksowe rozwiązanie, a co ważniejsze, kosztowne!",
+            "blockquoteAuthor": {
+              "name": "Debra Fiscal",
+              "role": "CEO Unseal"
+            },
+            "blockquoteText": "Studio było tak regularne w aktualizacjach postępów, że prawie zaczęliśmy myśleć, że są one zautomatyzowane!"
+          },
+          "solutionsSection": {
+            "title": "Dostarczanie Rozwiązania",
+            "description": "W Grupie Krayr starannie wybieramy idealnych kandydatów z naszego obszernego zasobu talentów, zapewniając dopasowanie do Twoich celów biznesowych. Nasz szczegółowy proces selekcji obejmuje weryfikację doświadczenia i umiejętności, a także przeprowadzanie kompleksowych rozmów kwalifikacyjnych zarówno online, jak i osobiście dla Twojej wygody.",
+            "solutionDeliveryText": "Nasz proces dostarczania rozwiązania obejmuje skrupulatną weryfikację profilu kandydata, dopasowane rozmowy kwalifikacyjne i płynne wdrożenie zatrudnienia. Priorytetem jest dla nas dokładność i efektywność, aby idealnie dopasować się do Twoich potrzeb.",
+            "integrationText": "Nasi dedykowani kierownicy projektów ściśle współpracują z Twoimi przedstawicielami, aby zapewnić płynne przejście i zapewnić wsparcie dla nowych pracowników, wspierając udaną integrację z Twoim zespołem.",
+            "includedInThisPhaseTitle": "Włączone w ten etap",
+            "tagListItems": [
+              "Szczegółowe kwestionariusze",
+              "Wybór kandydatów",
+              "Cele biznesowe",
+              "Weryfikacja profilu",
+              "Dopasowane rozmowy kwalifikacyjne",
+              "Płynne wdrożenie zatrudnienia"
+            ]
+          },
+          "deliverSection": {
+            "title": "Wsparcie Ciągłe",
+            "description": "Nasze zaangażowanie w Twoje sukcesy wykracza poza proces zatrudnienia. Zapewniamy ciągłe wsparcie, aby zapewnić płynne włączenie i trwały sukces nowych pracowników w Twojej firmie.",
+            "supportProcessText": "Nasz kompleksowy proces wsparcia obejmuje regularne wizyty, sesje orientacyjne i szkoleniowe, doradztwo oraz organizowanie wydarzeń i spotkań. Środki te zapewniają, że nowi pracownicy dostosowują się szybko i efektywnie do Twojego środowiska biznesowego.",
+            "successText": "Oferując ciągłe wsparcie, gwarantujemy, że Twoi nowi pracownicy będą się rozwijać i wnosić znaczący wkład w rozwój i sukces Twojej firmy.",
+            "includedInThisPhaseTitle": "Włączone w ten etap",
+            "listItems": [
+              "Wsparcie i koordynacja 24/7",
+              "Specjalistyczna koordynacja",
+              "Kompleksowa integracja"
+            ],
+            "supportAndCoordinationText": "Całodobowa pomoc dla pracowników i dedykowany przedstawiciel klienta dla płynnej komunikacji.",
+            "specializedCoordinationText": "Koordynatorzy dla pracowników zagranicznych, aby pomóc im dostosować się i poruszać w nowym środowisku.",
+            "comprehensiveIntegrationText": "Regularne wizyty, sesje orientacyjne, szkoleniowe oraz wydarzenia społeczne, aby zapewnić, że nowi pracownicy dostosowują się i rozwijają w Twojej firmie."
+          }
+        }
+      
+      
+    
+  
+  
 }

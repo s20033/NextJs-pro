@@ -12,7 +12,7 @@ type JobOpening = {
   salary: string;
   contractType: string;
   location: string;
-  workType: 'Remote' | 'Hybrid' | 'Stationary';
+  workType: string;
   description: string;
 };
 

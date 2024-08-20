@@ -142,12 +142,6 @@ function Block1() {
       image={{ src: imageLaptop, shape: 1 }}
     >
       <div className="space-y-6 text-base text-neutral-600">
-        {/* <p>
-            Based off of the discovery phase, we develop a comprehensive roadmap
-            for each product and start working towards delivery. The roadmap is an
-            intricately tangled mess of technical nonsense designed to drag the
-            project out as long as possible.
-          </p> */}
         <p>
           Grupa Krayr&apos;s{" "}
           <strong className="font-semibold text-neutral-950">

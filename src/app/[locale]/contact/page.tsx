@@ -107,29 +107,30 @@ function ContactForm() {
 }
 
 function ContactDetails() {
+  const t = useTranslations("ContactDetails");
+
   return (
     <FadeIn>
       <h2 className="font-display text-base font-semibold text-neutral-950">
-        Our offices
+        {t('ourOfficesTitle')}
       </h2>
       <p className="mt-6 text-base text-neutral-600">
-        Prefer doing things in person? We have our office addresses here for
-        your convenience.
+        {t("ourOfficesDescription")}
       </p>
 
       <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" />
 
       <Border className="mt-16 pt-16">
         <h2 className="font-display text-base font-semibold text-neutral-950">
-          Email us
+          {t("emailUsTitle")}
         </h2>
         <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
           {[
-            ["careers", "resume@grupakrayr.pl"],
-            ["Cooperation", "wspolpraca@grupakrayr.pl"],
+            ["careersLabel", "resume@grupakrayr.pl"],
+            ["cooperationLabel", "wspolpraca@grupakrayr.pl"],
           ].map(([label, email]) => (
             <div key={email}>
-              <dt className="font-semibold text-neutral-950">{label}</dt>
+              <dt className="font-semibold text-neutral-950">{t(label)}</dt>
               <dd>
                 <Link
                   href={`mailto:${email}`}
@@ -145,15 +146,15 @@ function ContactDetails() {
 
       <Border className="mt-16 pt-16">
         <h2 className="font-display text-base font-semibold text-neutral-950">
-          Reach by Phone
+          {t("reachByPhoneTitle")}
         </h2>
         <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
           {[
-            ["Poland", "+48728987991"],
-            ["Bulgaria", "+359886243448"],
+            ["polandLabel", "+48728987991"],
+            ["bulgariaLabel", "+359886243448"],
           ].map(([label, phone]) => (
             <div key={phone}>
-              <dt className="font-semibold text-neutral-950">{label}</dt>
+              <dt className="font-semibold text-neutral-950">{t(label)}</dt>
               <dd>
                 <Link
                   href={`tel:${phone.replace(/\s+/g, "")}`}
@@ -169,7 +170,7 @@ function ContactDetails() {
 
       <Border className="mt-16 pt-16">
         <h2 className="font-display text-base font-semibold text-neutral-950">
-          Follow us
+          {t("followUsTitle")}
         </h2>
         <SocialMedia className="mt-6" />
       </Border>
