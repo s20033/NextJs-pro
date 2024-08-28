@@ -1,16 +1,15 @@
-import { ContactSection } from '@/components/ContactSection';
-import { Container } from '@/components/Container';
-import { FadeIn } from '@/components/FadeIn';
-import { PageIntro } from '@/components/PageIntro';
-import { SectionIntro } from '@/components/SectionIntro';
-import { GridList, GridListItem } from '@/components/GridList';
+import { ContactSection } from '../components/ContactSection';
+import { Container } from '../components/Container';
+import { FadeIn } from '../components/FadeIn';
+import { PageIntro } from '../components/PageIntro';
+import { SectionIntro } from '../components/SectionIntro';
+import { GridList, GridListItem } from '../components/GridList';
 import { Metadata } from 'next';
 import React, {useState} from 'react';
-import { CurrencyDollarIcon, BriefcaseIcon, MapPinIcon, BuildingOfficeIcon } from '@heroicons/react/24/outline';
-import { StylizedImage } from '@/components/StylizedImage';
-import { JobCard } from '@/components/JobCard';
-import { JobListings } from '@/components/JobListings';
-import { GridPattern } from '@/components/GridPattern';
+import { StylizedImage } from '../components/StylizedImage';
+import { JobCard } from '../components/JobCard';
+import { JobListings } from '../components/JobListings';
+import { GridPattern } from '../components/GridPattern';
 import logoPolixnovDark from '@/images/clients/polixnov/polix-dark.svg'
 import  {jobOpenings}  from '@/data/jobOpenings'; 
 import { useTranslations } from 'next-intl';

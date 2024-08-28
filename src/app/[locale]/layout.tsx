@@ -3,9 +3,10 @@ import { getMessages } from "next-intl/server";
 
 import { type Metadata } from "next";
 
-import { RootLayout } from "@/components/RootLayout";
+
 
 import "@/styles/tailwind.css";
+import { RootLayout } from "./components/RootLayout";
 
 export const metadata: Metadata = {
   title: {

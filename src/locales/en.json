@@ -224,12 +224,38 @@
             "specializedCoordinationText": "Coordinators for foreign workers to help them acclimate and navigate their new environment.",
             "comprehensiveIntegrationText": "Regular visits, orientation, training sessions, and social events to ensure new hires adapt and thrive in your company."
           }
+        },
+        
+          "applicationForm": {
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "email": "Email",
+            "phone": "Phone",
+            "cv": "Upload CV",
+            "agreeToTerms": "I agree with Grupa Krayr processing my data as per privacy policy",
+            "cancel": "Cancel",
+            "submit": "Submit Application",
+            "privacyPolicyTitle": "Privacy Policy (RODO Clause)",
+            "privacyPolicy": {
+              "admin": "The administrator of your personal data is Grupa Krayr Sp. z o.o., with its registered office at Al. Jana Pawła II 11/1013, 00-823 Warsaw, Poland.",
+              "purpose": "Your personal data will be processed for the purpose of conducting the recruitment process for the position of {{jobTitle}}.",
+              "legalBasis": "The legal basis for the processing of your personal data is your voluntary consent (Article 6(1)(a) of the GDPR).",
+              "storage": "Your personal data will be stored for the duration of the recruitment process, but no longer than 6 months from the date of submission.",
+              "rights": "You have the right to access your data, rectify it, delete it, limit processing, and withdraw consent at any time without affecting the lawfulness of processing based on consent before its withdrawal.",
+              "voluntary": "Providing personal data is voluntary, but necessary to participate in the recruitment process.",
+              "automatedDecision": "Your data will not be subject to automated decision-making or profiling.",
+              "complaint": "You have the right to lodge a complaint with the supervisory authority (President of the Personal Data Protection Office) if you believe that the processing of your personal data violates the provisions of the GDPR."
+            },
+            "errors": {
+              "firstNameRequired": "First name is required",
+              "lastNameRequired": "Last name is required",
+              "emailRequired": "Email is required",
+              "emailInvalid": "Invalid email address",
+              "phoneRequired": "Phone number is required",
+              "cvRequired": "CV is required",
+              "agreeToTermsRequired": "You must agree to the terms"
+            }
+          }
         }
-      
-      
-
+        
     
-  
-  
-
-}

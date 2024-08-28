@@ -1,10 +1,10 @@
 
 import { loadArticles, type Article, type MDXEntry } from '@/lib/mdx'
-import { MDXComponents } from '@/components/MDXComponents'
-import { ContactSection } from '@/components/ContactSection'
-import { PageLinks } from '@/components/PageLinks'
-import { Container } from '@/components/Container'
-import { FadeIn } from '@/components/FadeIn'
+import { MDXComponents } from './MDXComponents'
+import { ContactSection } from './ContactSection'
+import { PageLinks } from './PageLinks'
+import { Container } from './Container'
+import { FadeIn } from './FadeIn'
 import { formatDate } from '@/lib/formatDate'
 
 async function BlogArticleWrapper({

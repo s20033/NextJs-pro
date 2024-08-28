@@ -1,20 +1,20 @@
 
 import { Metadata } from "next"
-import { Blockquote } from '@/components/Blockquote'
-import { ContactSection } from '@/components/ContactSection'
-import { Container } from '@/components/Container'
-import { FadeIn } from '@/components/FadeIn'
-import { GridList, GridListItem } from '@/components/GridList'
-import { GridPattern } from '@/components/GridPattern'
-import { List, ListItem } from '@/components/List'
-import { PageIntro } from '@/components/PageIntro'
-import { SectionIntro } from '@/components/SectionIntro'
-import { StylizedImage } from '@/components/StylizedImage'
-import { TagList, TagListItem } from '@/components/TagList'
+import { Blockquote } from '../components/Blockquote'
+import { ContactSection } from '../components/ContactSection'
+import { Container } from '../components/Container'
+import { FadeIn } from '../components/FadeIn'
+import { GridList, GridListItem } from '../components/GridList'
+import { GridPattern } from '../components/GridPattern'
+import { List, ListItem } from '../components/List'
+import { PageIntro } from '../components/PageIntro'
+import { SectionIntro } from '../components/SectionIntro'
+import { StylizedImage } from '../components/StylizedImage'
+import { TagList, TagListItem } from '../components/TagList'
 import imageLaptop from '@/images/discover.jpg'
 import imageMeeting from '@/images/meeting.jpg'
 import imageWhiteboard from '@/images/support.jpg'
-import FAQSection from "@/components/FAQs"
+import FAQSection from "../components/FAQs"
 
 
 function Section({

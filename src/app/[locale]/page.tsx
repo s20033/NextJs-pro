@@ -1,7 +1,4 @@
-import { ContactSection } from "@/components/ContactSection";
-import { Container } from "@/components/Container";
-import { FadeIn, FadeInStagger } from "@/components/FadeIn";
-import {CookieConsent} from '@/components/CookieConsent';
+import {CookieConsent} from './components/CookieConsent';
 import Image from "next/image";
 import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
 import logoVedascoLight from '@/images/clients/vedasco/vedascoW.svg'
@@ -13,13 +10,17 @@ import logoPolixnovDark from '@/images/clients/polixnov/polix-dark.svg'
 import logoPolixnovLight from '@/images/clients/polixnov/polix-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
-import { SectionIntro } from "@/components/SectionIntro";
-import { StylizedImage } from "@/components/StylizedImage";
-import { List, ListItem } from "@/components/List";
-import { Testimonial } from "@/components/Testimonial";
-import { GridList, GridListItem } from "@/components/GridList";
-import { GridPattern } from "@/components/GridPattern";
+
 import { useTranslations } from "next-intl";
+import { Container } from './components/Container';
+import { FadeIn, FadeInStagger } from './components/FadeIn';
+import { SectionIntro } from './components/SectionIntro';
+import { StylizedImage } from './components/StylizedImage';
+import { List, ListItem } from './components/List';
+import { GridPattern } from './components/GridPattern';
+import { GridList, GridListItem } from './components/GridList';
+import { Testimonial } from './components/Testimonial';
+import { ContactSection } from './components/ContactSection';
 
 
 const industries = [

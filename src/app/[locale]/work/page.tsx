@@ -2,25 +2,25 @@ import { type Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-import { Blockquote } from "@/components/Blockquote";
-import { Border } from "@/components/Border";
-import { Button } from "@/components/Button";
-import { ContactSection } from "@/components/ContactSection";
-import { Container } from "@/components/Container";
-import { FadeIn, FadeInStagger } from "@/components/FadeIn";
-import { PageIntro } from "@/components/PageIntro";
+import { Blockquote } from "../components/Blockquote";
+import { Border } from "../components/Border";
+import { Button } from "../components/Button";
+import { ContactSection } from "../components/ContactSection";
+import { Container } from "../components/Container";
+import { FadeIn, FadeInStagger } from "../components/FadeIn";
+import { PageIntro } from "../components/PageIntro";
 import { formatDate } from "@/lib/formatDate";
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from "@/lib/mdx";
-import { StylizedImage } from "@/components/StylizedImage";
+import { StylizedImage } from "../components/StylizedImage";
 import imageLaptop from "@/images/services/welding.jpg";
 import imageMeeting from "@/images/services/production.jpg";
 import imageWhiteboard from "@/images/services/warehouse.jpg";
 import imageHospitality from "@/images/services/hospitality.jpg";
 import imageAgriculture from "@/images/services/farm.jpg";
-import { TagList, TagListItem } from "@/components/TagList";
-import { SectionIntro } from "@/components/SectionIntro";
-import { GridList, GridListItem } from "@/components/GridList";
-import { GridPattern } from "@/components/GridPattern";
+import { TagList, TagListItem } from "../components/TagList";
+import { SectionIntro } from "../components/SectionIntro";
+import { GridList, GridListItem } from "../components/GridList";
+import { GridPattern } from "../components/GridPattern";
 
 function CaseStudies({
   caseStudies,
@@ -141,40 +141,39 @@ function Block1() {
       title="Specialized Welding and Process Outsourcing"
       image={{ src: imageLaptop, shape: 1 }}
     >
-      <div className="space-y-6 text-base text-neutral-600">
-        <p>
-          Grupa Krayr&apos;s{" "}
-          <strong className="font-semibold text-neutral-950">
-            process outsourcing
-          </strong>{" "}
-          services are tailored for the{" "}
-          <strong className="font-semibold text-neutral-950">
-            welding sector
-          </strong>
-          . Our expert engineers collaborate with clients to understand their
-          specific needs and deliver teams of{" "}
-          <strong className="font-semibold text-neutral-950">
-            qualified welders
-          </strong>
-          , coordinators, and helpers to complete projects efficiently. Our
-          hands-on approach and continuous support ensure project success and
-          client satisfaction.
-        </p>
-        <p>
-          Our welding teams are equipped with the latest tools and techniques to
-          deliver high-quality work that meets industry standards. By
-          outsourcing your welding projects to Grupa Krayr, you gain access to a
-          pool of skilled professionals who can handle complex tasks with
-          precision and expertise. We provide ongoing support throughout the
-          project lifecycle, ensuring that your projects are completed on time
-          and within budget.
-        </p>
-      </div>
-
-      <Blockquote
-        author={{ name: "Debra Fiscal", role: "CEO of Alstom" }}
-        className="mt-12"
-      >
+      <div className="space-y-6 text-base text-neutral-600" />..
+      <p>
+        Grupa Krayr&apos;s{" "}
+        <strong className="font-semibold text-neutral-950">
+          process outsourcing
+        </strong>{" "}
+        services are tailored for the{" "}
+        <strong className="font-semibold text-neutral-950">
+          welding sector
+        </strong>
+        . Our expert engineers collaborate with clients to understand their
+        specific needs and deliver teams of{" "}
+        <strong className="font-semibold text-neutral-950">
+          qualified welders
+        </strong>
+        , coordinators, and helpers to complete projects efficiently. Our
+        hands-on approach and continuous support ensure project success and
+        client satisfaction.
+      </p>
+      <p>
+        Our welding teams are equipped with the latest tools and techniques to
+        deliver high-quality work that meets industry standards. By
+        outsourcing your welding projects to Grupa Krayr, you gain access to a
+        pool of skilled professionals who can handle complex tasks with
+        precision and expertise. We provide ongoing support throughout the
+        project lifecycle, ensuring that your projects are completed on time
+        and within budget.
+      </p>
+    
+    <Blockquote
+      author={{ name: "Debra Fiscal", role: "CEO of Alstom" }}
+      className="mt-12"
+    >
         Our welding projects have never been smoother since we started working
         with Grupa Krayr&apos;s expert team.
       </Blockquote>

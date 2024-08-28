@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { FadeIn } from '@/components/FadeIn';
+import { FadeIn } from './FadeIn';
 import { JobCard } from './JobCard';
 import { Button } from './Button';
 

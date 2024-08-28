@@ -1,10 +1,10 @@
-import { ContactSection } from "@/components/ContactSection";
-import { Container } from "@/components/Container";
-import { GridList, GridListItem } from "@/components/GridList";
-import { PageIntro } from "@/components/PageIntro";
-import { PageLinks } from "@/components/PageLinks";
-import { SectionIntro } from "@/components/SectionIntro";
-import { StatList, StatListItem } from "@/components/StatList";
+import { ContactSection } from "../components/ContactSection";
+import { Container } from "../components/Container";
+import { GridList, GridListItem } from "../components/GridList";
+import { PageIntro } from "../components/PageIntro";
+import { PageLinks } from "../components/PageLinks";
+import { SectionIntro } from "../components/SectionIntro";
+import { StatList, StatListItem } from "../components/StatList";
 import { loadArticles } from "@/lib/mdx";
 import { Metadata } from "next";
 import React from "react";
@@ -17,12 +17,12 @@ import imageKathrynMurphy from "@/images/team/kathryn-murphy.jpg";
 import imageLeonardKrasner from "@/images/team/leonard-krasner.jpg";
 import imageLeslieAlexander from "@/images/team/leslie-alexander.jpg";
 import imageMichaelFoster from "@/images/team/michael-foster.jpg";
-import { FadeIn, FadeInStagger } from "@/components/FadeIn";
-import { Border } from "@/components/Border";
-import { GridPattern } from "@/components/GridPattern";
+import { FadeIn, FadeInStagger } from "../components/FadeIn";
+import { Border } from "../components/Border";
+import { GridPattern } from "../components/GridPattern";
 import { useTranslations } from "next-intl";
 
-// {t("")}
+// {t("")..
 function Culture() {
   const t = useTranslations("Culture");
   return (

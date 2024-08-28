@@ -1,17 +1,19 @@
 import Link from 'next/link'
 
-import { Container } from '@/components/Container'
-import { FadeIn } from '@/components/FadeIn'
-import { Logo } from '@/components/Logo'
-import { socialMediaProfiles } from '@/components/SocialMedia'
+import { Container } from './Container'
+import { FadeIn } from './FadeIn'
+import { Logo } from './Logo'
+import { socialMediaProfiles } from './SocialMedia'
+import { useLocale } from 'next-intl'
+
 
 const navigation = [
   {
     title: 'Work',
     links: [
-      { title: 'Our Work', href: '/work' },
+      { title: 'Our Work', href: '/work'} ,
       { title: 'Career', href: '/career' },
-      { title: 'Job Bank', href: 'https://jobs.grupakrayr.pl' },
+      // { title: 'Job Bank', href: 'https://jobs.grupakrayr.pl' },
       {
         title: (
           <>
@@ -38,6 +40,8 @@ const navigation = [
 ]
 
 function Navigation() {
+  const localActiveLanguage = useLocale();
+
   return (
     <nav>
       <ul role="list" className="grid grid-cols-2 gap-8 sm:grid-cols-3">
@@ -50,7 +54,9 @@ function Navigation() {
               {section.links.map((link, linkIndex) => (
                 <li key={linkIndex} className="mt-4">
                   <Link
-                    href={link.href}
+                    href={link.href.startsWith('http') 
+                      ? link.href 
+                      : `/${localActiveLanguage}${link.href}`}
                     className="transition hover:text-neutral-950"
                   >
                     {link.title}

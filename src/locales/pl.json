@@ -225,10 +225,39 @@
             "specializedCoordinationText": "Koordynatorzy dla pracowników zagranicznych, aby pomóc im dostosować się i poruszać w nowym środowisku.",
             "comprehensiveIntegrationText": "Regularne wizyty, sesje orientacyjne, szkoleniowe oraz wydarzenia społeczne, aby zapewnić, że nowi pracownicy dostosowują się i rozwijają w Twojej firmie."
           }
+        }, 
+        
+          "applicationForm": {
+            "firstName": "Imię",
+            "lastName": "Nazwisko",
+            "email": "Email",
+            "phone": "Telefon",
+            "cv": "Prześlij CV",
+            "agreeToTerms": "Zgadzam się na przetwarzanie moich danych osobowych przez Grupa Krayr zgodnie z polityką prywatności",
+            "cancel": "Anuluj",
+            "submit": "Złóż aplikację",
+            "privacyPolicyTitle": "Polityka Prywatności (Klauzula RODO)",
+            "privacyPolicy": {
+              "admin": "Administratorem Twoich danych osobowych jest Grupa Krayr Sp. z o.o., z siedzibą przy Al. Jana Pawła II 11/1013, 00-823 Warszawa, Polska.",
+              "purpose": "Twoje dane osobowe będą przetwarzane w celu przeprowadzenia procesu rekrutacji na stanowisko {{jobTitle}}.",
+              "legalBasis": "Podstawą prawną przetwarzania Twoich danych osobowych jest Twoja dobrowolna zgoda (artykuł 6 ust. 1 lit. a RODO).",
+              "storage": "Twoje dane osobowe będą przechowywane przez czas trwania procesu rekrutacji, jednak nie dłużej niż 6 miesięcy od daty złożenia.",
+              "rights": "Masz prawo dostępu do swoich danych, ich poprawiania, usunięcia, ograniczenia przetwarzania oraz cofnięcia zgody w dowolnym momencie, bez wpływu na legalność przetwarzania na podstawie zgody przed jej wycofaniem.",
+              "voluntary": "Podanie danych osobowych jest dobrowolne, ale konieczne do udziału w procesie rekrutacyjnym.",
+              "automatedDecision": "Twoje dane nie będą poddawane zautomatyzowanemu podejmowaniu decyzji ani profilowaniu.",
+              "complaint": "Masz prawo do złożenia skargi do organu nadzorczego (Prezesa Urzędu Ochrony Danych Osobowych), jeśli uważasz, że przetwarzanie Twoich danych osobowych narusza przepisy RODO."
+            },
+            "errors": {
+              "firstNameRequired": "Imię jest wymagane",
+              "lastNameRequired": "Nazwisko jest wymagane",
+              "emailRequired": "Email jest wymagany",
+              "emailInvalid": "Nieprawidłowy adres email",
+              "phoneRequired": "Numer telefonu jest wymagany",
+              "cvRequired": "CV jest wymagane",
+              "agreeToTermsRequired": "Musisz zgodzić się na warunki"
+            }
+          }
         }
-      
+        
       
     
-  
-  
-}
