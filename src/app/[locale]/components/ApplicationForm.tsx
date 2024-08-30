@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { XIcon } from '@heroicons/react/outline';
-
+import {useTranslations as translations} from 'next-intl'
 type FormInputs = {
   firstName: string;
   lastName: string;
@@ -19,13 +19,14 @@ type ApplicationFormProps = {
 };
 
 export function ApplicationForm({ onClose, jobTitle }: ApplicationFormProps) {
+  const t = translations("applicationForm")
   const { register, handleSubmit, formState: { errors } } = useForm<FormInputs>();
   const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
 
   const onSubmit: SubmitHandler<FormInputs> = (data) => {
+   
     console.log(data);
-    // Here you would typically send the form data to your server
-    alert('Application submitted successfully!');
+    alert(t('submitMessage'));
     onClose();
   };
 
@@ -33,9 +34,9 @@ export function ApplicationForm({ onClose, jobTitle }: ApplicationFormProps) {
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
-          <label htmlFor="firstName" className="block text-sm font-medium text-gray-800">First Name</label>
+          <label htmlFor="firstName" className="block text-sm font-medium text-gray-800">{t("firstName")}</label>
           <input
-            {...register('firstName', { required: 'First name is required' })}
+            {...register('firstName', { required: t("errors.firstNameRequired") })}
             id="firstName"
             type="text"
             className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-teal-900 focus:ring-teal-900"
@@ -43,9 +44,9 @@ export function ApplicationForm({ onClose, jobTitle }: ApplicationFormProps) {
           {errors.firstName && <p className="mt-1 text-sm text-red-600">{errors.firstName.message}</p>}
         </div>
         <div>
-          <label htmlFor="lastName" className="block text-sm font-medium text-gray-800">Last Name</label>
+          <label htmlFor="lastName" className="block text-sm font-medium text-gray-800">{t("lastName")}</label>
           <input
-            {...register('lastName', { required: 'Last name is required' })}
+            {...register('lastName', { required: t("errors.lastNameRequired") })}
             id="lastName"
             type="text"
             className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-teal-900 focus:ring-teal-900"
@@ -54,13 +55,13 @@ export function ApplicationForm({ onClose, jobTitle }: ApplicationFormProps) {
         </div>
       </div>
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-gray-800">Email</label>
+        <label htmlFor="email" className="block text-sm font-medium text-gray-800">{t("email")}</label>
         <input
           {...register('email', { 
-            required: 'Email is required',
+            required: t("errors.emailRequired"),
             pattern: {
               value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-              message: 'Invalid email address'
+              message: t("errors.emailInvalid")
             }
           })}
           id="email"
@@ -70,9 +71,9 @@ export function ApplicationForm({ onClose, jobTitle }: ApplicationFormProps) {
         {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>}
       </div>
       <div>
-        <label htmlFor="phone" className="block text-sm font-medium text-gray-800">Phone</label>
+        <label htmlFor="phone" className="block text-sm font-medium text-gray-800">{t("phone")}</label>
         <input
-          {...register('phone', { required: 'Phone number is required' })}
+          {...register('phone', { required: t("errors.phoneRequired") })}
           id="phone"
           type="tel"
           className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-teal-900 focus:ring-teal-900"
@@ -80,9 +81,9 @@ export function ApplicationForm({ onClose, jobTitle }: ApplicationFormProps) {
         {errors.phone && <p className="mt-1 text-sm text-red-600">{errors.phone.message}</p>}
       </div>
       <div>
-        <label htmlFor="cv" className="block text-sm font-medium text-gray-800">Upload CV</label>
+        <label htmlFor="cv" className="block text-sm font-medium text-gray-800">{t("cv")}</label>
         <input
-          {...register('cv', { required: 'CV is required' })}
+          {...register('cv', { required: t("errors.cvRequired") })}
           id="cv"
           type="file"
           accept=".pdf,.doc,.docx"
@@ -98,7 +99,7 @@ export function ApplicationForm({ onClose, jobTitle }: ApplicationFormProps) {
       <div className="flex items-start">
         <div className="flex items-center h-5">
           <input
-            {...register('agreeToTerms', { required: 'You must agree to the terms' })}
+            {...register('agreeToTerms', { required: t("errors.agreeToTermsRequired") })}
             id="agreeToTerms"
             type="checkbox"
             className="focus:ring-teal-500 h-4 w-4 text-teal-800 border-gray-300 rounded"
@@ -106,7 +107,7 @@ export function ApplicationForm({ onClose, jobTitle }: ApplicationFormProps) {
         </div>
         <div className="ml-3 text-sm">
           <label htmlFor="agreeToTerms" className="font-medium text-gray-700">
-            I agree with Grupa Krayr processing my data as per{' '}
+            {t("agreeToTerms")}{' '}
             <button
               type="button"
               onClick={() => setShowPrivacyPolicy(true)}
@@ -124,13 +125,13 @@ export function ApplicationForm({ onClose, jobTitle }: ApplicationFormProps) {
           onClick={onClose}
           className="px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-800 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-900"
         >
-          Cancel
+          {t("cancel")}
         </button>
         <button
           type="submit"
           className="px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-teal-900 hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-900"
         >
-          Submit Application
+          {t("submit")}
         </button>
       </div>
 
@@ -143,18 +144,18 @@ export function ApplicationForm({ onClose, jobTitle }: ApplicationFormProps) {
             >
               <XIcon className="h-6 w-6" />
             </button>
-            <h3 className="text-2xl font-semibold mb-4 text-teal-950">Privacy Policy (RODO Clause)</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-teal-950">{t("privacyPolicyTitle")}</h3>
             <div className="prose prose-sm max-w-none">
-              <p>In accordance with the General Data Protection Regulation (GDPR), we inform you that:</p>
+              <p>{t("privacyPolicyParagraph")}</p>
               <ol>
-                <li>The administrator of your personal data is Grupa Krayr Sp. z o.o., with its registered office at Al. Jana Pawła II 11/1013, 00-823 Warsaw, Poland.</li>
-                <li>Your personal data will be processed for the purpose of conducting the recruitment process for the position of {jobTitle}.</li>
-                <li>The legal basis for the processing of your personal data is your voluntary consent (Article 6(1)(a) of the GDPR).</li>
-                <li>Your personal data will be stored for the duration of the recruitment process, but no longer than 6 months from the date of submission.</li>
-                <li>You have the right to access your data, rectify it, delete it, limit processing, and withdraw consent at any time without affecting the lawfulness of processing based on consent before its withdrawal.</li>
-                <li>Providing personal data is voluntary, but necessary to participate in the recruitment process.</li>
-                <li>Your data will not be subject to automated decision-making or profiling.</li>
-                <li>You have the right to lodge a complaint with the supervisory authority (President of the Personal Data Protection Office) if you believe that the processing of your personal data violates the provisions of the GDPR.</li>
+                <li>{t("privacyPolicy.admin")}</li>
+                <li>{t("privacyPolicy.purpose")}{jobTitle}.</li>
+                <li>{t("privacyPolicy.legalBasis")}</li>
+                <li>{t("privacyPolicy.storage")}</li>
+                <li>{t("privacyPolicy.rights")}</li>
+                <li>{t("privacyPolicy.voluntary")}</li>
+                <li>{t("privacyPolicy.automatedDecision")}</li>
+                <li>{t("privacyPolicy.complaint")}</li>
               </ol>
             </div>
           </div>
@@ -162,4 +163,8 @@ export function ApplicationForm({ onClose, jobTitle }: ApplicationFormProps) {
       )}
     </form>
   );
+}
+
+function useTranslations(): { t: any; } {
+  throw new Error('Function not implemented.');
 }

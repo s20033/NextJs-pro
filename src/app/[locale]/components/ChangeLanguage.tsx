@@ -19,7 +19,7 @@ export default function ChangeLanguage() {
 
   return (
     <>
-      <div className="relative inline-block text-left">
+      <div className="relative inline-block text-center">
         <label
           id="language-switch"
           className="block text-sm font-medium leading-6 text-gray-900"

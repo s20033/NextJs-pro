@@ -1,102 +1,93 @@
 {
+  "Home": {
+    "headline": "Grupa Krayr: A Top Staffing Agency for Poland and Beyond",
+    "description": "We provide flexible, skilled workforce solutions for medium and large companies, specializing in worker leasing, temporary staffing, overseas hiring, and legalization of foreign workers from Eastern Europe and Asia.",
+    "client": "Alstom",
+    "quote": "Grupa Krayr's expertise and personalized approach made our hiring process seamless. We are satisfied with the quality of candidates they've provided."
+  },
+  "Industries": {
+    "title": "We work in these industries with our expert team"
+  },
+  "Services": {
+    "eyebrow": "Services",
+    "title": "Our Comprehensive Services - Recruitment, Temporary-Staffing, and Process Outsourcing",
+    "description": "Experience seamless, cost-effective recruitment with Grupa Krayr's innovative platform, connecting you with top international talent without upfront costs. Our \"no win, no pay\" model ensures you only pay for successful hires, making global recruitment efficient and affordable.",
+    "recruitmentTitle": "Recruitment Services",
+    "recruitmentDescription": "Grupa Krayr offers specialized recruitment services in Poland to help you find the perfect candidates for high-performing teams. Our rigorous selection process ensures you get the best talent available.",
+    "outsourcingTitle": "Process Outsourcing",
+    "outsourcingDescription": "Focus on your core business activities while we handle your projects' needs. Our process outsourcing services provide efficient and compliant workforce solutions tailored to your company. We get things done while you focus on your business.",
+    "staffingTitle": "Temporary Staffing",
+    "staffingDescription": "Need flexible, short-term, and project-based staffing solutions? Our temporary staffing services ensure you have the right personnel exactly when you need them, without the long-term commitment.",
+    "legalizationTitle": "Legalization of Foreigners",
+    "legalizationDescription": "Grupa Krayr offers comprehensive legalization services for foreign workers, ensuring a smooth and compliant process for international staffing. We handle Visa and Work permit assistance in compliance with immigration laws."
+  },
+  "Reasons": {
+    "eyebrow": "Your reasons",
+    "title": "Why Choose Grupa Krayr?",
+    "description": "Here are the top reasons why we are the best employment agency and how our services are suitable for you.",
+    "globalReachTitle": "Global Reach",
+    "globalReachDescription": "Our extensive network allows us to source top talent from around the world, meeting your global recruitment needs.",
+    "quickEfficientTitle": "Quick and Efficient",
+    "quickEfficientDescription": "We prioritize speed and efficiency, optimizing our recruitment process to save time and resources for your business.",
+    "laborLawTitle": "Navigating International Labor Law",
+    "laborLawDescription": "We expertly navigate international labor laws, ensuring a smooth and compliant recruitment process.",
+    "employmentCostTitle": "Reduced Employment Costs",
+    "employmentCostDescription": "Our cost-effective solutions help reduce employment costs while providing top-quality talent.",
+    "testingTitle": "Rigorous Candidate Testing",
+    "testingDescription": "We rigorously test potential employees, ensuring only the most qualified candidates are presented to you.",
+    "innovationTitle": "Innovation",
+    "innovationDescription": "We leverage the latest technologies to deliver efficient and effective staffing solutions that keep you ahead of the competition."
+  },
 
-    "Home": {
-      "headline": "Grupa Krayr: A Top Staffing Agency for Poland and Beyond",
-      "description": "We provide flexible, skilled workforce solutions for medium and large companies, specializing in worker leasing, temporary staffing, overseas hiring, and legalization of foreign workers from Eastern Europe and Asia.",
-      "client": "Alstom",
-      "quote": "Grupa Krayr's expertise and personalized approach made our hiring process seamless. We are satisfied with the quality of candidates they've provided."
-  
+  "Culture": {
+    "title": "Our culture - 3Es",
+    "Equality": "Equality",
+    "Equality_description": "We treat every team member with equal respect and opportunity, fostering a workplace where everyone’s voice is heard and valued.",
+    "Empathy": "Empathy",
+    "Empathy_description": "We understand and respect personal challenges, offering support and understanding to maintain a healthy work-life balance.",
+    "Empowerment": "Empowerment",
+    "Empowerment_description": "We empower our employees to manage their own schedules, fostering a culture of trust and responsibility."
+  },
+  "Values": {
+    "eyebrow": "Our values",
+    "title": "Balancing reliability and innovation",
+    "description": "At Grupa Krayr, we balance staying updated with emerging trends and relying on proven methods. Our commitment to core values ensures top-quality workforce solutions.",
+    "Meticulous": "Meticulous",
+    "Meticulous_description": "Understanding your needs is our priority. We meticulously match your requirements with the perfect candidates, ensuring a seamless fit with your company culture.",
+    "Efficient": "Efficient",
+    "Efficient_description": "We never miss deadlines. Our efficient processes ensure your staffing needs are met promptly, delivering top talent without delays.",
+    "Adaptable": "Adaptable",
+    "Adaptable_description": "We offer tailor-made solutions for your unique business needs, guaranteeing personalized recruitment that exceeds your expectations.",
+    "Honest": "Honest",
+    "Honest_description": "Transparency is key. We keep you informed throughout the recruitment process, ensuring clarity and trust in our partnership.",
+    "Loyal": "Loyal",
+    "Loyal_description": "We build long-term relationships, providing ongoing support and workforce solutions that evolve with your business.",
+    "Innovative": "Innovative",
+    "Innovative_description": "We continuously seek new ways to improve our services, leveraging the latest advancements to enhance our recruitment process."
+  },
+  "Team": {
+    "Leadership": "Leadership",
+    "Team": "Team"
+  },
+  "PageIntro": {
+    "eyebrow": "About us",
+    "title": "Revolutionizing Workforce Solutions",
+    "description": "Our Strength Lies in Innovation and Commitment which puts our clients at the center of everything we do.",
+    "content1": "Grupa Krayr was founded by two enthusiastic professionals who recognized Europe's pressing need for a qualified workforce to sustain its industrial leadership globally. Observing the negative impacts of labor shortages on company growth, coupled with the high costs and limited solutions offered by existing recruitment agencies, we set out to make a difference. Our mission is to provide affordable, diverse, and effective staffing solutions that cater to the dynamic needs of medium and large companies.",
+    "content2": "Since our inception, Grupa Krayr has been dedicated to revolutionizing recruitment and staffing solutions by integrating cutting-edge technology, market trends, and industry demands. We specialize in both domestic and international recruitment, addressing domestic unemployment while fulfilling the demand for qualified talent by attracting skilled workers from Eastern Europe and Asia. Our commitment to valuing human assets and leveraging innovative strategies ensures that we deliver exceptional results, positioning us as a reliable and forward-thinking recruitment partner.",
+    "HappyTalents": "1200+",
+    "HappyTalentsLabel": "Happy Talents",
+    "HappyClients": "25+",
+    "HappyClientsLabel": "Happy clients",
+    "InvoicesBilled": "$25M",
+    "InvoicesBilledLabel": "Invoices billed"
+  },
 
-    },
-    "Industries": {
-      "title": "We work in these industries with our expert team"
-    },
-    "Services": {
-      "eyebrow": "Services",
-      "title": "Our Comprehensive Services - Recruitment, Temporary-Staffing, and Process Outsourcing",
-      "description": "Experience seamless, cost-effective recruitment with Grupa Krayr's innovative platform, connecting you with top international talent without upfront costs. Our \"no win, no pay\" model ensures you only pay for successful hires, making global recruitment efficient and affordable.",
-        "recruitmentTitle": "Recruitment Services",
-        "recruitmentDescription": "Grupa Krayr offers specialized recruitment services in Poland to help you find the perfect candidates for high-performing teams. Our rigorous selection process ensures you get the best talent available.",
-        "outsourcingTitle": "Process Outsourcing",
-        "outsourcingDescription": "Focus on your core business activities while we handle your projects' needs. Our process outsourcing services provide efficient and compliant workforce solutions tailored to your company. We get things done while you focus on your business.",
-        "staffingTitle": "Temporary Staffing",
-        "staffingDescription": "Need flexible, short-term, and project-based staffing solutions? Our temporary staffing services ensure you have the right personnel exactly when you need them, without the long-term commitment.",
-        "legalizationTitle": "Legalization of Foreigners",
-        "legalizationDescription": "Grupa Krayr offers comprehensive legalization services for foreign workers, ensuring a smooth and compliant process for international staffing. We handle Visa and Work permit assistance in compliance with immigration laws."
-      
-    },
-    "Reasons": {
-      "eyebrow": "Your reasons",
-      "title": "Why Choose Grupa Krayr?",
-      "description": "Here are the top reasons why we are the best employment agency and how our services are suitable for you.",
-        "globalReachTitle": "Global Reach",
-        "globalReachDescription": "Our extensive network allows us to source top talent from around the world, meeting your global recruitment needs.",
-        "quickEfficientTitle": "Quick and Efficient",
-        "quickEfficientDescription": "We prioritize speed and efficiency, optimizing our recruitment process to save time and resources for your business.",
-        "laborLawTitle": "Navigating International Labor Law",
-        "laborLawDescription": "We expertly navigate international labor laws, ensuring a smooth and compliant recruitment process.",
-        "employmentCostTitle": "Reduced Employment Costs",
-        "employmentCostDescription": "Our cost-effective solutions help reduce employment costs while providing top-quality talent.",
-        "testingTitle": "Rigorous Candidate Testing",
-        "testingDescription": "We rigorously test potential employees, ensuring only the most qualified candidates are presented to you.",
-        "innovationTitle": "Innovation",
-        "innovationDescription": "We leverage the latest technologies to deliver efficient and effective staffing solutions that keep you ahead of the competition."
+  "PageLinks": {
+    "title": "From the blog",
+    "intro": "Stay informed with the latest industry updates as our team explores innovative solutions and shares insights on workforce trends and staffing strategies."
+  },
 
-    },
-
-
-
-      "Culture": {
-        "title": "Our culture - 3Es",
-        "Equality": "Equality",
-        "Equality_description": "We treat every team member with equal respect and opportunity, fostering a workplace where everyone’s voice is heard and valued.",
-        "Empathy": "Empathy",
-        "Empathy_description": "We understand and respect personal challenges, offering support and understanding to maintain a healthy work-life balance.",
-        "Empowerment": "Empowerment",
-        "Empowerment_description": "We empower our employees to manage their own schedules, fostering a culture of trust and responsibility."
-      },
-      "Values": {
-        "eyebrow": "Our values",
-        "title": "Balancing reliability and innovation",
-        "description": "At Grupa Krayr, we balance staying updated with emerging trends and relying on proven methods. Our commitment to core values ensures top-quality workforce solutions.",
-        "Meticulous": "Meticulous",
-        "Meticulous_description": "Understanding your needs is our priority. We meticulously match your requirements with the perfect candidates, ensuring a seamless fit with your company culture.",
-        "Efficient": "Efficient",
-        "Efficient_description": "We never miss deadlines. Our efficient processes ensure your staffing needs are met promptly, delivering top talent without delays.",
-        "Adaptable": "Adaptable",
-        "Adaptable_description": "We offer tailor-made solutions for your unique business needs, guaranteeing personalized recruitment that exceeds your expectations.",
-        "Honest": "Honest",
-        "Honest_description": "Transparency is key. We keep you informed throughout the recruitment process, ensuring clarity and trust in our partnership.",
-        "Loyal": "Loyal",
-        "Loyal_description": "We build long-term relationships, providing ongoing support and workforce solutions that evolve with your business.",
-        "Innovative": "Innovative",
-        "Innovative_description": "We continuously seek new ways to improve our services, leveraging the latest advancements to enhance our recruitment process."
-      },
-      "Team": {
-        "Leadership": "Leadership",
-        "Team": "Team"
-      },
-      "PageIntro": {
-        "eyebrow": "About us",
-        "title": "Revolutionizing Workforce Solutions",
-        "description": "Our Strength Lies in Innovation and Commitment which puts our clients at the center of everything we do.",
-        "content1":"Grupa Krayr was founded by two enthusiastic professionals who recognized Europe's pressing need for a qualified workforce to sustain its industrial leadership globally. Observing the negative impacts of labor shortages on company growth, coupled with the high costs and limited solutions offered by existing recruitment agencies, we set out to make a difference. Our mission is to provide affordable, diverse, and effective staffing solutions that cater to the dynamic needs of medium and large companies.",
-        "content2":"Since our inception, Grupa Krayr has been dedicated to revolutionizing recruitment and staffing solutions by integrating cutting-edge technology, market trends, and industry demands. We specialize in both domestic and international recruitment, addressing domestic unemployment while fulfilling the demand for qualified talent by attracting skilled workers from Eastern Europe and Asia. Our commitment to valuing human assets and leveraging innovative strategies ensures that we deliver exceptional results, positioning us as a reliable and forward-thinking recruitment partner.",
-        "HappyTalents": "1200+",
-        "HappyTalentsLabel": "Happy Talents",
-        "HappyClients": "25+",
-        "HappyClientsLabel": "Happy clients",
-        "InvoicesBilled": "$25M",
-        "InvoicesBilledLabel": "Invoices billed"
-      },
-
-      "PageLinks": {
-        "title": "From the blog",
-        "intro": "Stay informed with the latest industry updates as our team explores innovative solutions and shares insights on workforce trends and staffing strategies."
-      },
-    
-  
-  
   "ContactPage": {
     "eyebrow": "Contact Us",
     "title": "Let’s work together",
@@ -131,131 +122,284 @@
     "followUsTitle": "Follow us"
   },
 
+  "career": {
+    "introEyebrow": "Career",
+    "introTitle": "Join Our Team at Grupa Krayr",
+    "introText": "At Grupa Krayr, we offer a unique opportunity to be part of a team that is dedicated to revolutionizing the recruitment industry. Discover how you can make a difference and grow with us."
+  },
 
-    "career": {
-      "introEyebrow": "Career",
-      "introTitle": "Join Our Team at Grupa Krayr",
-      "introText": "At Grupa Krayr, we offer a unique opportunity to be part of a team that is dedicated to revolutionizing the recruitment industry. Discover how you can make a difference and grow with us."
+  "expertiseSection": {
+    "eyebrow": "Our Expertise",
+    "title": "Comprehensive Services for Overseas Hiring",
+    "text": "Our expertise in overseas hiring ensures that both companies and international workers receive the support they need for a seamless experience.",
+    "recruitmentTitle": "Recruitment",
+    "recruitmentText": "We assist in finding the best global talent to meet your business needs.",
+    "onboardingTitle": "Onboarding and Support",
+    "onboardingText": "We provide comprehensive support to ensure a seamless transition for your new hires.",
+    "visaTitle": "Visa and Immigration",
+    "visaText": "Our team navigates the complex visa and immigration process on your behalf."
+  },
+  "legalizationSection": {
+    "eyebrow": "Legalization Services",
+    "title": "Smooth and Compliant Legalization for Foreign Workers",
+    "text": "Grupa Krayr offers comprehensive legalization services to ensure that your international staffing is compliant and hassle-free.",
+    "visaAssistanceTitle": "Visa and Work Permit Assistance",
+    "visaAssistanceText": "We handle the application and renewal of work visas and permits, ensuring compliance with legal requirements, so your employees can work legally and efficiently.",
+    "complianceTitle": "Compliance with Immigration Laws",
+    "complianceText": "Our team ensures adherence to immigration regulations, navigating complex legal frameworks to keep your operations compliant and stress-free.",
+    "documentVerificationTitle": "Document Verification",
+    "documentVerificationText": "We assist in the verification and translation of essential documents for a smooth onboarding process, ensuring authenticity and legality.",
+    "ongoingSupportTitle": "Ongoing Support",
+    "ongoingSupportText": "We provide continuous support to address any legal or bureaucratic issues that may arise, ensuring your workforce remains compliant and productive."
+  },
+  "currentOpportunitiesSection": {
+    "eyebrow": "Current Opportunities",
+    "title": "Explore Our Open Positions",
+    "text": "Discover the exciting career opportunities available at Grupa Krayr. Join our team and make a difference in the world of recruitment and staffing."
+  },
+
+  "process": {
+    "introEyebrow": "Our process",
+    "introTitle": "How we work",
+    "introText": "We believe in efficiency and effectiveness of resources to provide the top-notch staffing solution to our clients. The way we do that is by utilizing our time-tested model, which we have been working on for 7 years.",
+
+    "needsSection": {
+      "title": "Understand the need",
+      "description": "We work closely with our clients to understand their needs, embedding ourselves in their everyday operations to understand their staffing needs. Hiring workers is not always the solution, hiring the right person is what we offer to make your business thrive.",
+      "approachTitle": "Our approach includes:",
+      "detailedQuestionnaires": "Detailed Questionnaires",
+      "detailedQuestionnairesText": "We collect all questionnaires related to your staffing needs, skill requirements.",
+      "employeeSurveys": "Employee Surveys",
+      "employeeSurveysText": "We collect all questionnaires related to your staffing needs, skill requirements.",
+      "feasibilityStudies": "Feasibility Studies",
+      "feasibilityStudiesText": "We collect all questionnaires related to your staffing needs, skill requirements.",
+      "costEffectiveSolution": "Once we fully understand your need, we offer you a comprehensive solution and, more importantly, cost effective one!",
+      "blockquoteAuthor": {
+        "name": "Debra Fiscal",
+        "role": "CEO of Unseal"
+      },
+      "blockquoteText": "Studio were so regular with their progress updates we almost began to think they were automated!"
     },
+    "solutionsSection": {
+      "title": "Deliver the Solution",
+      "description": "At Grupa Krayr, we meticulously select the ideal candidates from our extensive talent pool, ensuring alignment with your business goals. Our thorough selection process includes verifying past experiences and skills, and conducting comprehensive job interviews both online and face-to-face for your convenience.",
+      "solutionDeliveryText": "Our solution delivery process encompasses scrupulous candidate profile verification, tailored interviews, and smooth hiring implementation. We prioritize accuracy and efficiency to match your needs perfectly.",
+      "integrationText": "Our dedicated project managers work closely with your representatives to ensure a seamless transition and provide ongoing support for new hires, fostering a successful integration into your team.",
+      "includedInThisPhaseTitle": "Included in this phase",
+      "tagListItems": [
+        "In-depth questionnaires",
+        "Candidate selection",
+        "Business goals",
+        "Profile verification",
+        "Tailored interviews",
+        "Smooth hiring implementation"
+      ]
+    },
+    "deliverSection": {
+      "title": "Ongoing Support",
+      "description": "Our commitment to your success extends beyond the hiring process. We provide continuous support to ensure the seamless integration and ongoing success of new employees in your company.",
+      "supportProcessText": "Our comprehensive support process includes regular visits, orientation and training sessions, counseling, and organizing events and gatherings. These measures ensure your new hires adapt quickly and efficiently to your business environment.",
+      "successText": "By offering ongoing support, we guarantee that your new employees will thrive and make meaningful contributions to your company’s growth and success.",
+      "includedInThisPhaseTitle": "Included in this phase",
+      "listItems1": "24/7 Support and Coordination",
+      "listItems2": "Specialized Coordination",
+      "listItems3": "Comprehensive Integration",
+      "supportAndCoordinationText": "Round-the-clock assistance for workers and a dedicated client representative for seamless communication.",
+      "specializedCoordinationText": "Coordinators for foreign workers to help them acclimate and navigate their new environment.",
+      "comprehensiveIntegrationText": "Regular visits, orientation, training sessions, and social events to ensure new hires adapt and thrive in your company."
+    }
+  },
 
-      "expertiseSection": {
-        "eyebrow": "Our Expertise",
-        "title": "Comprehensive Services for Overseas Hiring",
-        "text": "Our expertise in overseas hiring ensures that both companies and international workers receive the support they need for a seamless experience.",
-        "recruitmentTitle": "Recruitment",
-        "recruitmentText": "We assist in finding the best global talent to meet your business needs.",
-        "onboardingTitle": "Onboarding and Support",
-        "onboardingText": "We provide comprehensive support to ensure a seamless transition for your new hires.",
-        "visaTitle": "Visa and Immigration",
-        "visaText": "Our team navigates the complex visa and immigration process on your behalf."
-      },
-      "legalizationSection": {
-        "eyebrow": "Legalization Services",
-        "title": "Smooth and Compliant Legalization for Foreign Workers",
-        "text": "Grupa Krayr offers comprehensive legalization services to ensure that your international staffing is compliant and hassle-free.",
-        "visaAssistanceTitle": "Visa and Work Permit Assistance",
-        "visaAssistanceText": "We handle the application and renewal of work visas and permits, ensuring compliance with legal requirements, so your employees can work legally and efficiently.",
-        "complianceTitle": "Compliance with Immigration Laws",
-        "complianceText": "Our team ensures adherence to immigration regulations, navigating complex legal frameworks to keep your operations compliant and stress-free.",
-        "documentVerificationTitle": "Document Verification",
-        "documentVerificationText": "We assist in the verification and translation of essential documents for a smooth onboarding process, ensuring authenticity and legality.",
-        "ongoingSupportTitle": "Ongoing Support",
-        "ongoingSupportText": "We provide continuous support to address any legal or bureaucratic issues that may arise, ensuring your workforce remains compliant and productive."
-      },
-      "currentOpportunitiesSection": {
-        "eyebrow": "Current Opportunities",
-        "title": "Explore Our Open Positions",
-        "text": "Discover the exciting career opportunities available at Grupa Krayr. Join our team and make a difference in the world of recruitment and staffing."
-      },
+  "applicationForm": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "phone": "Phone",
+    "cv": "Upload CV",
+    "agreeToTerms": "I agree with Grupa Krayr processing my data as per privacy policy",
+    "cancel": "Cancel",
+    "submit": "Submit Application",
+    "privacyPolicyTitle": "Privacy Policy (RODO Clause)",
+    "privacyPolicyParagraph": "In accordance with the General Data Protection Regulation (GDPR), we inform you that:",
+    "submitMessage": "Application submitted successfully!",
+    "privacyPolicy": {
+      "admin": "The administrator of your personal data is Grupa Krayr Sp. z o.o., with its registered office at Al. Jana Pawła II 11/1013, 00-823 Warsaw, Poland.",
+      "purpose": "Your personal data will be processed for the purpose of conducting the recruitment process for the position of ",
+      "legalBasis": "The legal basis for the processing of your personal data is your voluntary consent (Article 6(1)(a) of the GDPR).",
+      "storage": "Your personal data will be stored for the duration of the recruitment process, but no longer than 6 months from the date of submission.",
+      "rights": "You have the right to access your data, rectify it, delete it, limit processing, and withdraw consent at any time without affecting the lawfulness of processing based on consent before its withdrawal.",
+      "voluntary": "Providing personal data is voluntary, but necessary to participate in the recruitment process.",
+      "automatedDecision": "Your data will not be subject to automated decision-making or profiling.",
+      "complaint": "You have the right to lodge a complaint with the supervisory authority (President of the Personal Data Protection Office) if you believe that the processing of your personal data violates the provisions of the GDPR."
+    },
+    "errors": {
+      "firstNameRequired": "First name is required",
+      "lastNameRequired": "Last name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Invalid email address",
+      "phoneRequired": "Phone number is required",
+      "cvRequired": "CV is required",
+      "agreeToTermsRequired": "You must agree to the terms"
+    }
+  },
+  "contactSection": {
+    "title": "Tell us about your need",
+    "subtitle": "We have the best offer for you",
+    "buttonText": "Say Hej",
+    "officesTitle": "Our offices"
+  },
 
+  "navigation": {
+    "work": "Work",
+    "company": "Company",
+    "connect": "Connect",
+    "ourWork": "Our Work",
+    "career": "Career",
+    "seeAll": "See all",
+    "about": "About Us",
+    "process": "Process",
+    "blog": "Blog",
+    "contactUs": "Contact us"
+  },
 
+  "socialMedia": {
+    "Facebook": "Facebook",
+    "Instagram": "Instagram",
+    "TikTok": "TikTok",
+    "LinkedIn": "LinkedIn"
+  },
+  "newsletter": {
+    "title": "Sign up for our newsletter",
+    "description": "Subscribe to get the latest news, articles, resources and inspiration.",
+    "placeHolder": "Enter your Email"
+  },
+  "cookies": {
+    "text": "We use cookies to improve your experience on our site. By using our site, you accept our use of cookies.",
+    "button": "Accept"
+  },
 
+  "jobCard": {
+    "applyNow": "Apply Now",
+    "applyFor": "Apply for",
+    "workType": {
+      "Remote": "Remote",
+      "Hybrid": "Hybrid",
+      "Stationary": "Stationary"
+    },
+    "salaryPerHour": "/hr",
+    "contractType": "Contract Type",
+    "location": "Location"
+  },
 
-        "process": {
-          "pageTitle": "Our Process",
-          "pageDescription": "We believe in efficiency and effectiveness of resources to provide the top-notch staffing solution to our clients.",
-          "introEyebrow": "Our process",
-          "introTitle": "How we work",
-          "introText": "We believe in efficiency and effectiveness of resources to provide the top-notch staffing solution to our clients. The way we do that is by utilizing our time-tested model, which we have been working on for 7 years.",
-          "needsSection": {
-            "title": "Understand the need",
-            "description": "We work closely with our clients to understand their needs, embedding ourselves in their everyday operations to understand their staffing needs. Hiring workers is not always the solution, hiring the right person is what we offer to make your business thrive.",
-            "approachTitle": "Our approach includes:",
-            "detailedQuestionnaires": "Detailed Questionnaires",
-            "detailedQuestionnairesText": "We collect all questionnaires related to your staffing needs, skill requirements.",
-            "employeeSurveys": "Employee Surveys",
-            "employeeSurveysText": "We collect all questionnaires related to your staffing needs, skill requirements.",
-            "feasibilityStudies": "Feasibility Studies",
-            "feasibilityStudiesText": "We collect all questionnaires related to your staffing needs, skill requirements.",
-            "costEffectiveSolution": "Once we fully understand your need, we offer you a comprehensive solution and, more importantly, cost effective one!",
-            "blockquoteAuthor": {
-              "name": "Debra Fiscal",
-              "role": "CEO of Unseal"
-            },
-            "blockquoteText": "Studio were so regular with their progress updates we almost began to think they were automated!"
-          },
-          "solutionsSection": {
-            "title": "Deliver the Solution",
-            "description": "At Grupa Krayr, we meticulously select the ideal candidates from our extensive talent pool, ensuring alignment with your business goals. Our thorough selection process includes verifying past experiences and skills, and conducting comprehensive job interviews both online and face-to-face for your convenience.",
-            "solutionDeliveryText": "Our solution delivery process encompasses scrupulous candidate profile verification, tailored interviews, and smooth hiring implementation. We prioritize accuracy and efficiency to match your needs perfectly.",
-            "integrationText": "Our dedicated project managers work closely with your representatives to ensure a seamless transition and provide ongoing support for new hires, fostering a successful integration into your team.",
-            "includedInThisPhaseTitle": "Included in this phase",
-            "tagListItems": [
-              "In-depth questionnaires",
-              "Candidate selection",
-              "Business goals",
-              "Profile verification",
-              "Tailored interviews",
-              "Smooth hiring implementation"
-            ]
-          },
-          "deliverSection": {
-            "title": "Ongoing Support",
-            "description": "Our commitment to your success extends beyond the hiring process. We provide continuous support to ensure the seamless integration and ongoing success of new employees in your company.",
-            "supportProcessText": "Our comprehensive support process includes regular visits, orientation and training sessions, counseling, and organizing events and gatherings. These measures ensure your new hires adapt quickly and efficiently to your business environment.",
-            "successText": "By offering ongoing support, we guarantee that your new employees will thrive and make meaningful contributions to your company’s growth and success.",
-            "includedInThisPhaseTitle": "Included in this phase",
-            "listItems": [
-              "24/7 Support and Coordination",
-              "Specialized Coordination",
-              "Comprehensive Integration"
-            ],
-            "supportAndCoordinationText": "Round-the-clock assistance for workers and a dedicated client representative for seamless communication.",
-            "specializedCoordinationText": "Coordinators for foreign workers to help them acclimate and navigate their new environment.",
-            "comprehensiveIntegrationText": "Regular visits, orientation, training sessions, and social events to ensure new hires adapt and thrive in your company."
-          }
-        },
-        
-          "applicationForm": {
-            "firstName": "First Name",
-            "lastName": "Last Name",
-            "email": "Email",
-            "phone": "Phone",
-            "cv": "Upload CV",
-            "agreeToTerms": "I agree with Grupa Krayr processing my data as per privacy policy",
-            "cancel": "Cancel",
-            "submit": "Submit Application",
-            "privacyPolicyTitle": "Privacy Policy (RODO Clause)",
-            "privacyPolicy": {
-              "admin": "The administrator of your personal data is Grupa Krayr Sp. z o.o., with its registered office at Al. Jana Pawła II 11/1013, 00-823 Warsaw, Poland.",
-              "purpose": "Your personal data will be processed for the purpose of conducting the recruitment process for the position of {{jobTitle}}.",
-              "legalBasis": "The legal basis for the processing of your personal data is your voluntary consent (Article 6(1)(a) of the GDPR).",
-              "storage": "Your personal data will be stored for the duration of the recruitment process, but no longer than 6 months from the date of submission.",
-              "rights": "You have the right to access your data, rectify it, delete it, limit processing, and withdraw consent at any time without affecting the lawfulness of processing based on consent before its withdrawal.",
-              "voluntary": "Providing personal data is voluntary, but necessary to participate in the recruitment process.",
-              "automatedDecision": "Your data will not be subject to automated decision-making or profiling.",
-              "complaint": "You have the right to lodge a complaint with the supervisory authority (President of the Personal Data Protection Office) if you believe that the processing of your personal data violates the provisions of the GDPR."
-            },
-            "errors": {
-              "firstNameRequired": "First name is required",
-              "lastNameRequired": "Last name is required",
-              "emailRequired": "Email is required",
-              "emailInvalid": "Invalid email address",
-              "phoneRequired": "Phone number is required",
-              "cvRequired": "CV is required",
-              "agreeToTermsRequired": "You must agree to the terms"
-            }
-          }
-        }
-        
+  "faq": {
+    "searchPlaceholder": "Search...",
+    "prevButton": "Prev",
+    "nextButton": "Next",
+    "questions": {
+      "1": "What are the benefits of outsourcing staffing solutions in Poland?",
+      "2": "How can I hire temporary workers in Poland?",
+      "3": "What are the key labor laws affecting foreign workers in Poland?",
+      "4": "What is the process for permanent hiring in Poland?",
+      "5": "How do I ensure compliance with Polish immigration laws for foreign employees?",
+      "6": "What are the challenges of hiring overseas talent for companies in Poland?",
+      "7": "How does Grupa Krayr support businesses with the relocation of foreign employees to Poland?",
+      "8": "What industries benefit most from temporary staffing solutions in Poland?",
+      "9": "What are the most common types of work visas for foreign employees in Poland?",
+      "10": "How can I find reliable staffing agencies in Poland?",
+      "11": "What is the process for hiring foreign workers in Bulgaria?",
+      "12": "How can Grupa Krayr assist with the legalization of foreign workers in Bulgaria?",
+      "13": "What are the benefits of hiring international talent in Bulgaria?",
+      "14": "What types of staffing solutions does Grupa Krayr offer in Bulgaria?",
+      "15": "How does Grupa Krayr support the relocation of foreign workers to Bulgaria?"
+    },
+    "answers": {
+      "1": "Outsourcing staffing solutions in Poland offers numerous benefits including cost efficiency, access to a skilled talent pool, and reduced administrative burden. Polish labor costs are generally lower compared to Western Europe, which can help companies save on operational expenses. Additionally, Poland boasts a well-educated and skilled workforce, particularly in fields such as IT, engineering, and manufacturing. Outsourcing also allows businesses to focus on core activities while leaving recruitment and administrative tasks to specialized providers.",
+      "2": "Hiring temporary workers in Poland involves partnering with staffing agencies that specialize in temporary placements. Agencies handle recruitment, compliance with Polish labor laws, and payroll management. Businesses can access a flexible workforce for short-term needs such as seasonal peaks or specific projects. It’s essential to choose an agency with a good reputation and experience in your industry.",
+      "3": "Foreign workers in Poland must adhere to several labor laws, including obtaining the appropriate work visa and permit. Key regulations include compliance with minimum wage standards, working hours, and employee rights as outlined in the Polish Labor Code. It is crucial for employers to ensure that foreign workers have valid work permits and comply with all legal requirements to avoid penalties.",
+      "4": "Permanent hiring in Poland involves several steps: defining job requirements, sourcing candidates through job boards or recruitment agencies, conducting interviews, and finalizing employment contracts. Employers must also ensure compliance with Polish labor laws regarding employment contracts, probation periods, and termination conditions. It is advisable to work with local recruitment experts to navigate these processes efficiently.",
+      "5": "Ensuring compliance with Polish immigration laws requires obtaining the correct work visas and permits for foreign employees. Employers should verify that all documentation is complete and up-to-date, including work contracts and residence permits. It is beneficial to consult with immigration specialists or legal advisors to ensure all legal requirements are met and to avoid any issues with the authorities.",
+      "6": "Challenges of hiring overseas talent for companies in Poland include navigating complex immigration regulations, cultural differences, and ensuring compliance with local labor laws. Additionally, there may be language barriers and the need for relocation support for international hires. Partnering with experienced staffing agencies or consultants can help address these challenges effectively.",
+      "7": "Grupa Krayr supports businesses by managing the entire relocation process for foreign employees. This includes obtaining work visas and permits, assisting with housing and settling-in arrangements, and providing orientation programs to help employees adapt to their new environment. Our goal is to ensure a smooth transition and integration for international staff.",
+      "8": "Industries that benefit most from temporary staffing solutions in Poland include manufacturing, logistics, IT, and hospitality. These sectors often experience fluctuating demand and require flexible staffing solutions to manage peak periods or project-based work. Temporary staffing helps maintain productivity and meet business needs without long-term commitments.",
+      "9": "The most common types of work visas for foreign employees in Poland include the Type A work permit, which is for employment with a specific employer, and the Type B work permit, which is for managerial positions. Additionally, the Blue Card is available for highly skilled workers. Each visa type has specific requirements and application processes.",
+      "10": "To find reliable staffing agencies in Poland, consider looking for agencies with a strong track record in your industry, positive client reviews, and clear accreditation. Industry associations and networks can also provide recommendations. It’s important to choose an agency that understands local labor laws and has experience managing your specific staffing needs.",
+      "11": "Hiring foreign workers in Bulgaria involves several steps to ensure compliance with local regulations. First, employers must obtain a work permit from the Bulgarian Employment Agency. This requires providing proof of the employee’s qualifications and ensuring there are no suitable Bulgarian candidates for the position. After securing the permit, the employee must apply for a long-term visa at the Bulgarian consulate in their home country. Employers must also comply with Bulgarian labor laws, including registering the employee with the National Revenue Agency.",
+      "12": "Grupa Krayr specializes in managing the complete legalization process for foreign workers in Bulgaria. We handle the application for work permits and long-term visas, ensuring compliance with Bulgarian immigration laws. Our services include document verification, translation, and ongoing support to address any legal or bureaucratic issues that may arise.",
+      "13": "Hiring international talent in Bulgaria offers several benefits, including access to a diverse and skilled workforce, cost efficiencies, and the ability to fill niche roles that may be hard to fill locally. Bulgaria’s competitive wage structures and favorable business environment make it an attractive destination for companies looking to expand their talent pool.",
+      "14": "Grupa Krayr offers a range of staffing solutions in Bulgaria, including outsourcing, temporary work, onsite solutions, and permanent hire. We provide tailored solutions to meet your specific needs, whether you require temporary staffing for peak periods, permanent employees for long-term roles, or outsourcing for complete workforce management. Our expertise ensures that you find the right talent efficiently and effectively.",
+      "15": "Grupa Krayr offers comprehensive relocation support for foreign workers moving to Bulgaria. Our services include assistance with obtaining the necessary visas and work permits, arranging accommodation, and helping employees adapt to their new environment. We also provide guidance on cultural integration to ensure a smooth transition into your company’s work culture."
+    }
+  },
+
+  "work": {
+    "introEyebrow": "Our process",
+    "introTitle": "How we work",
+    "introText": "We believe in efficiency and effectiveness of resources to provide the top-notch staffing solution to our clients. The way we do that is by utilizing our time-tested model, which we have been working on for 7 years.",
+
+    "block1": {
+      "title": "Specialized Welding and Process Outsourcing",
+      "description": "Grupa Krayr's process outsourcing services are tailored for the welding sector . Our expert engineers collaborate with clients to understand their specific needs and deliver teams of qualified welders , coordinators, and helpers to complete projects efficiently. Our hands-on approach and continuous support ensure project success and client satisfaction.",
+      "weldingProject": "Our welding teams are equipped with the latest tools and techniques to deliver high-quality work that meets industry standards. By outsourcing your welding projects to Grupa Krayr, you gain access to a pool of skilled professionals who can handle complex tasks with precision and expertise. We provide ongoing support throughout the project lifecycle, ensuring that your projects are completed on time and within budget.",
+      "blockquoteText": "Our welding projects have never been smoother since we started working with Grupa Krayr's expert team."
+    },
+    "block2": {
+      "title": "Production and Manufacturing Employee Leasing",
+      "description": "Our reputation for excellence in the production and manufacturing industries is built on providing reliable and skilled employees. Our focus on thorough vetting and training ensures that our employees contribute effectively to your production goals.",
+      "solutionDeliveryText":"By leasing employees from Grupa Krayr, you benefit from a flexible workforce that can be adjusted to meet the demands of your production schedules. Our leasing model provides you with the manpower you need without the long-term commitment, allowing you to scale up or down based on your operational requirements. We take care of all administrative tasks, including payroll and compliance, so you can focus on what you do best – manufacturing quality products.",
+      "includedInThisPhaseTitle": " Talents that we can provide to you",
+      "tagListItems": [
+        "Machine operators ",
+        "Assembly line workers",
+        "Packers",
+        "Production helpers",
+        "Quality control inspectors"
+      ]
+    },
+    "block3": {
+      "title": "Logistics and Warehouse Expertise",
+      "description": "Efficiency and reliability are crucial in the logistics and warehouse sector. We understand the fast-paced nature of this industry and provide workers who can handle the demands with precision and dedication. Our team is adept at managing the complexities of logistics operations, ensuring your supply chain remains uninterrupted.",
+      "solutionDeliveryText":" We pride ourselves on our ability to quickly adapt to your specific needs, providing you with a flexible workforce that can scale with your operations. Whether you need temporary or parmanent recuits or additional support during peak seasons or specialized skills for specific projects, Grupa Krayr has the resources to ensure your warehouse and logistics operations run smoothly.",
+      "includedInThisPhaseTitle": "Our staffing solutions include",
+      "tagListItems": [
+        "warehouse workers",
+        "inventory managers",
+        "Drivers",
+        "logistics coordinators",
+        "Forklift operators",
+        "Loader/unloader"
+      ]
+    },
+    "block4": {
+      "title": "Excellence in Hospitality Staffing",
+      "description": "In the hospitality industry, delivering exceptional service is paramount. We provide highly trained hospitality staff who excel in roles such as hotel management, event coordination, and customer service. Our rigorous selection process ensures that only the most dedicated and professional candidates join your team, enhancing your guests' experience and maintaining your establishment's reputation. Whether you need front-of-house staff, kitchen personnel, or housekeeping teams, Grupa Krayr has the expertise to meet your requirements.",
+      "blockquoteText": "Grupa Krayr's hospitality staffing solutions have significantly improved our service quality and customer satisfaction."
+
+  },
+  "block5": {
+    "title": "Agricultural Workforce Solutions",
+    "description": "In the farm and agriculture sector, seasonal and temporary workers are essential. Grupa Krayr supplies skilled farm laborers who are experienced in various agricultural tasks. Our workers ensure that your farming operations run smoothly, regardless of the season. From planting to harvesting, we provide reliable labor that meets the demands of agricultural cycles.",
+    "agroProject": "We understand the unique challenges faced by the agricultural industry, including the need for timely and efficient labor during critical periods. Our recruitment process focuses on sourcing workers who are not only skilled but also adaptable to the ever-changing needs of farming operations. By partnering with Grupa Krayr, you gain access to a dedicated workforce that can help increase productivity and ensure the success of your agricultural ventures.",
+    "blockquoteText": "Our plant has significant growth after partnering with Grupa Krayr, as we do not have to worry about how to hire hundreds of workers for seasonal work. Great work you have done so far! "
+
+}
+  },
+
+  "pricingSection": {
+    "eyebrow":"Serving Price",
+    "sectionTitle": "Competitive and Transparent Pricing",
+    "intro": "At Grupa Krayr, we offer competitive and transparent pricing tailored to meet the unique needs of your business. Our flexible pricing structures ensure you get the best value for our comprehensive staffing solutions.",
+     "flexible": "Flexible Pricing Models",
+      "flexibledescription": "Choose from various pricing plans that suit your specific industry requirements, whether it's for temporary staffing, employee leasing, or specialized process outsourcing.",
+       "customizable": "Customizable Packages",
+        "customizabledescription": "We provide customizable staffing packages that allow you to select the level of support and number of workers you need, ensuring cost efficiency and scalability.",
+        "feetitle": "No Hidden Fees",
+        "feedescription": "Our transparent pricing means you know exactly what you're paying for, with no hidden fees or unexpected charges."
+      }
     
+  }
+
+
+
+
+
+

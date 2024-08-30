@@ -1,28 +1,30 @@
+import { useTranslations } from 'next-intl'
 import { Button } from './Button'
 import { Container } from './Container'
 import { FadeIn } from './FadeIn'
 import { Offices } from './Offices'
 
 export function ContactSection() {
+  const t = useTranslations("contactSection")
   return (
     <Container className="mt-24 sm:mt-32 lg:mt-40">
       <FadeIn className="-mx-6 rounded-4xl bg-emerald-950 px-6 py-20 sm:mx-0 sm:py-32 md:px-12">
         <div className="mx-auto max-w-4xl">
           <div className="max-w-xl">
             <h2 className="font-display text-3xl font-medium text-white [text-wrap:balance] sm:text-4xl">
-              Tell us about your need,
+              {t("title")}
             </h2>
             <h4 className="font-display text-1xl font-medium text-white [text-wrap:balance] sm:text-1xl">
-              We have Best offer for you
+            {t("subtitle")}
             </h4>
             <div className="mt-6 flex">
               <Button href="/contact" invert>
-                Say Hej
+              {t("buttonText")}
               </Button>
             </div>
             <div className="mt-10 border-t border-white/10 pt-10">
               <h3 className="font-display text-base font-semibold text-white">
-                Our offices
+              {t("officesTitle")}
               </h3>
               <Offices
                 invert

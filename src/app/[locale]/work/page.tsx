@@ -21,81 +21,83 @@ import { TagList, TagListItem } from "../components/TagList";
 import { SectionIntro } from "../components/SectionIntro";
 import { GridList, GridListItem } from "../components/GridList";
 import { GridPattern } from "../components/GridPattern";
+import { useTranslations } from "next-intl";
+import { List, ListItem } from "../components/List";
 
-function CaseStudies({
-  caseStudies,
-}: {
-  caseStudies: Array<MDXEntry<CaseStudy>>;
-}) {
-  return (
-    <Container className="mt-40">
-      <FadeIn>
-        <h2 className="font-display text-2xl font-semibold text-neutral-950">
-          Case studies
-        </h2>
-      </FadeIn>
-      <div className="mt-10 space-y-20 sm:space-y-24 lg:space-y-32">
-        {caseStudies.map((caseStudy) => (
-          <FadeIn key={caseStudy.client}>
-            <article>
-              <Border className="grid grid-cols-3 gap-x-8 gap-y-8 pt-16">
-                <div className="col-span-full sm:flex sm:items-center sm:justify-between sm:gap-x-8 lg:col-span-1 lg:block">
-                  <div className="sm:flex sm:items-center sm:gap-x-6 lg:block">
-                    <Image
-                      src={caseStudy.logo}
-                      alt=""
-                      className="h-16 w-16 flex-none"
-                      unoptimized
-                    />
-                    <h3 className="mt-6 text-sm font-semibold text-neutral-950 sm:mt-0 lg:mt-8">
-                      {caseStudy.client}
-                    </h3>
-                  </div>
-                  <div className="mt-1 flex gap-x-4 sm:mt-0 lg:block">
-                    <p className="text-sm tracking-tight text-neutral-950 after:ml-4 after:font-semibold after:text-neutral-300 after:content-['/'] lg:mt-2 lg:after:hidden">
-                      {caseStudy.service}
-                    </p>
-                    <p className="text-sm text-neutral-950 lg:mt-2">
-                      <time dateTime={caseStudy.date}>
-                        {formatDate(caseStudy.date)}
-                      </time>
-                    </p>
-                  </div>
-                </div>
-                <div className="col-span-full lg:col-span-2 lg:max-w-2xl">
-                  <p className="font-display text-4xl font-medium text-neutral-950">
-                    <Link href={caseStudy.href}>{caseStudy.title}</Link>
-                  </p>
-                  <div className="mt-6 space-y-6 text-base text-neutral-600">
-                    {caseStudy.summary.map((paragraph) => (
-                      <p key={paragraph}>{paragraph}</p>
-                    ))}
-                  </div>
-                  <div className="mt-8 flex">
-                    <Button
-                      href={caseStudy.href}
-                      aria-label={`Read case study: ${caseStudy.client}`}
-                    >
-                      Read case study
-                    </Button>
-                  </div>
-                  {caseStudy.testimonial && (
-                    <Blockquote
-                      author={caseStudy.testimonial.author}
-                      className="mt-12"
-                    >
-                      {caseStudy.testimonial.content}
-                    </Blockquote>
-                  )}
-                </div>
-              </Border>
-            </article>
-          </FadeIn>
-        ))}
-      </div>
-    </Container>
-  );
-}
+// function CaseStudies({
+//   caseStudies,
+// }: {
+//   caseStudies: Array<MDXEntry<CaseStudy>>;
+// }) {
+//   return (
+//     <Container className="mt-40">
+//       <FadeIn>
+//         <h2 className="font-display text-2xl font-semibold text-neutral-950">
+//           Case studies
+//         </h2>
+//       </FadeIn>
+//       <div className="mt-10 space-y-20 sm:space-y-24 lg:space-y-32">
+//         {caseStudies.map((caseStudy) => (
+//           <FadeIn key={caseStudy.client}>
+//             <article>
+//               <Border className="grid grid-cols-3 gap-x-8 gap-y-8 pt-16">
+//                 <div className="col-span-full sm:flex sm:items-center sm:justify-between sm:gap-x-8 lg:col-span-1 lg:block">
+//                   <div className="sm:flex sm:items-center sm:gap-x-6 lg:block">
+//                     <Image
+//                       src={caseStudy.logo}
+//                       alt=""
+//                       className="h-16 w-16 flex-none"
+//                       unoptimized
+//                     />
+//                     <h3 className="mt-6 text-sm font-semibold text-neutral-950 sm:mt-0 lg:mt-8">
+//                       {caseStudy.client}
+//                     </h3>
+//                   </div>
+//                   <div className="mt-1 flex gap-x-4 sm:mt-0 lg:block">
+//                     <p className="text-sm tracking-tight text-neutral-950 after:ml-4 after:font-semibold after:text-neutral-300 after:content-['/'] lg:mt-2 lg:after:hidden">
+//                       {caseStudy.service}
+//                     </p>
+//                     <p className="text-sm text-neutral-950 lg:mt-2">
+//                       <time dateTime={caseStudy.date}>
+//                         {formatDate(caseStudy.date)}
+//                       </time>
+//                     </p>
+//                   </div>
+//                 </div>
+//                 <div className="col-span-full lg:col-span-2 lg:max-w-2xl">
+//                   <p className="font-display text-4xl font-medium text-neutral-950">
+//                     <Link href={caseStudy.href}>{caseStudy.title}</Link>
+//                   </p>
+//                   <div className="mt-6 space-y-6 text-base text-neutral-600">
+//                     {caseStudy.summary.map((paragraph) => (
+//                       <p key={paragraph}>{paragraph}</p>
+//                     ))}
+//                   </div>
+//                   <div className="mt-8 flex">
+//                     <Button
+//                       href={caseStudy.href}
+//                       aria-label={`Read case study: ${caseStudy.client}`}
+//                     >
+//                       Read case study
+//                     </Button>
+//                   </div>
+//                   {caseStudy.testimonial && (
+//                     <Blockquote
+//                       author={caseStudy.testimonial.author}
+//                       className="mt-12"
+//                     >
+//                       {caseStudy.testimonial.content}
+//                     </Blockquote>
+//                   )}
+//                 </div>
+//               </Border>
+//             </article>
+//           </FadeIn>
+//         ))}
+//       </div>
+//     </Container>
+//   );
+// }
 
 function Section({
   title,
@@ -136,13 +138,14 @@ function Section({
 }
 
 function Block1() {
+  const t = useTranslations("work.block1")
   return (
     <Section
-      title="Specialized Welding and Process Outsourcing"
+      title={t("title")}
       image={{ src: imageLaptop, shape: 1 }}
     >
-      <div className="space-y-6 text-base text-neutral-600" />..
-      <p>
+      <div className="space-y-6 text-base text-neutral-600" />
+      {/* <p>
         Grupa Krayr&apos;s{" "}
         <strong className="font-semibold text-neutral-950">
           process outsourcing
@@ -159,8 +162,12 @@ function Block1() {
         , coordinators, and helpers to complete projects efficiently. Our
         hands-on approach and continuous support ensure project success and
         client satisfaction.
-      </p>
+      </p> */}
       <p>
+        {t("description")}
+      </p>
+
+      {/* <p>
         Our welding teams are equipped with the latest tools and techniques to
         deliver high-quality work that meets industry standards. By
         outsourcing your welding projects to Grupa Krayr, you gain access to a
@@ -168,35 +175,51 @@ function Block1() {
         precision and expertise. We provide ongoing support throughout the
         project lifecycle, ensuring that your projects are completed on time
         and within budget.
+      </p> */}
+        <p>
+        {t("weldingProject")}
       </p>
     
     <Blockquote
       author={{ name: "Debra Fiscal", role: "CEO of Alstom" }}
       className="mt-12"
     >
-        Our welding projects have never been smoother since we started working
-        with Grupa Krayr&apos;s expert team.
+       {t("blockquoteText")}
       </Blockquote>
     </Section>
   );
 }
 
 function Block2() {
+  const t = useTranslations("work.block2")
+  const tagListItems = [
+    t('tagListItems.0'),
+    t('tagListItems.1'),
+    t('tagListItems.2'),
+    t('tagListItems.3'),
+    t('tagListItems.4'),
+  ];  
+
   return (
     <Section
-      title="Production and Manufacturing Employee Leasing"
+      title={t("title")}
       image={{ src: imageMeeting, shape: 2 }}
     >
       <div className="space-y-6 text-base text-neutral-600">
-        <p>
+        {/* <p>
           Our reputation for excellence in the production and manufacturing
           industries is built on providing reliable and skilled employees. Our focus on
           thorough vetting and training ensures that our employees contribute
           effectively to your{' '}<strong className="font-semibold text-neutral-950">
             production goals
           </strong>.
-        </p>
+        </p> */}
+
         <p>
+        {t("description")}
+        </p>
+
+        {/* <p>
           By leasing employees from Grupa Krayr, you benefit from a flexible
           workforce that can be adjusted to meet the demands of your production
           schedules. Our{' '}<strong className="font-semibold text-neutral-950">
@@ -208,86 +231,98 @@ function Block2() {
             administrative tasks
           </strong>, including payroll and compliance, so you can
           focus on what you do best – manufacturing quality products
+        </p> */}
+        <p>
+          {t("solutionDeliveryText")}
         </p>
       </div>
 
       <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
-          Talents that we can provide to you
+      {t("includedInThisPhaseTitle")}
         </h3>
-        <TagList className="mt-4">
+        {/* <TagList className="mt-4">
         <TagListItem>Machine operators </TagListItem>
         <TagListItem>Assembly line workers</TagListItem>
         <TagListItem>Packers</TagListItem>
         <TagListItem>Production helpers</TagListItem>
         <TagListItem>Quality control inspectors</TagListItem>
-      </TagList>
+      </TagList> */}
 
-
-
-      {/* <List className="mt-8">
-          <ListItem title="Testing">
-            Our projects always have 100% test coverage, which would be impressive
-            if our tests weren’t as porous as a sieve.
-          </ListItem>
-          <ListItem title="Infrastructure">
-            To ensure reliability we only use the best Digital Ocean droplets that
-            $4 a month can buy.
-          </ListItem>
-          <ListItem title="Support">
-            Because we hold the API keys for every critical service your business
-            uses, you can expect a lifetime of support, and invoices, from us.
-          </ListItem>
-        </List> */}
+<TagList className="mt-4">
+      {tagListItems.map((item, index) => (
+        <TagListItem key={index}>{item}</TagListItem>
+      ))}
+    </TagList>
     </Section>
   );
 }
 
 function Block3() {
+  const t = useTranslations("work.block3")
+  const tagListItems = [
+    t('tagListItems.0'),
+    t('tagListItems.1'),
+    t('tagListItems.2'),
+    t('tagListItems.3'),
+    t('tagListItems.4'),
+    t('tagListItems.5'),
+  ]; 
   return (
     <Section
-      title="Logistics and Warehouse Expertise"
+      title={t("title")}
       image={{ src: imageWhiteboard }}
     >
       <div className="space-y-6 text-base text-neutral-600">
-        <p>
+        {/* <p>
           Efficiency and reliability are crucial in the logistics and warehouse
           sector. We understand the fast-paced nature of this industry and provide workers
           who can handle the demands with precision and dedication. Our team is
           adept at managing the complexities of logistics operations, ensuring
           your supply chain remains uninterrupted.{" "}
-        </p>
+        </p> */}
         <p>
+          {t("description")}
+        </p>
+        {/* <p>
           We pride ourselves on our ability to quickly adapt to your specific
           needs, providing you with a flexible workforce that can scale with
           your operations. Whether you need temporary or parmanent recuits or additional support during peak
           seasons or specialized skills for specific projects, Grupa Krayr has
           the resources to ensure your warehouse and logistics operations run
           smoothly.
-        </p>
+        </p> */}
+        {t("solutionDeliveryText")}
       </div>
 
       <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
-        Our staffing solutions include
+      {t("includedInThisPhaseTitle")}
       </h3>
-      <TagList className="mt-4">
+      {/* <TagList className="mt-4">
         <TagListItem>warehouse workers</TagListItem>
         <TagListItem>inventory managers</TagListItem>
         <TagListItem>Drivers</TagListItem>
         <TagListItem>logistics coordinators</TagListItem>
         <TagListItem>Forklift operators</TagListItem>
         <TagListItem>Loader/unloader</TagListItem>
-      </TagList>
+      </TagList> */}
+
+<TagList className="mt-4">
+      {tagListItems.map((item, index) => (
+        <TagListItem key={index}>{item}</TagListItem>
+      ))}
+    </TagList>
     </Section>
   );
 }
 function Block4() {
+  const t = useTranslations("work.block4")
   return (
     <Section
-      title="Excellence in Hospitality Staffing"
+      title={t("title")}
       image={{ src: imageHospitality, shape: 1 }}
     >
       <div className="space-y-6 text-base text-neutral-600">
-        <p>
+        {/* <p>
           In the hospitality industry, delivering exceptional service is
           paramount. We provide highly trained hospitality staff who excel in
           roles such as hotel management, event coordination, and customer
@@ -297,6 +332,9 @@ function Block4() {
           Whether you need front-of-house staff, kitchen personnel, or
           housekeeping teams, Grupa Krayr has the expertise to meet your
           requirements.
+        </p> */}
+        <p>
+        {t("description")}
         </p>
       </div>
 
@@ -304,20 +342,21 @@ function Block4() {
         author={{ name: "John Doe", role: "HR Manager Hayatt Residency" }}
         className="mt-12"
       >
-Grupa Krayr&apos;s hospitality staffing solutions have significantly improved our service quality and customer satisfaction.
+{t("blockquoteText")}
       </Blockquote>
     </Section>
   );
 }
 
 function Block5() {
+  const t = useTranslations("work.block5")
     return (
       <Section
-        title="Agricultural Workforce Solutions"
+        title={t("title")}
         image={{ src: imageAgriculture, shape: 1 }}
       >
         <div className="space-y-6 text-base text-neutral-600">
-          <p>
+          {/* <p>
           In the farm and agriculture sector, seasonal and temporary workers are essential. 
           Grupa Krayr supplies skilled farm laborers who are experienced in various agricultural tasks. 
           Our workers ensure that your farming operations run smoothly, regardless of the season. 
@@ -328,6 +367,12 @@ function Block5() {
           and efficient labor during critical periods. Our recruitment process focuses on 
           sourcing workers who are not only skilled but also adaptable to the ever-changing needs of farming operations. 
           By partnering with Grupa Krayr, you gain access to a dedicated workforce that can help increase productivity and ensure the success of your agricultural ventures.
+          </p> */}
+          <p>
+          {t("description")}
+          </p>
+          <p>
+          {t("agroProject")}
           </p>
         </div>
   
@@ -335,13 +380,14 @@ function Block5() {
           author={{ name: "John Doe", role: "HR Manager Polona Fruits" }}
           className="mt-12"
         >
-  Grupa Krayr&apos;s hospitality staffing solutions have significantly improved our service quality and customer satisfaction.
+          {t("blockquoteText")}
         </Blockquote>
       </Section>
     );
   }
 
   function Price() {
+    const t = useTranslations("pricingSection")
     return (
       <div className="relative mt-24 pt-24 sm:mt-32 sm:pt-32 lg:mt-40 lg:pt-40">
         <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-gradient-to-b from-neutral-50">
@@ -352,24 +398,24 @@ function Block5() {
         </div>
   
         <SectionIntro
-          eyebrow="Service Pricing"
-          title="Competitive and Transparent Pricing"
+          eyebrow={t("eyebrow")}
+          title={t("sectionTitle")}
         >
           <p>
-          At Grupa Krayr, we offer competitive and transparent pricing tailored to meet the unique needs of your business. Our flexible pricing structures ensure you get the best value for our comprehensive staffing solutions.
+          {t("intro")}
           </p>
         </SectionIntro>
   
         <Container className="mt-24">
           <GridList>
-            <GridListItem title="Flexible Pricing Models">
-            Choose from various pricing plans that suit your specific industry requirements, whether it&apos;s for temporary staffing, employee leasing, or specialized process outsourcing.
+            <GridListItem title={t("flexible")}>
+            {t("flexibledescription")}
             </GridListItem>
-            <GridListItem title="Customizable Packages">
-            We provide customizable staffing packages that allow you to select the level of support and number of workers you need, ensuring cost efficiency and scalability.
+            <GridListItem title={t("customizable")}>
+            {t("customizabledescription")}
             </GridListItem>
-            <GridListItem title="No Hidden Fees">
-            Our transparent pricing means you know exactly what you&apos;re paying for, with no hidden fees or unexpected charges.            
+            <GridListItem title={t("feetitle")}>
+            {t("feedescription")}
             </GridListItem>
           </GridList>
         </Container>
@@ -385,21 +431,19 @@ export const metadata: Metadata = {
     "We believe in efficiency and maximizing our resources to provide the best value to our clients.",
 };
 
-export default async function Work() {
-  let caseStudies = await loadCaseStudies();
+export default  function Work() {
+const t = useTranslations("work")
+
+
 
   return (
     <>
       <PageIntro
-        eyebrow="Our work"
-        title="Comprehensive Staffing Solutions Across Industries."
+        eyebrow= {t("introEyebrow")}
+        title= {t("introTitle")}
       >
         <p>
-          At Grupa Krayr, we specialize in providing top-tier staffing solutions
-          across various industries. Our expertise and commitment to excellence
-          ensure that your business receives the skilled workforce it needs to
-          thrive. Explore our services in different sectors and discover how we
-          can support your growth.
+        {t("introText")}
         </p>
       </PageIntro>
 

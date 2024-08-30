@@ -21,7 +21,7 @@ import { Logo, Logomark } from "./Logo";
 import { Offices } from "./Offices";
 import { SocialMedia } from "./SocialMedia";
 import ChangeLanguage from "./ChangeLanguage";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 
 const RootLayoutContext = createContext<{
@@ -63,6 +63,13 @@ function Header({
 }) {
   let { logoHovered, setLogoHovered } = useContext(RootLayoutContext)!;
   const localActiveLanguage = useLocale();
+  const pathname = usePathname();
+  const t = useTranslations("navigation")
+
+  const contactHref = pathname.startsWith(`/${localActiveLanguage}/contact`)
+    
+    ? `/${localActiveLanguage}/contact`: `/${localActiveLanguage}/contact`;
+  
   return (
     <Container>
       <div className="flex items-center justify-between">
@@ -85,39 +92,9 @@ function Header({
         </Link>
         <div className="flex items-center gap-x-4">
           <ChangeLanguage />
-          <Button href={`${localActiveLanguage}/contact`} invert={invert}>
-            Contact us
+          <Button href={contactHref} invert={invert}>
+          {t("contactUs")}
           </Button>
-
-          {/* <div className="relative">
-            <button
-              type="button"
-              className={clsx(
-                "group inline-flex items-center gap-x-2 rounded-md px-3 py-2 text-sm font-medium",
-                invert ? "text-white" : "text-neutral-950"
-              )}
-              aria-haspopup="true"
-            >
-              EN
-            </button>
-            <div className="absolute right-0 z-10 mt-2 w-32 origin-top-right rounded-md shadow-lg bg-white dark:bg-neutral-800">
-              <div className="py-1">
-                <a
-                  href="#"
-                  className="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-700"
-                >
-                  EN
-                </a>
-                <a
-                  href="#"
-                  className="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-700"
-                >
-                  PL
-                </a>
-              </div>
-            </div>
-          </div> */}
-
           <button
             ref={toggleRef}
             type="button"
@@ -158,38 +135,38 @@ function NavigationRow({ children }: { children: React.ReactNode }) {
   );
 }
 
-function NavigationItem({
-  href,
-  children,
-}: {
-  href: string;
-  children: React.ReactNode;
+function NavigationItem({href,children,}: { href: string; children: React.ReactNode;
 }) {
+  const locale = useLocale()
+  const pathname = usePathname();
+  const correctedHref = pathname.startsWith(`/${locale}${href}`)
+    ? `/${locale}${href}`
+    : `/${locale}${href}`;
+
   return (
-    <Link
-      href={href}
-      className="group relative isolate -mx-6 bg-teal-950 px-6 py-10 even:mt-px sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:mt-0 sm:even:border-l sm:even:border-neutral-800 sm:even:pl-16"
-    >
-      {children}
-      <span className="absolute inset-y-0 -z-10 w-screen bg-amber-700 opacity-0 transition group-odd:right-0 group-even:left-0 group-hover:opacity-100" />
+    <Link href={correctedHref} locale={false}
+       className="group relative isolate -mx-6 bg-teal-950 px-6 py-10 even:mt-px sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:mt-0 sm:even:border-l sm:even:border-neutral-800 sm:even:pl-16">
+        {children}
+        <span className="absolute inset-y-0 -z-10 w-screen bg-amber-700 opacity-0 transition group-odd:right-0 group-even:left-0 group-hover:opacity-100" />
+      
     </Link>
   );
 }
 
 
 
-function Navigation() {
-  const localActiveLanguage = useLocale();
 
+function Navigation() {
+  const t = useTranslations("navigation")
   return (
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
       <NavigationRow>
-        <NavigationItem href={`${localActiveLanguage}/about`}>About Us</NavigationItem>
-        <NavigationItem href={`${localActiveLanguage}/work`}>Our Work</NavigationItem>
+        <NavigationItem href="/about">{t("about")}</NavigationItem>
+        <NavigationItem href="/work">{t("ourWork")}</NavigationItem>
       </NavigationRow>
       <NavigationRow>
-        <NavigationItem href={`${localActiveLanguage}/process`}>Our Process</NavigationItem>
-        <NavigationItem href={`${localActiveLanguage}/blog`}>Blog</NavigationItem>
+        <NavigationItem href="/process">{t("process")}</NavigationItem>
+        <NavigationItem href="/blog">{t("blog")}</NavigationItem>
       </NavigationRow>
       {/* <NavigationRow>
         <NavigationItem href="/project">Our Project</NavigationItem>
@@ -200,6 +177,8 @@ function Navigation() {
 }
 
 function RootLayoutInner({ children }: { children: React.ReactNode }) {
+  const t = useTranslations("ContactDetails")
+
   let panelId = useId();
   let [expanded, setExpanded] = useState(false);
   let openRef = useRef<React.ElementRef<"button">>(null);
@@ -278,7 +257,7 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
                 <div className="grid grid-cols-1 gap-y-10 pb-16 pt-10 sm:grid-cols-2 sm:pt-16">
                   <div>
                     <h2 className="font-display text-base font-semibold text-white">
-                      Our offices
+                      {t("ourOfficesTitle")}
                     </h2>
                     <Offices
                       invert
@@ -287,7 +266,7 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
                   </div>
                   <div className="sm:border-l sm:border-transparent sm:pl-16">
                     <h2 className="font-display text-base font-semibold text-white">
-                      Follow us
+                      {t("followUsTitle")}
                     </h2>
                     <SocialMedia className="mt-6" invert />
                   </div>

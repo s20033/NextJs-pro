@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { FadeIn } from './FadeIn';
 import { JobCard } from './JobCard';
 import { Button } from './Button';
+import { useTranslations } from 'next-intl';
 
 type JobOpening = {
   title: string;
@@ -21,6 +22,7 @@ type JobListingsProps = {
 };
 
 export function JobListings({ jobOpenings }: JobListingsProps) {
+  const t = useTranslations("faq")
   const [currentPage, setCurrentPage] = useState(0);
   const jobsPerPage = 3;
   const pageCount = Math.ceil(jobOpenings.length / jobsPerPage);
@@ -52,13 +54,13 @@ export function JobListings({ jobOpenings }: JobListingsProps) {
               onClick={prevPage}
               className="px-4 py-2 bg-teal-950 text-white rounded hover:bg-amber-700"
             >
-              Previous
+              {t("prevButton")}
               </Button>
               <Button 
               onClick={nextPage}
               className="px-4 py-2 bg-teal-950 text-white rounded hover:bg-amber-700"
             >
-              Next
+              {t("nextButton")}
               </Button>
             
       </div>

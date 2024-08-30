@@ -1,8 +1,10 @@
 'use client'
+import { useTranslations } from 'next-intl';
 import { useState, useEffect } from 'react';
 import { useCookies } from 'react-cookie';
 
 export const CookieConsent = () => {
+  const t = useTranslations("cookies")
   const [cookies, setCookie] = useCookies(['cookieConsent']);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -21,13 +23,13 @@ export const CookieConsent = () => {
     <div className="fixed bottom-0 left-0 right-0 z-50 p-4 bg-teal-950 text-white">
       <div className="flex justify-between items-center max-w-4xl mx-auto">
         <p className="text-sm">
-          We use cookies to improve your experience on our site. By using our site, you accept our use of cookies.
+          {t("text")}
         </p>
         <button
           onClick={handleAccept}
-          className="ml-4 px-4 py-2 bg-neutral-100 text-neutral-800 rounded-lg hover:bg-amber-600"
+          className="ml-6 px-6 py-0 bg-neutral-100 text-neutral-800 rounded-lg hover:bg-amber-600"
         >
-          Accept
+          {t("button")}
         </button>
       </div>
     </div>

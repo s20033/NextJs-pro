@@ -4,43 +4,40 @@ import { Container } from './Container'
 import { FadeIn } from './FadeIn'
 import { Logo } from './Logo'
 import { socialMediaProfiles } from './SocialMedia'
-import { useLocale } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 
 
 const navigation = [
   {
-    title: 'Work',
+    title: 'work',
     links: [
-      { title: 'Our Work', href: '/work'} ,
-      { title: 'Career', href: '/career' },
-      // { title: 'Job Bank', href: 'https://jobs.grupakrayr.pl' },
+      { title: 'ourWork', href: '/work' },
+      { title: 'career', href: '/career' },
       {
-        title: (
-          <>
-            See all <span aria-hidden="true">&rarr;</span>
-          </>
-        ),
+        title: 'seeAll',
         href: '/work',
       },
     ],
   },
   {
-    title: 'Company',
+    title: 'company',
     links: [
-      { title: 'About', href: '/about' },
-      { title: 'Process', href: '/process' },
-      { title: 'Blog', href: '/blog' },
-      { title: 'Contact us', href: '/contact' },
+      { title: 'about', href: '/about' },
+      { title: 'process', href: '/process' },
+      { title: 'blog', href: '/blog' },
+      { title: 'contactUs', href: '/contact' },
     ],
   },
   {
-    title: 'Connect',
+    title: 'connect',
     links: socialMediaProfiles,
   },
 ]
 
 function Navigation() {
-  const localActiveLanguage = useLocale();
+  const t = useTranslations('navigation')
+  const tSocial = useTranslations('socialMedia')
+  const localActiveLanguage = useLocale()
 
   return (
     <nav>
@@ -48,19 +45,18 @@ function Navigation() {
         {navigation.map((section, sectionIndex) => (
           <li key={sectionIndex}>
             <div className="font-display text-sm font-semibold tracking-wider text-neutral-950">
-              {section.title}
+              {t(section.title)}
             </div>
             <ul role="list" className="mt-4 text-sm text-neutral-700">
               {section.links.map((link, linkIndex) => (
                 <li key={linkIndex} className="mt-4">
                   <Link
-                    href={link.href.startsWith('http') 
-                      ? link.href 
+                    href={link.href.startsWith('http')
+                      ? link.href
                       : `/${localActiveLanguage}${link.href}`}
                     className="transition hover:text-neutral-950"
                   >
-                    {link.title}
-                  </Link>
+                    {link.href.startsWith('http') ? tSocial(link.title) : t(link.title)}                    </Link>
                 </li>
               ))}
             </ul>
@@ -68,6 +64,7 @@ function Navigation() {
         ))}
       </ul>
     </nav>
+  
   )
 }
 
@@ -85,19 +82,19 @@ function ArrowIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 function NewsletterForm() {
+  const t = useTranslations("newsletter")
   return (
     <form className="max-w-sm">
       <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
-        Sign up for our newsletter
+        {t("title")}
       </h2>
       <p className="mt-4 text-sm text-neutral-700">
-        Subscribe to get the latest news, articles, resources and
-        inspiration.
+      {t("description")}
       </p>
       <div className="relative mt-6">
         <input
           type="email"
-          placeholder="Email address"
+          placeholder={t("placeHolder")}
           autoComplete="email"
           aria-label="Email address"
           className="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pl-6 pr-20 text-base/6 text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5"

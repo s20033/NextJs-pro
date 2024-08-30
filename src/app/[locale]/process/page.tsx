@@ -15,6 +15,7 @@ import imageLaptop from '@/images/discover.jpg'
 import imageMeeting from '@/images/meeting.jpg'
 import imageWhiteboard from '@/images/support.jpg'
 import FAQSection from "../components/FAQs"
+import { useTranslations } from "next-intl"
 
 
 function Section({
@@ -55,30 +56,35 @@ function Section({
     )
   }
   function Needs() {
+    const t = useTranslations("process.needsSection")
     return (
-      <Section title="Understand the need" image={{ src: imageLaptop, shape: 1 }}>
+      <Section title={t("title")} image={{ src: imageLaptop, shape: 1 }}>
         <div className="space-y-6 text-base text-neutral-600">
-          <p>
+          {/* <p>
           We work closely with our clients to understand their <strong className="font-semibold text-neutral-950">needs</strong>, embedding ourselves in their every day operations to understand their staffing need. 
           Hiring workers is not always the solution, hiring the <strong className="font-semibold text-neutral-950">right person</strong> is what we offer to make your business thrive. 
-          </p>
+          </p> */}
+<p
+      dangerouslySetInnerHTML={{
+        __html: t('description'),
+      }}
+    />
           <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
-          Our approach includes: </h3>
+          {t("approachTitle")} </h3>
           <List className="mt-8">
-          <ListItem title="Detailed Questionnaires">
-            We collect all questionnaires related to your staffing needs, skill requirements.
+          <ListItem title={t("detailedQuestionnaires")}>
+          {t("detailedQuestionnaires")}
+          </ListItem> 
+            <ListItem title={t("employeeSurveys")}>
+            {t("employeeSurveysText")}
             </ListItem> 
-            <ListItem title="Employee Surveys">
-            We collect all questionnaires related to your staffing needs, skill requirements.
-            </ListItem> 
-            <ListItem title="Feasibility Studies">
-            We collect all questionnaires related to your staffing needs, skill requirements.
+            <ListItem title={t("feasibilityStudies")}>
+            {t("feasibilityStudiesText")}
             </ListItem> 
           </List>
 
           <p>
-          Once we fully understand your need, 
-          we offer you with a comprehensive solution and, more importantly, <strong className="font-semibold text-neutral-950">cost effective</strong> one !
+          {t("costEffectiveSolution")}
           </p>
         </div>
   
@@ -86,18 +92,28 @@ function Section({
           author={{ name: 'Debra Fiscal', role: 'CEO of Unseal' }}
           className="mt-12"
         >
-          Studio were so regular with their progress updates we almost began to
-          think they were automated!
+          {t("blockquoteText")}
         </Blockquote>
       </Section>
     )
   }
   
   function Solutions() {
+
+    const t = useTranslations("process.solutionsSection")
+
+    const tagListItems = [
+      t('tagListItems.0'),
+      t('tagListItems.1'),
+      t('tagListItems.2'),
+      t('tagListItems.3'),
+      t('tagListItems.4'),
+      t('tagListItems.5'),
+    ];  
     return (
-      <Section title="Deliver the Solution" image={{ src: imageWhiteboard }}>
+      <Section title={t("title")} image={{ src: imageWhiteboard }}>
         <div className="space-y-6 text-base text-neutral-600">
-          <p>
+          {/* <p>
           At Grupa Krayr, we meticulously select the ideal candidates from our extensive 
           talent pool, ensuring alignment with your {' '} <strong className="font-semibold text-neutral-950">
          business goals</strong>. Our thorough selection process includes verifying past experiences and skills, 
@@ -112,20 +128,35 @@ function Section({
           Our dedicated project managers work closely with your 
           representatives to ensure a seamless transition and provide ongoing support for new hires, 
           fostering a successful{' '} <strong className="font-semibold text-neutral-950">integration</strong>{' '}into your team
+          </p> */}
+          <p>
+          {t("description")}
+          </p>
+          <p>
+          {t("solutionDeliveryText")}
+          </p>
+          <p>
+          {t("integrationText")}
           </p>
         </div>
   
         <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
-          Included in this phase
+        {t("includedInThisPhaseTitle")}
         </h3>
-        <TagList className="mt-4">
+        {/* <TagList className="mt-4">
           <TagListItem>In-depth questionnaires</TagListItem>
           <TagListItem>Candidate selection</TagListItem>
           <TagListItem>Business goals</TagListItem>
           <TagListItem>Profile verification</TagListItem>
           <TagListItem>Tailored interviews</TagListItem>
           <TagListItem>smooth hiring implementation</TagListItem>
-        </TagList>
+        </TagList> */}
+        
+        <TagList className="mt-4">
+      {tagListItems.map((item, index) => (
+        <TagListItem key={index}>{item}</TagListItem>
+      ))}
+    </TagList>
       </Section>
     )
   }
@@ -133,10 +164,13 @@ function Section({
 
   
   function Deliver() {
+    const t = useTranslations("process.deliverSection")
+
+
     return (
-      <Section title="Ongoing Support" image={{ src: imageMeeting, shape: 2 }}>
+      <Section title={t("title")} image={{ src: imageMeeting, shape: 2 }}>
         <div className="space-y-6 text-base text-neutral-600">
-          <p>
+          {/* <p>
           Our commitment to your success extends beyond the hiring process. 
           We provide continuous{' '}<strong className="font-semibold text-neutral-950">
               support
@@ -155,23 +189,34 @@ function Section({
             <strong className="font-semibold text-neutral-950">
             success
             </strong>.
-          </p>
+          </p> */}
+
+        <p>  
+
+        {t("description")}
+        </p>
+        <p>
+          
+        {t("supportProcessText")}
+        </p>
+        <p>
+
+        {t("successText")}
+        </p>
         </div>
   
         <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
-          Included in this phase
+        {t("includedInThisPhaseTitle")}
         </h3>
         <List className="mt-8">
-          <ListItem title="24/7 Support and Coordination">
-          Round-the-clock assistance for workers and a dedicated 
-          client representative for seamless communication.
+          <ListItem title={t("listItems1")}>
+          {t("supportAndCoordinationText")}
           </ListItem>
-          <ListItem title="Specialized Coordination">
-          Coordinators for foreign workers to help them 
-          acclimate and navigate their new environment.
+          <ListItem title={t("listItems2")}>
+          {t("specializedCoordinationText")}
           </ListItem>
-          <ListItem title="Comprehensive Integration">
-          Regular visits, orientation, training sessions, and social events to ensure new hires adapt and thrive in your company.
+          <ListItem title={t("listItems3")}>
+          {t("comprehensiveIntegrationText")}
          </ListItem>
         </List>
       </Section>
@@ -187,12 +232,12 @@ export const metadata: Metadata = {
   }
   
   export default function Process() {
+    const t = useTranslations("process")
     return (
       <>
-        <PageIntro eyebrow="Our process" title="How we work">
+        <PageIntro eyebrow={t("introEyebrow")} title={t("introTitle")}>
           <p>
-          We believe in efficiency and effectiness of resources to provide the top-notch staffing solution to our clients. 
-          The way we do that is by utilizing our time-tested model, which we have been working since 7 years. 
+          {t("introText")} 
           </p>
         </PageIntro>
   
