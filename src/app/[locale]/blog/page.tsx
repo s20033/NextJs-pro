@@ -10,22 +10,28 @@ import { FadeIn } from '../components/FadeIn'
 import { PageIntro } from '../components/PageIntro'
 import { formatDate } from '@/lib/formatDate'
 import { loadArticles } from '@/lib/mdx'
+import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
 
-export const metadata: Metadata = {
-  title: 'Blog',
-  description:
-    'Stay up-to-date with the latest industry news as our marketing teams finds new ways to re-purpose old CSS tricks articles.',
+export async function generateMetadata(
+  { params: { locale } }: { params: { locale: string } }
+): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: 'Blog' })
+
+  return {
+    title: t('metadata.title'),
+    description: t('metadata.description'),
+  }
 }
 
-export default async function Blog() {
-  let articles = await loadArticles()
+export default async function Blog({ params: { locale } }: { params: { locale: string } }) {
+  const t = await getTranslations({ locale, namespace: 'Blog' })
+  const articles = await loadArticles(locale)
 
   return (
     <>
-      <PageIntro eyebrow="Blog" title="The latest articles and news">
-        <p>
-        Stay informed with our latest insights on industry trends, workforce strategies, and staffing solutions to keep your business ahead.
-        </p>
+      <PageIntro eyebrow={t('eyebrow')} title={t('title')}>
+        <p>{t('intro')}</p>
       </PageIntro>
 
       <Container className="mt-24 sm:mt-32 lg:mt-40">
@@ -40,13 +46,13 @@ export default async function Blog() {
                         <Link href={article.href}>{article.title}</Link>
                       </h2>
                       <dl className="lg:absolute lg:left-0 lg:top-0 lg:w-1/3 lg:px-4">
-                        <dt className="sr-only">Published</dt>
+                        <dt className="sr-only">{t('published')}</dt>
                         <dd className="absolute left-0 top-0 text-sm text-neutral-950 lg:static">
                           <time dateTime={article.date}>
-                            {formatDate(article.date)}
+                            {formatDate(article.date, locale)}
                           </time>
                         </dd>
-                        <dt className="sr-only">Author</dt>
+                        <dt className="sr-only">{t('author')}</dt>
                         <dd className="mt-6 flex gap-x-4">
                           <div className="flex-none overflow-hidden rounded-xl bg-neutral-100">
                             <Image
@@ -68,10 +74,10 @@ export default async function Blog() {
                       </p>
                       <Button
                         href={article.href}
-                        aria-label={`Read more: ${article.title}`}
+                        aria-label={t('readMoreAriaLabel', { title: article.title })}
                         className="mt-8"
                       >
-                        Read more
+                        {t('readMore')}
                       </Button>
                     </div>
                   </div>

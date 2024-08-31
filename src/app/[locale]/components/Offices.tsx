@@ -1,4 +1,5 @@
 import clsx from 'clsx'
+import { useTranslations } from 'next-intl'
 
 function Office({
   name,
@@ -29,20 +30,23 @@ export function Offices({
   invert = false,
   ...props
 }: React.ComponentPropsWithoutRef<'ul'> & { invert?: boolean }) {
+  const t= useTranslations("ContactDetails")
   return (
     <ul role="list" {...props}>
       <li>
-        <Office name="Poland" invert={invert}>
-          11 John Paul II Avenue 
-          <br />
-          00-823, Warsaw, Poland
+        <Office name={t("polandLabel")} invert={invert}>
+        Al. Jana Pawła II 11/1013  
+        <br/>
+        00-823, Warsaw, Poland
+
         </Office>
       </li>
       <li>
-        <Office name="Bulgaria" invert={invert}>
-          24 Lego Allé
+        <Office name={t("bulgariaLabel")}  invert={invert}>
+          Gen. Totleben Blvd 2,  
           <br />
-          7190, Billund, Bulgaria
+          1606 Sofia, Bulgaria
+
         </Office>
       </li>
     </ul>

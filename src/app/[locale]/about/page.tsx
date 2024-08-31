@@ -21,6 +21,7 @@ import { FadeIn, FadeInStagger } from "../components/FadeIn";
 import { Border } from "../components/Border";
 import { GridPattern } from "../components/GridPattern";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
 // {t("")..
 function Culture() {
@@ -201,15 +202,25 @@ function Team() {
   );
 }
 
-export const metadata: Metadata = {
-  title: "About Us",
-  description:
-    "Grupa Krayr is a leading recruitment agency specializing in worker leasing, temporary staffing, and overseas hiring. We focus on providing skilled workforce solutions for medium and large companies, with expertise in legalizing foreign workers from Eastern Europe and Asia.",
-};
+// export const metadata: Metadata = {
+//   title: "About Us",
+//   description:
+//     "Grupa Krayr is a leading recruitment agency specializing in worker leasing, temporary staffing, and overseas hiring. We focus on providing skilled workforce solutions for medium and large companies, with expertise in legalizing foreign workers from Eastern Europe and Asia.",
+// };
+export async function generateMetadata(
+  { params: { locale } }: { params: { locale: string } }
+): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: 'PageIntro' })
 
-export default  function About() {
-  const t = useTranslations("PageIntro")
-  // let blogArticles = (await loadArticles()).slice(0, 2);
+  return {
+    title: t('title'),
+    description: t('description'),
+  }
+}
+
+export default async function About({ params: { locale } }: { params: { locale: string } }) {
+  const t = await getTranslations({ locale, namespace: 'PageIntro' })
+  const articles = await loadArticles(locale)
 
   return (
     <>
@@ -237,12 +248,12 @@ export default  function About() {
       <Values />
       <Team />
 
-      {/* <PageLinks
+      <PageLinks
         className="mt-24 sm:mt-32 lg:mt-40"
-        title="From the blog"
-        intro="Stay informed with the latest industry updates as our team explores innovative solutions and shares insights on workforce trends and staffing strategies."
-        pages={blogArticles}
-      /> */}
+        title={t("linktitle")}
+        intro={t("intro")}
+        pages={articles}
+      />
 
       <ContactSection />
     </>

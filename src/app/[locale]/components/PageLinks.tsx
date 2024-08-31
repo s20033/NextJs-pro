@@ -7,6 +7,7 @@ import { FadeIn, FadeInStagger } from './FadeIn'
 import { GridPattern } from './GridPattern'
 import { SectionIntro } from './SectionIntro'
 import { formatDate } from '@/lib/formatDate'
+import { useTranslations } from 'next-intl'
 
 function ArrowIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -28,6 +29,7 @@ interface Page {
 }
 
 function PageLink({ page }: { page: Page }) {
+  const t = useTranslations("PageLinks")
   return (
     <article key={page.href}>
       <Border
@@ -49,7 +51,7 @@ function PageLink({ page }: { page: Page }) {
           className="mt-6 flex gap-x-3 text-base font-semibold text-neutral-950 transition hover:text-neutral-700"
           aria-label={`Read more: ${page.title}`}
         >
-          Read more
+          {t("readMore")}
           <ArrowIcon className="w-6 flex-none fill-current" />
           <span className="absolute inset-0" />
         </Link>
@@ -69,6 +71,7 @@ export function PageLinks({
   intro?: string
   className?: string
 }) {
+
   return (
     <div className={clsx('relative pt-24 sm:pt-32 lg:pt-40', className)}>
       <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-gradient-to-b from-neutral-50">

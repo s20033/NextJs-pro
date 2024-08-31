@@ -80,11 +80,13 @@
     "HappyClients": "25+",
     "HappyClientsLabel": "Zadowoleni klienci",
     "InvoicesBilled": "$25M",
-    "InvoicesBilledLabel": "Wystawione faktury"
+    "InvoicesBilledLabel": "Wystawione faktury",
+    "linktitle": "Z bloga",
+    "intro": "Bądź na bieżąco z najnowszymi aktualizacjami branżowymi, gdy nasz zespół bada innowacyjne rozwiązania i dzieli się spostrzeżeniami na temat trendów na rynku pracy i strategii kadrowych."
+
   },
   "PageLinks": {
-    "title": "Z bloga",
-    "intro": "Bądź na bieżąco z najnowszymi aktualizacjami branżowymi, gdy nasz zespół bada innowacyjne rozwiązania i dzieli się spostrzeżeniami na temat trendów na rynku pracy i strategii kadrowych."
+       "readMore":"Czytaj więcej"
   },
 
   "ContactPage": {
@@ -330,22 +332,22 @@
     }
   },
 
-"work": {
-    "introEyebrow": "Nasz proces",
-    "introTitle": "Jak pracujemy",
-    "introText": "Wierzymy w efektywność i skuteczność zasobów, aby zapewnić naszym klientom najwyższej jakości rozwiązania kadrowe. Sposób, w jaki to robimy, polega na wykorzystaniu naszego sprawdzonego modelu, nad którym pracujemy od 7 lat.",
+  "work": {
+    "introEyebrow": "Nasza Praca",
+    "introTitle": "Niezrównana wiedza branżowa.",
+    "introText": "Odkryj nasz kompleksowy pakiet rozwiązań dla pracowników, dostosowany do Twoich unikalnych potrzeb i napędzający rozwój Twojej firmy. Jesteśmy dumni z posiadania dźwigni w niektórych konkretnych branżach. Wierzymy w jakość, a nie ilość, dlatego angażujemy się w nasze doskonałe usługi w następujących branżach.",
 
     "block1": {
       "title": "Specjalistyczne spawanie i outsourcing procesów",
       "description": "Usługi outsourcingu procesów Grupy Krayr są dostosowane do sektora spawalniczego. Nasi doświadczeni inżynierowie współpracują z klientami, aby zrozumieć ich specyficzne potrzeby i dostarczyć zespoły wykwalifikowanych spawaczy, koordynatorów i pomocników do efektywnego realizowania projektów. Nasze praktyczne podejście i ciągłe wsparcie zapewniają sukces projektu i satysfakcję klienta.",
       "weldingProject": "Nasze zespoły spawalnicze są wyposażone w najnowsze narzędzia i techniki, aby dostarczać wysokiej jakości prace spełniające standardy branżowe. Outsourcingując swoje projekty spawalnicze do Grupy Krayr, zyskujesz dostęp do puli wykwalifikowanych profesjonalistów, którzy mogą precyzyjnie i z fachowością realizować skomplikowane zadania. Zapewniamy ciągłe wsparcie przez cały cykl życia projektu, gwarantując, że Twoje projekty zostaną ukończone na czas i w ramach budżetu.",
       "blockquoteText": "Nasze projekty spawalnicze nigdy nie przebiegały sprawniej, odkąd rozpoczęliśmy współpracę z zespołem ekspertów Grupy Krayr"
-    }, 
-     
+    },
+
     "block2": {
       "title": "Leasing pracowniczy w produkcji i wytwarzaniu",
       "description": "Nasza reputacja w zakresie doskonałości w branży produkcyjnej i wytwórczej opiera się na dostarczaniu niezawodnych i wykwalifikowanych pracowników. Nasze skupienie na dokładnym sprawdzaniu i szkoleniu zapewnia, że nasi pracownicy skutecznie przyczyniają się do realizacji Twoich celów produkcyjnych.",
-      "solutionDeliveryText":"Dzięki leasingowi pracowników z Grupy Krayr zyskujesz elastyczną siłę roboczą, którą można dostosować do wymagań Twoich harmonogramów produkcji. Nasz model leasingu zapewnia Ci siłę roboczą, której potrzebujesz, bez długoterminowych zobowiązań, co pozwala na skalowanie w górę lub w dół w zależności od Twoich potrzeb operacyjnych. Zajmujemy się wszystkimi zadaniami administracyjnymi, w tym płacami i zgodnością z przepisami, abyś mógł skupić się na tym, co robisz najlepiej – produkcji wysokiej jakości produktów.",
+      "solutionDeliveryText": "Dzięki leasingowi pracowników z Grupy Krayr zyskujesz elastyczną siłę roboczą, którą można dostosować do wymagań Twoich harmonogramów produkcji. Nasz model leasingu zapewnia Ci siłę roboczą, której potrzebujesz, bez długoterminowych zobowiązań, co pozwala na skalowanie w górę lub w dół w zależności od Twoich potrzeb operacyjnych. Zajmujemy się wszystkimi zadaniami administracyjnymi, w tym płacami i zgodnością z przepisami, abyś mógł skupić się na tym, co robisz najlepiej – produkcji wysokiej jakości produktów.",
       "includedInThisPhaseTitle": " Talenty, które możemy ci zapewnić",
       "tagListItems": [
         "Operatorzy maszyn",
@@ -356,46 +358,55 @@
       ]
     },
     "block3": {
-    "title": "Ekspertyza w zakresie logistyki i magazynowania",
-    "description": "Efektywność i niezawodność są kluczowe w sektorze logistyki i magazynowania. Rozumiemy szybkie tempo tej branży i zapewniamy pracowników, którzy potrafią sprostać wymaganiom z precyzją i zaangażowaniem. Nasz zespół jest biegły w zarządzaniu złożonością operacji logistycznych, zapewniając nieprzerwane funkcjonowanie łańcucha dostaw.",
-    "solutionDeliveryText": "Szczycimy się naszą zdolnością do szybkiego dostosowywania się do Twoich specyficznych potrzeb, zapewniając Ci elastyczną siłę roboczą, która może rosnąć wraz z rozwojem Twojej działalności. Niezależnie od tego, czy potrzebujesz tymczasowych lub stałych pracowników, dodatkowego wsparcia w okresach szczytowych, czy specjalistycznych umiejętności na potrzeby konkretnych projektów, Grupa Krayr posiada zasoby, aby zapewnić sprawne funkcjonowanie Twoich operacji magazynowych i logistycznych.",
-    "includedInThisPhaseTitle": "Nasze rozwiązania kadrowe obejmują",
-    "tagListItems": [
-      "pracownicy magazynowi",
-      "kierownicy ds. inwentaryzacji",
-      "kierowcy",
-      "koordynatorzy ds. logistyki",
-      "operatorzy wózków widłowych",
-      "ładowacze/rozładowywacze"
-    ]
-  },
-  "block4": {
-    "title": "Doskonalenie w zakresie personelu hotelarskiego",
-    "description": "W branży hotelarskiej kluczowe jest świadczenie wyjątkowej obsługi. Zapewniamy wysoko wykwalifikowany personel hotelarski, który doskonale sprawdza się w rolach takich jak zarządzanie hotelami, koordynacja wydarzeń i obsługa klienta. Nasz rygorystyczny proces selekcji gwarantuje, że do Twojego zespołu dołączają tylko najbardziej zaangażowani i profesjonalni kandydaci, poprawiając doświadczenie gości i utrzymując renomę Twojego obiektu. Niezależnie od tego, czy potrzebujesz personelu do obsługi gości, personelu kuchennego, czy zespołów sprzątających, Grupa Krayr ma doświadczenie, aby spełnić Twoje wymagania.",
-    "blockquoteText": "Rozwiązania kadrowe Grupy Krayr w sektorze hotelarskim znacznie poprawiły jakość naszych usług i zadowolenie klientów."
-  },
-  "block5": {
-    "title": "Rozwiązania kadrowe dla rolnictwa",
-    "description": "W sektorze rolniczym pracownicy sezonowi i tymczasowi są niezbędni. Grupa Krayr dostarcza wykwalifikowanych pracowników rolnych, którzy mają doświadczenie w różnych zadaniach rolniczych. Nasi pracownicy dbają o to, aby Twoje operacje rolnicze przebiegały sprawnie, niezależnie od pory roku. Od sadzenia po zbiór, zapewniamy niezawodną siłę roboczą, która spełnia wymagania cykli rolniczych.",
-    "agroProject": "Rozumiemy unikalne wyzwania, przed którymi stoi branża rolnicza, w tym potrzebę terminowej i efektywnej pracy w kluczowych okresach. Nasz proces rekrutacji koncentruje się na pozyskiwaniu pracowników, którzy są nie tylko wykwalifikowani, ale także elastyczni, aby dostosować się do zmieniających się potrzeb operacji rolniczych. Współpracując z Grupą Krayr, zyskujesz dostęp do zaangażowanej siły roboczej, która może pomóc zwiększyć wydajność i zapewnić sukces Twoich przedsięwzięć rolniczych.",
-    "blockquoteText": "Nasza plantacja znacznie się rozwinęła po nawiązaniu współpracy z Grupą Krayr, ponieważ nie musimy martwić się o to, jak zatrudnić setki pracowników do pracy sezonowej. Świetna robota, jaką wykonaliście do tej pory!"
-  }
-},
-
-    "pricingSection": {
-      "eyebrow":"podawanie ceny",
-      "sectionTitle": "Konkurencyjne i Przejrzyste Ceny",
-      "intro": "W Grupie Krayr oferujemy konkurencyjne i przejrzyste ceny dostosowane do unikalnych potrzeb Twojej firmy. Nasze elastyczne struktury cenowe zapewniają najlepszy stosunek jakości do ceny naszych kompleksowych rozwiązań kadrowych.",
-      "flexible": "Elastyczne Modele Cenowe",
-          "flexibledescription": "Wybierz spośród różnych planów cenowych dostosowanych do specyficznych wymagań Twojej branży, niezależnie od tego, czy chodzi o tymczasowe zatrudnienie, leasing pracowników, czy specjalistyczne outsourcing procesów.",
-          "customizable": "Dostosowywane Pakiety",
-          "customizabledescription": "Oferujemy dostosowywane pakiety kadrowe, które pozwalają wybrać poziom wsparcia i liczbę pracowników, jakich potrzebujesz, zapewniając efektywność kosztową i skalowalność.",
-          "feetitle": "Brak Ukrytych Opłat",
-          "feedescription": "Nasze przejrzyste ceny oznaczają, że dokładnie wiesz, za co płacisz, bez ukrytych opłat i nieoczekiwanych kosztów."
-        }
-      
+      "title": "Ekspertyza w zakresie logistyki i magazynowania",
+      "description": "Efektywność i niezawodność są kluczowe w sektorze logistyki i magazynowania. Rozumiemy szybkie tempo tej branży i zapewniamy pracowników, którzy potrafią sprostać wymaganiom z precyzją i zaangażowaniem. Nasz zespół jest biegły w zarządzaniu złożonością operacji logistycznych, zapewniając nieprzerwane funkcjonowanie łańcucha dostaw.",
+      "solutionDeliveryText": "Szczycimy się naszą zdolnością do szybkiego dostosowywania się do Twoich specyficznych potrzeb, zapewniając Ci elastyczną siłę roboczą, która może rosnąć wraz z rozwojem Twojej działalności. Niezależnie od tego, czy potrzebujesz tymczasowych lub stałych pracowników, dodatkowego wsparcia w okresach szczytowych, czy specjalistycznych umiejętności na potrzeby konkretnych projektów, Grupa Krayr posiada zasoby, aby zapewnić sprawne funkcjonowanie Twoich operacji magazynowych i logistycznych.",
+      "includedInThisPhaseTitle": "Nasze rozwiązania kadrowe obejmują",
+      "tagListItems": [
+        "pracownicy magazynowi",
+        "kierownicy ds. inwentaryzacji",
+        "kierowcy",
+        "koordynatorzy ds. logistyki",
+        "operatorzy wózków widłowych",
+        "ładowacze/rozładowywacze"
+      ]
+    },
+    "block4": {
+      "title": "Doskonalenie w zakresie personelu hotelarskiego",
+      "description": "W branży hotelarskiej kluczowe jest świadczenie wyjątkowej obsługi. Zapewniamy wysoko wykwalifikowany personel hotelarski, który doskonale sprawdza się w rolach takich jak zarządzanie hotelami, koordynacja wydarzeń i obsługa klienta. Nasz rygorystyczny proces selekcji gwarantuje, że do Twojego zespołu dołączają tylko najbardziej zaangażowani i profesjonalni kandydaci, poprawiając doświadczenie gości i utrzymując renomę Twojego obiektu. Niezależnie od tego, czy potrzebujesz personelu do obsługi gości, personelu kuchennego, czy zespołów sprzątających, Grupa Krayr ma doświadczenie, aby spełnić Twoje wymagania.",
+      "blockquoteText": "Rozwiązania kadrowe Grupy Krayr w sektorze hotelarskim znacznie poprawiły jakość naszych usług i zadowolenie klientów."
+    },
+    "block5": {
+      "title": "Rozwiązania kadrowe dla rolnictwa",
+      "description": "W sektorze rolniczym pracownicy sezonowi i tymczasowi są niezbędni. Grupa Krayr dostarcza wykwalifikowanych pracowników rolnych, którzy mają doświadczenie w różnych zadaniach rolniczych. Nasi pracownicy dbają o to, aby Twoje operacje rolnicze przebiegały sprawnie, niezależnie od pory roku. Od sadzenia po zbiór, zapewniamy niezawodną siłę roboczą, która spełnia wymagania cykli rolniczych.",
+      "agroProject": "Rozumiemy unikalne wyzwania, przed którymi stoi branża rolnicza, w tym potrzebę terminowej i efektywnej pracy w kluczowych okresach. Nasz proces rekrutacji koncentruje się na pozyskiwaniu pracowników, którzy są nie tylko wykwalifikowani, ale także elastyczni, aby dostosować się do zmieniających się potrzeb operacji rolniczych. Współpracując z Grupą Krayr, zyskujesz dostęp do zaangażowanej siły roboczej, która może pomóc zwiększyć wydajność i zapewnić sukces Twoich przedsięwzięć rolniczych.",
+      "blockquoteText": "Nasza plantacja znacznie się rozwinęła po nawiązaniu współpracy z Grupą Krayr, ponieważ nie musimy martwić się o to, jak zatrudnić setki pracowników do pracy sezonowej. Świetna robota, jaką wykonaliście do tej pory!"
     }
-  
-  
-  
+  },
 
+  "pricingSection": {
+    "eyebrow": "podawanie ceny",
+    "sectionTitle": "Konkurencyjne i Przejrzyste Ceny",
+    "intro": "W Grupie Krayr oferujemy konkurencyjne i przejrzyste ceny dostosowane do unikalnych potrzeb Twojej firmy. Nasze elastyczne struktury cenowe zapewniają najlepszy stosunek jakości do ceny naszych kompleksowych rozwiązań kadrowych.",
+    "flexible": "Elastyczne Modele Cenowe",
+    "flexibledescription": "Wybierz spośród różnych planów cenowych dostosowanych do specyficznych wymagań Twojej branży, niezależnie od tego, czy chodzi o tymczasowe zatrudnienie, leasing pracowników, czy specjalistyczne outsourcing procesów.",
+    "customizable": "Dostosowywane Pakiety",
+    "customizabledescription": "Oferujemy dostosowywane pakiety kadrowe, które pozwalają wybrać poziom wsparcia i liczbę pracowników, jakich potrzebujesz, zapewniając efektywność kosztową i skalowalność.",
+    "feetitle": "Brak Ukrytych Opłat",
+    "feedescription": "Nasze przejrzyste ceny oznaczają, że dokładnie wiesz, za co płacisz, bez ukrytych opłat i nieoczekiwanych kosztów."
+  },
+
+  "Blog": {
+    "eyebrow": "Blog",
+    "title": "Najświeższe artykuły i wiadomości",
+    "intro": "Bądź na bieżąco z naszymi najnowszymi spostrzeżeniami na temat trendów w branży, strategii kadrowych i rozwiązań personalnych, aby utrzymać przewagę konkurencyjną swojej firmy.",
+    "published": "Opublikowano",
+    "author": "Autor",
+    "readMore": "Czytaj więcej",
+    "readMoreAriaLabel": "Czytaj więcej: {title}",
+    "metadata": {
+      "title": "Blog",
+      "description": "Bądź na bieżąco z najnowszymi wiadomościami branżowymi, gdy nasze zespoły marketingowe znajdują nowe sposoby na przetworzenie starych artykułów o trikach CSS."
+    }
+  }
+}

@@ -80,12 +80,14 @@
     "HappyClients": "25+",
     "HappyClientsLabel": "Happy clients",
     "InvoicesBilled": "$25M",
-    "InvoicesBilledLabel": "Invoices billed"
+    "InvoicesBilledLabel": "Invoices billed",
+    "linktitle": "From the blog",
+    "intro": "Stay informed with the latest industry updates as our team explores innovative solutions and shares insights on workforce trends and staffing strategies."
+
   },
 
   "PageLinks": {
-    "title": "From the blog",
-    "intro": "Stay informed with the latest industry updates as our team explores innovative solutions and shares insights on workforce trends and staffing strategies."
+        "readMore":"Read more"
   },
 
   "ContactPage": {
@@ -332,9 +334,9 @@
   },
 
   "work": {
-    "introEyebrow": "Our process",
-    "introTitle": "How we work",
-    "introText": "We believe in efficiency and effectiveness of resources to provide the top-notch staffing solution to our clients. The way we do that is by utilizing our time-tested model, which we have been working on for 7 years.",
+    "introEyebrow": "Our Work",
+    "introTitle": "Unparalleled Industry Expertise",
+    "introText": "Discover our comprehensive suite of workforce solutions tailored to meet your unique needs and drive your business forward. We have a pride of having leverage in some specific Industries. We believe in Quality not Quantity, thus we commit our excellent services in following Industries.",
 
     "block1": {
       "title": "Specialized Welding and Process Outsourcing",
@@ -345,7 +347,7 @@
     "block2": {
       "title": "Production and Manufacturing Employee Leasing",
       "description": "Our reputation for excellence in the production and manufacturing industries is built on providing reliable and skilled employees. Our focus on thorough vetting and training ensures that our employees contribute effectively to your production goals.",
-      "solutionDeliveryText":"By leasing employees from Grupa Krayr, you benefit from a flexible workforce that can be adjusted to meet the demands of your production schedules. Our leasing model provides you with the manpower you need without the long-term commitment, allowing you to scale up or down based on your operational requirements. We take care of all administrative tasks, including payroll and compliance, so you can focus on what you do best – manufacturing quality products.",
+      "solutionDeliveryText": "By leasing employees from Grupa Krayr, you benefit from a flexible workforce that can be adjusted to meet the demands of your production schedules. Our leasing model provides you with the manpower you need without the long-term commitment, allowing you to scale up or down based on your operational requirements. We take care of all administrative tasks, including payroll and compliance, so you can focus on what you do best – manufacturing quality products.",
       "includedInThisPhaseTitle": " Talents that we can provide to you",
       "tagListItems": [
         "Machine operators ",
@@ -358,7 +360,7 @@
     "block3": {
       "title": "Logistics and Warehouse Expertise",
       "description": "Efficiency and reliability are crucial in the logistics and warehouse sector. We understand the fast-paced nature of this industry and provide workers who can handle the demands with precision and dedication. Our team is adept at managing the complexities of logistics operations, ensuring your supply chain remains uninterrupted.",
-      "solutionDeliveryText":" We pride ourselves on our ability to quickly adapt to your specific needs, providing you with a flexible workforce that can scale with your operations. Whether you need temporary or parmanent recuits or additional support during peak seasons or specialized skills for specific projects, Grupa Krayr has the resources to ensure your warehouse and logistics operations run smoothly.",
+      "solutionDeliveryText": " We pride ourselves on our ability to quickly adapt to your specific needs, providing you with a flexible workforce that can scale with your operations. Whether you need temporary or parmanent recuits or additional support during peak seasons or specialized skills for specific projects, Grupa Krayr has the resources to ensure your warehouse and logistics operations run smoothly.",
       "includedInThisPhaseTitle": "Our staffing solutions include",
       "tagListItems": [
         "warehouse workers",
@@ -373,33 +375,38 @@
       "title": "Excellence in Hospitality Staffing",
       "description": "In the hospitality industry, delivering exceptional service is paramount. We provide highly trained hospitality staff who excel in roles such as hotel management, event coordination, and customer service. Our rigorous selection process ensures that only the most dedicated and professional candidates join your team, enhancing your guests' experience and maintaining your establishment's reputation. Whether you need front-of-house staff, kitchen personnel, or housekeeping teams, Grupa Krayr has the expertise to meet your requirements.",
       "blockquoteText": "Grupa Krayr's hospitality staffing solutions have significantly improved our service quality and customer satisfaction."
-
-  },
-  "block5": {
-    "title": "Agricultural Workforce Solutions",
-    "description": "In the farm and agriculture sector, seasonal and temporary workers are essential. Grupa Krayr supplies skilled farm laborers who are experienced in various agricultural tasks. Our workers ensure that your farming operations run smoothly, regardless of the season. From planting to harvesting, we provide reliable labor that meets the demands of agricultural cycles.",
-    "agroProject": "We understand the unique challenges faced by the agricultural industry, including the need for timely and efficient labor during critical periods. Our recruitment process focuses on sourcing workers who are not only skilled but also adaptable to the ever-changing needs of farming operations. By partnering with Grupa Krayr, you gain access to a dedicated workforce that can help increase productivity and ensure the success of your agricultural ventures.",
-    "blockquoteText": "Our plant has significant growth after partnering with Grupa Krayr, as we do not have to worry about how to hire hundreds of workers for seasonal work. Great work you have done so far! "
-
-}
+    },
+    "block5": {
+      "title": "Agricultural Workforce Solutions",
+      "description": "In the farm and agriculture sector, seasonal and temporary workers are essential. Grupa Krayr supplies skilled farm laborers who are experienced in various agricultural tasks. Our workers ensure that your farming operations run smoothly, regardless of the season. From planting to harvesting, we provide reliable labor that meets the demands of agricultural cycles.",
+      "agroProject": "We understand the unique challenges faced by the agricultural industry, including the need for timely and efficient labor during critical periods. Our recruitment process focuses on sourcing workers who are not only skilled but also adaptable to the ever-changing needs of farming operations. By partnering with Grupa Krayr, you gain access to a dedicated workforce that can help increase productivity and ensure the success of your agricultural ventures.",
+      "blockquoteText": "Our plant has significant growth after partnering with Grupa Krayr, as we do not have to worry about how to hire hundreds of workers for seasonal work. Great work you have done so far! "
+    }
   },
 
   "pricingSection": {
-    "eyebrow":"Serving Price",
+    "eyebrow": "Serving Price",
     "sectionTitle": "Competitive and Transparent Pricing",
     "intro": "At Grupa Krayr, we offer competitive and transparent pricing tailored to meet the unique needs of your business. Our flexible pricing structures ensure you get the best value for our comprehensive staffing solutions.",
-     "flexible": "Flexible Pricing Models",
-      "flexibledescription": "Choose from various pricing plans that suit your specific industry requirements, whether it's for temporary staffing, employee leasing, or specialized process outsourcing.",
-       "customizable": "Customizable Packages",
-        "customizabledescription": "We provide customizable staffing packages that allow you to select the level of support and number of workers you need, ensuring cost efficiency and scalability.",
-        "feetitle": "No Hidden Fees",
-        "feedescription": "Our transparent pricing means you know exactly what you're paying for, with no hidden fees or unexpected charges."
-      }
-    
+    "flexible": "Flexible Pricing Models",
+    "flexibledescription": "Choose from various pricing plans that suit your specific industry requirements, whether it's for temporary staffing, employee leasing, or specialized process outsourcing.",
+    "customizable": "Customizable Packages",
+    "customizabledescription": "We provide customizable staffing packages that allow you to select the level of support and number of workers you need, ensuring cost efficiency and scalability.",
+    "feetitle": "No Hidden Fees",
+    "feedescription": "Our transparent pricing means you know exactly what you're paying for, with no hidden fees or unexpected charges."
+  },
+
+  "Blog": {
+    "eyebrow": "Blog",
+    "title": "The latest articles and news",
+    "intro": "Stay informed with our latest insights on industry trends, workforce strategies, and staffing solutions to keep your business ahead.",
+    "published": "Published",
+    "author": "Author",
+    "readMore": "Read more",
+    "readMoreAriaLabel": "Read more: {title}",
+    "metadata": {
+      "title": "Blog",
+      "description": "Stay up-to-date with the latest industry news as our marketing teams finds new ways to re-purpose old CSS tricks articles."
+    }
   }
-
-
-
-
-
-
+}
