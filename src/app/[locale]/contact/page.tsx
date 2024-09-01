@@ -1,6 +1,8 @@
-import { useId } from "react";
+'use client'
+import { useId, useRef, useState } from "react";
 import { type Metadata } from "next";
 import Link from "next/link";
+import emailjs from '@emailjs/browser';
 
 import { Border } from "../components/Border";
 import { Button } from "../components/Button";
@@ -53,20 +55,44 @@ function RadioInput({
 }
 
 function ContactForm() {
+const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const form = useRef<HTMLFormElement | null>(null);
+
+  const sendEmail = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (form.current) {
+      emailjs.sendForm('service_aixzu6y', 'template_0jiinx7', form.current, 'w07if5kw3bnm_lOKS')
+        .then((result) => {
+          console.log(result.text);
+        }, (error) => {
+          console.log(error.text);
+        })
+        .finally(() => {
+          window.location.reload(); // Reload the page after submission
+        });
+    } else {
+      console.error('Form reference is not defined');
+    }
+  };
+
   const t = useTranslations("ContactPage");
+
   return (
     <FadeIn className="lg:order-last">
-      <form>
+      <form ref={form} onSubmit={sendEmail}> {/* Attach sendEmail to onSubmit */}
         <h2 className="font-display text-base font-semibold text-neutral-950">
           {t("business_enquiry")}
         </h2>
         <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
-          <TextInput label={t("name")} name="name" autoComplete="name" />
+          <TextInput label={t("name")} name="name" autoComplete="name"  />
           <TextInput
             label={t("email")}
             type="email"
             name="email"
             autoComplete="email"
+            
           />
           <TextInput
             label={t("company")}
@@ -78,6 +104,7 @@ function ContactForm() {
             type="tel"
             name="phone"
             autoComplete="tel"
+            
           />
           <TextInput label={t("message")} name="message" />
           <div className="border border-neutral-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
@@ -86,19 +113,20 @@ function ContactForm() {
                 {t("subject")}
               </legend>
               <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2">
-                <RadioInput label={t("cooperation")} name="budget" value="25" />
-                <RadioInput label={t("career")} name="budget" value="50" />
+                {/* The name is 'subject' so it will be sent as the email subject */}
+                <RadioInput label={t("cooperation")} name="subject" value="Cooperation" />
+                <RadioInput label={t("career")} name="subject" value="Career" />
                 <RadioInput
                   label={t("legalization")}
-                  name="budget"
-                  value="100"
+                  name="subject"
+                  value="Legalization"
                 />
-                <RadioInput label={t("offer")} name="budget" value="150" />
+                <RadioInput label={t("offer")} name="subject" value="Offer" />
               </div>
             </fieldset>
           </div>
         </div>
-        <Button type="submit" className="mt-10">
+        <Button disabled={isSubmitting} type="submit" className="mt-10">
           {t("lets_work_together")}
         </Button>
       </form>
@@ -178,10 +206,10 @@ function ContactDetails() {
   );
 }
 
-export const metadata: Metadata = {
-  title: "Contact Us",
-  description: "Let’s work together. We can’t wait to hear from you.",
-};
+// export const metadata: Metadata = {
+//   title: "Contact Us",
+//   description: "Let’s work together. We can’t wait to hear from you.",
+// };
 
 export default function Contact() {
   const t = useTranslations("ContactPage");
@@ -200,3 +228,4 @@ export default function Contact() {
     </>
   );
 }
+

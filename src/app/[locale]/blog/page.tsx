@@ -10,7 +10,6 @@ import { FadeIn } from '../components/FadeIn'
 import { PageIntro } from '../components/PageIntro'
 import { formatDate } from '@/lib/formatDate'
 import { loadArticles } from '@/lib/mdx'
-import { useTranslations } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
 
 export async function generateMetadata(
@@ -26,6 +25,7 @@ export async function generateMetadata(
 
 export default async function Blog({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: 'Blog' })
+
   const articles = await loadArticles(locale)
 
   return (
@@ -43,7 +43,7 @@ export default async function Blog({ params: { locale } }: { params: { locale: s
                   <div className="relative lg:-mx-4 lg:flex lg:justify-end">
                     <div className="pt-10 lg:w-2/3 lg:flex-none lg:px-4 lg:pt-0">
                       <h2 className="font-display text-2xl font-semibold text-neutral-950">
-                        <Link href={article.href}>{article.title}</Link>
+                        <Link href={`/${locale}${article.href}`}>{article.title}</Link>
                       </h2>
                       <dl className="lg:absolute lg:left-0 lg:top-0 lg:w-1/3 lg:px-4">
                         <dt className="sr-only">{t('published')}</dt>
@@ -73,7 +73,7 @@ export default async function Blog({ params: { locale } }: { params: { locale: s
                         {article.description}
                       </p>
                       <Button
-                        href={article.href}
+                        href={`/${locale}${article.href}`}
                         aria-label={t('readMoreAriaLabel', { title: article.title })}
                         className="mt-8"
                       >

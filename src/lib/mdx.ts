@@ -4,7 +4,7 @@ import glob from 'fast-glob'
 async function loadEntries<T extends { date: string }>(
   directory: string,
   metaName: string,
-  locale:string,
+  locale: string
 ): Promise<Array<MDXEntry<T>>> {
   return (
     await Promise.all(
@@ -39,28 +39,6 @@ export interface Article {
   }
 }
 
-// export interface CaseStudy {
-//   date: string
-//   client: string
-//   title: string
-//   description: string
-//   summary: Array<string>
-//   logo: ImageProps['src']
-//   image: ImagePropsWithOptionalAlt
-//   service: string
-//   testimonial: {
-//     author: {
-//       name: string
-//       role: string
-//     }
-//     content: string
-//   }
-// }
-
-export function loadArticles(locale:string) {
+export function loadArticles(locale: string) {
   return loadEntries<Article>('blog', 'article', locale)
 }
-
-// export function loadCaseStudies() {
-//   return loadEntries<CaseStudy>('work', 'caseStudy')
-// }

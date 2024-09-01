@@ -1,11 +1,19 @@
-import { useTranslations } from 'next-intl'
+'use client'
+import { useLocale, useTranslations } from 'next-intl'
 import { Button } from './Button'
 import { Container } from './Container'
 import { FadeIn } from './FadeIn'
 import { Offices } from './Offices'
+import { usePathname } from 'next/navigation'
 
 export function ContactSection() {
+  const localActiveLanguage = useLocale();
+  const pathname = usePathname();
   const t = useTranslations("contactSection")
+  const contactHref = pathname.startsWith(`/${localActiveLanguage}/contact`)
+    
+    ? `/${localActiveLanguage}/contact`: `/${localActiveLanguage}/contact`;
+
   return (
     <Container className="mt-24 sm:mt-32 lg:mt-40">
       <FadeIn className="-mx-6 rounded-4xl bg-emerald-950 px-6 py-20 sm:mx-0 sm:py-32 md:px-12">
@@ -18,7 +26,7 @@ export function ContactSection() {
             {t("subtitle")}
             </h4>
             <div className="mt-6 flex">
-              <Button href="/contact" invert>
+              <Button href={`${contactHref}`} invert>
               {t("buttonText")}
               </Button>
             </div>

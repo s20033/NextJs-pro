@@ -37,6 +37,7 @@ export default function ChangeLanguage() {
           >
             <option value="en">English</option>
             <option value="pl">Polish</option>
+            {/* <option value="de">German</option> */}
           </select>
         </div>
       </div>
