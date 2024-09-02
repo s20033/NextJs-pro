@@ -1,6 +1,5 @@
 'use client'
 import { useId, useRef, useState } from "react";
-import { type Metadata } from "next";
 import Link from "next/link";
 import emailjs from '@emailjs/browser';
 
