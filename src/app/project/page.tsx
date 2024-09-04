@@ -290,3 +290,351 @@ export function Logo({
 //     </>
 //   )
 // }
+
+
+// application form: 
+
+'use client';
+
+import React, { useId, useRef, useState } from 'react';
+import { useForm, SubmitHandler } from 'react-hook-form';
+import { XIcon } from '@heroicons/react/outline';
+import {useTranslations as translations} from 'next-intl'
+import { FadeIn } from './FadeIn';
+import { Button } from './Button';
+import emailjs from '@emailjs/browser';
+
+
+type FormInputs = {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  cv: FileList;
+  agreeToTerms: boolean;
+};
+
+type ApplicationFormProps = {
+  onClose: () => void;
+  jobTitle: string;
+};
+
+function TextInput({
+  label,
+  ...props
+}: React.ComponentPropsWithoutRef<"input"> & { label: string }) {
+  let id = useId();
+
+  return (
+    <div className="group relative z-0 transition-all focus-within:z-10">
+      <input
+        type="text"
+        id={id}
+        {...props}
+        placeholder=" "
+        className="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-12 text-base/6 text-neutral-950 ring-4 ring-transparent transition focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5 group-first:rounded-t-2xl group-last:rounded-b-2xl"
+      />
+      <label
+        htmlFor={id}
+        className="pointer-events-none absolute left-6 top-1/2 -mt-3 origin-left text-base/6 text-neutral-500 transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-neutral-950 peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:text-neutral-950"
+      >
+        {label}
+      </label>
+    </div>
+  );
+}
+
+// export function ApplicationForm({ onClose, jobTitle }: ApplicationFormProps) {
+//   const t = translations("applicationForm")
+//   const { register, handleSubmit, formState: { errors } } = useForm<FormInputs>();
+//   const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
+//   const [isSubmitting, setIsSubmitting] = useState(false);
+
+//   const form = useRef<HTMLFormElement | null>(null);
+
+//   const sendEmail = (e: React.FormEvent) => {
+//     e.preventDefault();
+    
+//     if (form.current) {
+//       emailjs.sendForm('service_aixzu6y', 'template_5c0we3u', form.current, 'w07if5kw3bnm_lOKS')
+//         .then((result) => {
+//           console.log(result.text);
+//         }, (error) => {
+//           console.log(error.text);
+//         })
+//         .finally(() => {
+//           window.location.reload(); // Reload the page after submission
+//         });
+//     } else {
+//       console.error('Form reference is not defined');
+//     }
+//   };
+
+
+//   return (
+//     <FadeIn className="lg:order-last">
+//       <form ref={form} onSubmit={sendEmail}> {/* Attach sendEmail to onSubmit */}
+//         <h2 className="font-display text-base font-semibold text-neutral-950">
+//           {t("subtitle")} 
+//         </h2>
+//         <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
+//           <TextInput label={t("firstName")} name="firstName" autoComplete="name"  />
+//           <TextInput label={t("lastName")} name="lastName" autoComplete="name"  />
+
+//           <TextInput
+//             label={t("email")}
+//             type="email"
+//             name="email"
+//             autoComplete="email"
+            
+//           />
+//           <TextInput
+//             label={t("phone")}
+//             name="phone"
+//             autoComplete="phone"
+//           />
+
+//           <div className="border border-neutral-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
+//           <label for="coverletter">{t("message")}</label>
+//           <textarea id="coverletter" name="message" cols={65}/>
+
+//           </div>
+        
+//       <div className="flex items-start mt-4">
+//         <div className="flex items-center h-5">
+//           <input
+//             {...register('agreeToTerms', { required: t("errors.agreeToTermsRequired") })}
+//             id="agreeToTerms"
+//             type="checkbox"
+//             className="focus:ring-teal-500 h-4 w-4 text-teal-800 border-gray-300 rounded"
+//           />
+//         </div>
+//         <div className="ml-3 text-sm">
+//           <label htmlFor="agreeToTerms" className="font-medium text-gray-700">
+//             {t("agreeToTerms")}{' '}
+//             <button
+//               type="button"
+//               onClick={() => setShowPrivacyPolicy(true)}
+//               className="text-teal-600 hover:text-teal-500 font-semibold"
+//             >
+//               {t("privacyPolicyTitle")}
+//             </button>
+//           </label>
+//           {errors.agreeToTerms && <p className="mt-1 text-sm text-red-600">{errors.agreeToTerms.message}</p>}
+//         </div>
+//       </div>
+//     <div className="flex justify-end space-x-3 mt-10">
+//     <Button onClick={close} className="mt-10">
+//     {t("cancel")}
+//         </Button> 
+        
+//       <Button disabled={isSubmitting} type="submit" className="mt-10">
+//           {t("submit")}
+//         </Button>
+//     </div>
+//     </div>
+//   </form>
+
+//   {showPrivacyPolicy && (
+//     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+//       <div className="bg-white p-8 rounded-lg max-w-2xl w-full m-4 relative">
+//         <button
+//           onClick={() => setShowPrivacyPolicy(false)} 
+//           className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
+//         >
+//           <XIcon className="h-6 w-6" />
+//         </button>
+//         <h3 className="text-2xl font-semibold mb-4 text-teal-950">{t("privacyPolicyTitle")}</h3>
+//         <div className="prose prose-sm max-w-none">
+//           <p>{t("privacyPolicyParagraph")}</p>
+//           <ol>
+//             <li>{t("privacyPolicy.admin")}</li>
+//             <li>{t("privacyPolicy.purpose")}{jobTitle}.</li>
+//             <li>{t("privacyPolicy.legalBasis")}</li>
+//             <li>{t("privacyPolicy.storage")}</li>
+//             <li>{t("privacyPolicy.rights")}</li>
+//             <li>{t("privacyPolicy.voluntary")}</li>
+//             <li>{t("privacyPolicy.automatedDecision")}</li>
+//             <li>{t("privacyPolicy.complaint")}</li>
+//           </ol>
+//         </div>
+//       </div>
+//     </div>
+//   )}
+// </FadeIn>
+
+//   );
+// }
+
+
+'use client';
+
+import React, { useState } from 'react';
+import { useForm, SubmitHandler } from 'react-hook-form';
+import { XIcon } from '@heroicons/react/outline';
+import {useTranslations as translations} from 'next-intl'
+type FormInputs = {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  cv: FileList;
+  agreeToTerms: boolean;
+};
+
+type ApplicationFormProps = {
+  onClose: () => void;
+  jobTitle: string;
+};
+
+export function ApplicationForm({ onClose, jobTitle }: ApplicationFormProps) {
+  const t = translations("applicationForm")
+  const { register, handleSubmit, formState: { errors } } = useForm<FormInputs>();
+  const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
+
+  const onSubmit: SubmitHandler<FormInputs> = (data) => {
+   
+    console.log(data);
+    alert(t('submitMessage'));
+    onClose();
+  };
+
+  return (
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label htmlFor="firstName" className="block text-sm font-medium text-gray-800">{t("firstName")}</label>
+          <input
+            {...register('firstName', { required: t("errors.firstNameRequired") })}
+            id="firstName"
+            type="text"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-teal-900 focus:ring-teal-900"
+          />
+          {errors.firstName && <p className="mt-1 text-sm text-red-600">{errors.firstName.message}</p>}
+        </div>
+        <div>
+          <label htmlFor="lastName" className="block text-sm font-medium text-gray-800">{t("lastName")}</label>
+          <input
+            {...register('lastName', { required: t("errors.lastNameRequired") })}
+            id="lastName"
+            type="text"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-teal-900 focus:ring-teal-900"
+          />
+          {errors.lastName && <p className="mt-1 text-sm text-red-600">{errors.lastName.message}</p>}
+        </div>
+      </div>
+      <div>
+        <label htmlFor="email" className="block text-sm font-medium text-gray-800">{t("email")}</label>
+        <input
+          {...register('email', { 
+            required: t("errors.emailRequired"),
+            pattern: {
+              value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+              message: t("errors.emailInvalid")
+            }
+          })}
+          id="email"
+          type="email"
+          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-teal-900 focus:ring-teal-900"
+        />
+        {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>}
+      </div>
+      <div>
+        <label htmlFor="phone" className="block text-sm font-medium text-gray-800">{t("phone")}</label>
+        <input
+          {...register('phone', { required: t("errors.phoneRequired") })}
+          id="phone"
+          type="tel"
+          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-teal-900 focus:ring-teal-900"
+        />
+        {errors.phone && <p className="mt-1 text-sm text-red-600">{errors.phone.message}</p>}
+      </div>
+      <div>
+        <label htmlFor="cv" className="block text-sm font-medium text-gray-800">{t("cv")}</label>
+        <input
+          {...register('cv', { required: t("errors.cvRequired") })}
+          id="cv"
+          type="file"
+          accept=".pdf,.doc,.docx"
+          className="mt-1 block w-full text-sm text-gray-500
+            file:mr-4 file:py-2 file:px-4
+            file:rounded-full file:border-0
+            file:text-sm file:font-semibold
+            file:bg-teal-50 file:text-teal-900
+            hover:file:bg-teal-100"
+        />
+        {errors.cv && <p className="mt-1 text-sm text-red-600">{errors.cv.message}</p>}
+      </div>
+      <div className="flex items-start">
+        <div className="flex items-center h-5">
+          <input
+            {...register('agreeToTerms', { required: t("errors.agreeToTermsRequired") })}
+            id="agreeToTerms"
+            type="checkbox"
+            className="focus:ring-teal-500 h-4 w-4 text-teal-800 border-gray-300 rounded"
+          />
+        </div>
+        <div className="ml-3 text-sm">
+          <label htmlFor="agreeToTerms" className="font-medium text-gray-700">
+            {t("agreeToTerms")}{' '}
+            <button
+              type="button"
+              onClick={() => setShowPrivacyPolicy(true)}
+              className="text-teal-600 hover:text-teal-500 font-semibold"
+            >
+              privacy policy
+            </button>
+          </label>
+          {errors.agreeToTerms && <p className="mt-1 text-sm text-red-600">{errors.agreeToTerms.message}</p>}
+        </div>
+      </div>
+      <div className="flex justify-end space-x-3">
+        <button
+          type="button"
+          onClick={onClose}
+          className="px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-800 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-900"
+        >
+          {t("cancel")}
+        </button>
+        <button
+          type="submit"
+          className="px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-teal-900 hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-900"
+        >
+          {t("submit")}
+        </button>
+      </div>
+
+      {showPrivacyPolicy && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white p-8 rounded-lg max-w-2xl w-full m-4 relative">
+            <button
+              onClick={() => setShowPrivacyPolicy(false)}
+              className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
+            >
+              <XIcon className="h-6 w-6" />
+            </button>
+            <h3 className="text-2xl font-semibold mb-4 text-teal-950">{t("privacyPolicyTitle")}</h3>
+            <div className="prose prose-sm max-w-none">
+              <p>{t("privacyPolicyParagraph")}</p>
+              <ol>
+                <li>{t("privacyPolicy.admin")}</li>
+                <li>{t("privacyPolicy.purpose")}{jobTitle}.</li>
+                <li>{t("privacyPolicy.legalBasis")}</li>
+                <li>{t("privacyPolicy.storage")}</li>
+                <li>{t("privacyPolicy.rights")}</li>
+                <li>{t("privacyPolicy.voluntary")}</li>
+                <li>{t("privacyPolicy.automatedDecision")}</li>
+                <li>{t("privacyPolicy.complaint")}</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      )}
+    </form>
+  );
+}
+
+function useTranslations(): { t: any; } {
+  throw new Error('Function not implemented.');
+}
+

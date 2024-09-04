@@ -21,11 +21,13 @@ export default async function BlogArticleWrapper({
     .filter(({ metadata }) => metadata !== article.metadata)
     .slice(0, 2)
 
+
+
+
   return (
     <div>
       <Container as="article" className="mt-24 sm:mt-32 lg:mt-40">
          <FadeIn> 
-         
           <header className="mx-auto flex max-w-5xl flex-col text-center">
             <h1 className="mt-6 font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-6xl">
               {article.title}

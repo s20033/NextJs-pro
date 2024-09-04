@@ -2,7 +2,7 @@
   "Home": {
     "headline": "Grupa Krayr: A Top Staffing Agency for Poland and Beyond",
     "description": "We provide flexible, skilled workforce solutions for medium and large companies, specializing in worker leasing, temporary staffing, overseas hiring, and legalization of foreign workers from Eastern Europe and Asia.",
-    "client": "Alstom",
+    "client": "Polixnov",
     "quote": "Grupa Krayr's expertise and personalized approach made our hiring process seamless. We are satisfied with the quality of candidates they've provided."
   },
   "Industries": {
@@ -79,8 +79,8 @@
     "HappyTalentsLabel": "Happy Talents",
     "HappyClients": "25+",
     "HappyClientsLabel": "Happy clients",
-    "InvoicesBilled": "$25M",
-    "InvoicesBilledLabel": "Invoices billed",
+    "InvoicesBilled": "7+ years",
+    "InvoicesBilledLabel": "Industry Experience",
     "linktitle": "From the blog",
     "intro": "Stay informed with the latest industry updates as our team explores innovative solutions and shares insights on workforce trends and staffing strategies."
 
@@ -217,11 +217,14 @@
   },
 
   "applicationForm": {
+    "subtitle":"Please fill the form to apply for the job",
     "firstName": "First Name",
     "lastName": "Last Name",
     "email": "Email",
     "phone": "Phone",
     "cv": "Upload CV",
+    "message":"Cover Letter",
+    "messagePlaceholder":"Write a short cover Letter",
     "agreeToTerms": "I agree with Grupa Krayr processing my data as per privacy policy",
     "cancel": "Cancel",
     "submit": "Submit Application",

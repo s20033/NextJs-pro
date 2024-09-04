@@ -5,17 +5,18 @@ import { PageIntro } from "../components/PageIntro";
 import { PageLinks } from "../components/PageLinks";
 import { SectionIntro } from "../components/SectionIntro";
 import { StatList, StatListItem } from "../components/StatList";
-import { loadArticles } from "@/lib/mdx";
+import { Article, loadArticles, MDXEntry } from "@/lib/mdx";
 import { Metadata } from "next";
 import React from "react";
 import Image from "next/image";
-import imageBlakeReid from "@/images/team/blake-reid.jpg";
-import imageChelseaHagon from "@/images/team/chelsea-hagon.jpg";
+import imageMaciejZielinski from "@/images/team/maciej-zielinski.jpg";
+import imageMaftunaAzadova from "@/images/team/maftuna-azadova.jpg";
 import imageDriesVincent from "@/images/team/dries-vincent.jpg";
-import imageEmmaDorsey from "@/images/team/emma-dorsey.jpg";
-import imageKathrynMurphy from "@/images/team/kathryn-murphy.jpg";
-import imageLeonardKrasner from "@/images/team/leonard-krasner.jpg";
-import imageLeslieAlexander from "@/images/team/leslie-alexander.jpg";
+import imageMierafGeberhiwot from "@/images/team/mieraf-geberhiwot.jpg";
+import imagePatrycjaMachajska from "@/images/team/patrycja-machajska.jpg";
+import imagePrzemyslawMazurek from "@/images/team/przemyslaw-mazurek.jpeg";
+import imageLeslieAlexander from "@/images/team/sefu.jpeg";
+import imageShephaliGhimire from "@/images/team/shephali-ghimire.png";
 import imageMichaelFoster from "@/images/team/michael-foster.jpg";
 import { FadeIn, FadeInStagger } from "../components/FadeIn";
 import { Border } from "../components/Border";
@@ -107,7 +108,7 @@ const team = [
       {
         name: "Shephali Ghimire",
         role: "Co-Founder / Marketing Director",
-        image: { src: imageLeslieAlexander },
+        image: { src: imageShephaliGhimire },
       },
       {
         name: "Suman Bhurtel",
@@ -120,32 +121,34 @@ const team = [
     title: "Team",
     people: [
       {
-        name: "Maftuna Azadova",
-        role: "Adminstrator",
-        image: { src: imageChelseaHagon },
+        name: "Przemysław Mazurek",
+        role: "Sales Director",
+        image: { src: imagePrzemyslawMazurek },
+      },
+
+      {
+        name: "Maciej Zieliński",
+        role: "Accountant / Financial Advisor",
+        image: { src: imageMaciejZielinski },
+      },
+
+      {
+        name: "Patrycja Machajska",
+        role: "Legal Advisor / Immigration Lawyer",
+        image: { src: imagePatrycjaMachajska },
       },
       {
         name: "Mieraf Tesfaye",
         role: "Digital Marketing specialist ",
-        image: { src: imageEmmaDorsey },
+        image: { src: imageMierafGeberhiwot },
       },
       {
-        name: "Leonard Krasner",
-        role: "VP, User Experience",
-        image: { src: imageLeonardKrasner },
+        name: "Maftuna Azadova",
+        role: "Adminstrator",
+        image: { src: imageMaftunaAzadova },
       },
       {
-        name: "Maciej Zieliński",
-        role: "Accountant / Financial Advisor",
-        image: { src: imageBlakeReid },
-      },
-      {
-        name: "Patrycja Machajska",
-        role: "Business Developer",
-        image: { src: imageKathrynMurphy },
-      },
-      {
-        name: "Blake Reid",
+        name: "Udeshya Ghimire",
         role: "Senior Recruiter",
         image: { src: imageMichaelFoster },
       },
@@ -218,9 +221,20 @@ export async function generateMetadata(
   }
 }
 
-export default async function About({ params: { locale } }: { params: { locale: string } }) {
+export default async function About({
+  article,
+  children,
+  params: { locale },
+}: {
+  article: MDXEntry<Article>
+  children: React.ReactNode
+  params: { locale: string }
+}) {
   const t = await getTranslations({ locale, namespace: 'PageIntro' })
   const articles = await loadArticles(locale)
+  const moreArticles = articles
+  .filter(({ metadata }) => metadata)
+  .slice(0, 2)
 
   return (
     <>
@@ -248,12 +262,16 @@ export default async function About({ params: { locale } }: { params: { locale: 
       <Values />
       <Team />
 
-      <PageLinks
-        className="mt-24 sm:mt-32 lg:mt-40"
-        title={t("linktitle")}
-        intro={t("intro")}
-        pages={articles}
-      />
+      {moreArticles.length > 0 && (
+        <PageLinks
+          className="mt-24 sm:mt-32 lg:mt-40"
+          title={t('linktitle')}
+          pages={moreArticles.map((article) => ({
+            ...article,
+            href: `/${locale}${article.href}`,
+          }))}
+        />
+      )}
 
       <ContactSection />
     </>

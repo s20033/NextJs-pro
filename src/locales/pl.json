@@ -1,30 +1,31 @@
+
 {
   "Home": {
-    "headline": "Grupa Krayr: Czołowa agencja zatrudnienia w Polsce i poza jej granicami",
-    "description": "Zapewniamy elastyczne i wykwalifikowane rozwiązania kadrowe dla średnich i dużych firm, specjalizując się w wynajmie pracowników, zatrudnianiu tymczasowym, zatrudnianiu z zagranicy oraz legalizacji pracowników z Europy Wschodniej i Azji.",
+    "headline": "Grupa Krayr: Czołowa agencja zatrudnienia w Polsce i na arenie międzynarodowej",
+    "description": "Zapewniamy elastyczne i wykwalifikowane rozwiązania kadrowe dla średnich i dużych przedsiębiorstw, specjalizując się w wynajmie pracowników, zatrudnieniu tymczasowym, rekrutacji międzynarodowej oraz legalizacji pracowników z Europy Wschodniej i Azji.",
     "client": "Alstom",
-    "quote": "Ekspertyza Grupy Krayr i spersonalizowane podejście sprawiły, że nasz proces rekrutacji przebiegł bezproblemowo. Jesteśmy zadowoleni z jakości dostarczonych kandydatów."
+    "quote": "Ekspertyza Grupy Krayr oraz indywidualne podejście zapewniły płynny przebieg naszego procesu rekrutacji. Jesteśmy bardzo zadowoleni z jakości dostarczanych kandydatów."
   },
   "Industries": {
-    "title": "Działamy w tych branżach z naszym zespołem ekspertów"
+    "title": "Działamy w wielu branżach z pomocą naszego zespołu ekspertów"
   },
   "Services": {
     "eyebrow": "Usługi",
     "title": "Nasze kompleksowe usługi - Rekrutacja, Praca Tymczasowa i Outsourcing Procesów",
-    "description": "Doświadcz bezproblemowej, opłacalnej rekrutacji dzięki innowacyjnej platformie Grupy Krayr, która łączy Cię z najlepszymi międzynarodowymi talentami bez kosztów wstępnych. Nasz model \"no win, no pay\" gwarantuje, że płacisz tylko za udane zatrudnienia, co sprawia, że globalna rekrutacja jest efektywna i przystępna cenowo.",
+    "description": " Skorzystaj z bezproblemowej i opłacalnej rekrutacji dzięki innowacyjnej platformie Grupy Krayr, która łączy Cię z najlepszymi talentami na świecie bez kosztów wstępnych. Nasz model „no win, no pay” gwarantuje płatność wyłącznie za udane zatrudnienia, co czyni globalną rekrutację efektywną i przystępną cenowo.",
     "recruitmentTitle": "Usługi Rekrutacyjne",
-    "recruitmentDescription": "Grupa Krayr oferuje specjalistyczne usługi rekrutacyjne w Polsce, aby pomóc Ci znaleźć idealnych kandydatów do wysokowydajnych zespołów. Nasz rygorystyczny proces selekcji zapewnia dostęp do najlepszych talentów.",
+    "recruitmentDescription": "Grupa Krayr oferuje specjalistyczne usługi rekrutacyjne w Polsce, pomagając w znalezieniu idealnych kandydatów do tworzenia wysokowydajnych zespołów. Nasz rygorystyczny proces selekcji zapewnia dostęp do najlepszych talentów na rynku",
     "outsourcingTitle": "Outsourcing Procesów",
-    "outsourcingDescription": "Skup się na swoich kluczowych działaniach biznesowych, a my zajmiemy się Twoimi projektami. Nasze usługi outsourcingowe zapewniają wydajne i zgodne z przepisami rozwiązania kadrowe dostosowane do potrzeb Twojej firmy.",
+    "outsourcingDescription": " Skoncentruj się na swoich kluczowych działaniach biznesowych, a my zajmiemy się realizacją Twoich projektów. Nasze usługi outsourcingowe zapewniają efektywne i zgodne z przepisami rozwiązania kadrowe dostosowane do specyfiki Twojej firmy.",
     "staffingTitle": "Praca Tymczasowa",
-    "staffingDescription": "Potrzebujesz elastycznych, krótkoterminowych rozwiązań kadrowych? Nasze usługi pracy tymczasowej zapewniają odpowiedni personel dokładnie wtedy, gdy go potrzebujesz, bez długoterminowych zobowiązań.",
+    "staffingDescription": " Potrzebujesz elastycznych, krótkoterminowych rozwiązań kadrowych? Nasze usługi pracy tymczasowej dostarczają odpowiedni personel dokładnie wtedy, gdy go potrzebujesz, bez długoterminowych zobowiązań.",
     "legalizationTitle": "Legalizacja Cudzoziemców",
-    "legalizationDescription": "Grupa Krayr oferuje kompleksowe usługi legalizacji pracowników zagranicznych, zapewniając płynny i zgodny z przepisami proces zatrudnienia międzynarodowego. Zajmujemy się wsparciem w zakresie wiz i zezwoleń na pracę, zgodnie z przepisami imigracyjnymi."
+    "legalizationDescription": "Grupa Krayr oferuje kompleksowe usługi legalizacji pracowników zagranicznych, zapewniając płynny i zgodny z przepisami proces rekrutacji międzynarodowej. Oferujemy wsparcie w zakresie wiz i zezwoleń na pracę zgodnie z obowiązującymi przepisami imigracyjnymi."
   },
   "Reasons": {
-    "eyebrow": "Twoje powody",
+    "eyebrow": " Twoje powody",
     "title": "Dlaczego warto wybrać Grupę Krayr?",
-    "description": "Oto główne powody, dla których jesteśmy najlepszą agencją zatrudnienia i jak nasze usługi są dostosowane do Twoich potrzeb.",
+    "description": "Oto główne powody, dla których jesteśmy najlepszym partnerem w zakresie zatrudnienia i jak nasze usługi spełniają Twoje oczekiwania.",
     "globalReachTitle": "Zasięg Globalny",
     "globalReachDescription": "Nasza rozbudowana sieć pozwala nam pozyskiwać najlepsze talenty z całego świata, zaspokajając Twoje globalne potrzeby rekrutacyjne.",
     "quickEfficientTitle": "Szybko i Efektywnie",
@@ -34,15 +35,14 @@
     "employmentCostTitle": "Obniżenie Kosztów Zatrudnienia",
     "employmentCostDescription": "Nasze opłacalne rozwiązania pomagają obniżyć koszty zatrudnienia, zapewniając jednocześnie wysokiej jakości talenty.",
     "testingTitle": "Rygorystyczne Testowanie Kandydatów",
-    "testingDescription": "Rygorystycznie testujemy potencjalnych pracowników, zapewniając, że prezentujemy tylko najbardziej wykwalifikowanych kandydatów.",
+    "testingDescription": "Rygorystycznie testujemy potencjalnych pracowników, aby zapewnić, że przedstawiamy tylko najbardziej wykwalifikowanych kandydatów.",
     "innovationTitle": "Innowacja",
     "innovationDescription": "Wykorzystujemy najnowsze technologie, aby dostarczać efektywne i skuteczne rozwiązania kadrowe, które utrzymają Cię na czele konkurencji."
   },
-
   "Culture": {
     "title": "Nasza kultura - 3E",
     "Equality": "Równość",
-    "Equality_description": "Traktujemy każdego członka zespołu z równym szacunkiem i możliwościami, tworząc miejsce pracy, w którym głos każdego jest słyszalny i ceniony.",
+    "Equality_description": "Traktujemy każdego członka zespołu z równym szacunkiem i dajemy równe szanse, tworząc miejsce pracy, w którym głos każdego jest słyszalny i ceniony.",
     "Empathy": "Empatia",
     "Empathy_description": "Rozumiemy i szanujemy wyzwania osobiste, oferując wsparcie i zrozumienie, aby utrzymać zdrową równowagę między pracą a życiem osobistym.",
     "Empowerment": "Upoważnienie",
@@ -73,22 +73,20 @@
     "eyebrow": "O nas",
     "title": "Rewolucjonizowanie rozwiązań kadrowych",
     "description": "Nasza siła tkwi w innowacjach i zaangażowaniu, które stawia naszych klientów w centrum wszystkiego, co robimy.",
-    "content1": "Grupa Krayr została założona przez dwóch entuzjastycznych profesjonalistów, którzy dostrzegli pilną potrzebę wykwalifikowanej siły roboczej w Europie, aby utrzymać pozycję lidera przemysłowego na świecie. Obserwując negatywny wpływ niedoborów siły roboczej na rozwój firmy, w połączeniu z wysokimi kosztami i ograniczonymi rozwiązaniami oferowanymi przez istniejące agencje rekrutacyjne, postanowiliśmy coś zmienić. Naszą misją jest dostarczanie przystępnych cenowo, zróżnicowanych i skutecznych rozwiązań kadrowych, które zaspokajają dynamiczne potrzeby średnich i dużych firm,",
+    "content1": "Grupa Krayr została założona przez dwóch entuzjastycznych profesjonalistów, którzy dostrzegli pilną potrzebę wykwalifikowanej siły roboczej w Europie, aby utrzymać pozycję lidera przemysłowego na świecie. Zauważając negatywny wpływ niedoborów siły roboczej na rozwój firm, w połączeniu z wysokimi kosztami i ograniczonymi rozwiązaniami oferowanymi przez istniejące agencje rekrutacyjne, postanowiliśmy coś zmienić. Naszą misją jest dostarczanie przystępnych cenowo, zróżnicowanych i skutecznych rozwiązań kadrowych, które odpowiadają dynamicznym potrzebom średnich i dużych firm.",
     "content2": "Od momentu powstania Grupa Krayr jest zaangażowana w rewolucjonizowanie rekrutacji i rozwiązań kadrowych poprzez integrację najnowocześniejszych technologii, trendów rynkowych i wymagań branżowych. Specjalizujemy się zarówno w rekrutacji krajowej, jak i międzynarodowej, rozwiązując problem krajowego bezrobocia i zaspokajając zapotrzebowanie na wykwalifikowanych pracowników z Europy Wschodniej i Azji. Nasze zaangażowanie w docenianie zasobów ludzkich i wykorzystywanie innowacyjnych strategii zapewnia, że dostarczamy wyjątkowe wyniki, pozycjonując nas jako wiarygodnego i myślącego przyszłościowo partnera rekrutacyjnego.",
     "HappyTalents": "1200+",
     "HappyTalentsLabel": "Zadowoleni pracownicy",
     "HappyClients": "25+",
     "HappyClientsLabel": "Zadowoleni klienci",
-    "InvoicesBilled": "$25M",
-    "InvoicesBilledLabel": "Wystawione faktury",
+    "InvoicesBilled": "7+ lat",
+    "InvoicesBilledLabel": "Doświadczenie branżowe",
     "linktitle": "Z bloga",
-    "intro": "Bądź na bieżąco z najnowszymi aktualizacjami branżowymi, gdy nasz zespół bada innowacyjne rozwiązania i dzieli się spostrzeżeniami na temat trendów na rynku pracy i strategii kadrowych."
-
+    "intro": "Bądź na bieżąco z najnowszymi aktualizacjami branżowymi, gdy nasz zespół bada innowacyjne rozwiązania i dzieli się spostrzeżeniami na temat trendów na rynku pracy oraz strategii kadrowych."
   },
   "PageLinks": {
        "readMore":"Czytaj więcej"
   },
-
   "ContactPage": {
     "eyebrow": "Skontaktuj się z nami",
     "title": "Pracujmy razem",
@@ -108,10 +106,9 @@
     "submit": "Wyślij",
     "lets_work_together": "Pracujmy razem"
   },
-
   "ContactDetails": {
     "ourOfficesTitle": "Nasze biura",
-    "ourOfficesDescription": "Preferujesz załatwiać sprawy osobiście? Mamy dla Ciebie nasze adresy biurowe.",
+    "ourOfficesDescription": "Preferujesz załatwiać sprawy osobiście? Oto nasze adresy biurowe.",
     "emailUsTitle": "Napisz do nas",
     "careersLabel": "Kariera",
     "careersEmail": "resume@grupakrayr.pl",
@@ -120,19 +117,17 @@
     "reachByPhoneTitle": "Kontakt telefoniczny",
     "polandLabel": "Polska",
     "bulgariaLabel": "Bułgaria",
-    "followUsTitle": "podążaj za nami"
+    "followUsTitle": "Śledź nas"
   },
-
   "career": {
     "introEyebrow": "Kariera",
     "introTitle": "Dołącz do naszego zespołu w Grupie Krayr",
     "introText": "W Grupie Krayr oferujemy unikalną możliwość dołączenia do zespołu, który jest zaangażowany w rewolucjonizowanie branży rekrutacyjnej. Dowiedz się, jak możesz wnieść swój wkład i rozwijać się razem z nami."
   },
-
   "expertiseSection": {
     "eyebrow": "Nasza wiedza",
     "title": "Kompleksowe usługi w zakresie zatrudniania zagranicznego",
-    "text": "Nasza wiedza w zakresie zatrudniania zagranicznego gwarantuje, że zarówno firmy, jak i pracownicy międzynarodowi otrzymują wsparcie niezbędne do płynnej współpracy.",
+    "text": "Nasza wiedza w zakresie zatrudniania zagranicznego gwarantuje, że zarówno firmy, jak i pracownicy międzynarodowi otrzymują wsparcie niezbędne do efektywnej współpracy.",
     "recruitmentTitle": "Rekrutacja",
     "recruitmentText": "Pomagamy w znalezieniu najlepszych globalnych talentów, aby spełnić potrzeby Twojej firmy.",
     "onboardingTitle": "Wdrożenie i wsparcie",
@@ -143,11 +138,11 @@
   "legalizationSection": {
     "eyebrow": "Usługi legalizacyjne",
     "title": "Płynna i zgodna legalizacja dla pracowników zagranicznych",
-    "text": "Grupa Krayr oferuje kompleksowe usługi legalizacyjne, aby zapewnić, że Twoja międzynarodowa kadra jest zgodna z przepisami i bezproblemowa.",
+    "text": "Grupa Krayr oferuje kompleksowe usługi legalizacyjne, aby zapewnić, że Twoja międzynarodowa kadra jest zgodna z przepisami i działa bezproblemowo.",
     "visaAssistanceTitle": "Pomoc w uzyskaniu wizy i pozwolenia na pracę",
     "visaAssistanceText": "Zajmujemy się aplikacją i odnowieniem wiz oraz pozwoleń na pracę, zapewniając zgodność z wymogami prawnymi, aby Twoi pracownicy mogli pracować legalnie i efektywnie.",
     "complianceTitle": "Zgodność z przepisami imigracyjnymi",
-    "complianceText": "Nasz zespół dba o przestrzeganie przepisów imigracyjnych, nawigując po złożonych ramach prawnych, aby Twoje operacje były zgodne z przepisami i bezstresowe.",
+    "complianceText": " Nasz zespół dba o przestrzeganie przepisów imigracyjnych, nawigując po złożonych ramach prawnych, aby Twoje operacje były zgodne z przepisami i bezstresowe.",
     "documentVerificationTitle": "Weryfikacja dokumentów",
     "documentVerificationText": "Pomagamy w weryfikacji i tłumaczeniu niezbędnych dokumentów, aby zapewnić płynne wdrożenie, zapewniając autentyczność i legalność.",
     "ongoingSupportTitle": "Stałe wsparcie",
@@ -158,7 +153,6 @@
     "title": "Poznaj nasze oferty pracy",
     "text": "Odkryj ekscytujące możliwości kariery dostępne w Grupie Krayr. Dołącz do naszego zespołu i zrób różnicę w świecie rekrutacji i zatrudniania."
   },
-
   "process": {
     "pageTitle": "Nasz Proces",
     "pageDescription": "Wierzymy w efektywność i skuteczność zasobów, aby zapewnić najwyższej jakości rozwiązania kadrowe naszym klientom.",
@@ -172,9 +166,9 @@
       "detailedQuestionnaires": "Szczegółowe Kwestionariusze",
       "detailedQuestionnairesText": "Zbieramy wszystkie kwestionariusze związane z Twoimi potrzebami kadrowymi i wymaganiami dotyczącymi umiejętności.",
       "employeeSurveys": "Ankiety Pracownicze",
-      "employeeSurveysText": "Zbieramy wszystkie kwestionariusze związane z Twoimi potrzebami kadrowymi i wymaganiami dotyczącymi umiejętności.",
+      "employeeSurveysText": "Przeprowadzamy ankiety wśród pracowników, aby lepiej zrozumieć ich potrzeby i oczekiwania.",
       "feasibilityStudies": "Studia Wykonalności",
-      "feasibilityStudiesText": "Zbieramy wszystkie kwestionariusze związane z Twoimi potrzebami kadrowymi i wymaganiami dotyczącymi umiejętności.",
+      "feasibilityStudiesText": "Oceniamy wykonalność proponowanych rozwiązań w kontekście Twoich potrzeb kadrowych i wymagań.",
       "costEffectiveSolution": "Gdy w pełni zrozumiemy Twoje potrzeby, oferujemy kompleksowe rozwiązanie, a co ważniejsze, kosztowne!",
       "blockquoteAuthor": {
         "name": "Debra Fiscal",
@@ -186,7 +180,7 @@
       "title": "Dostarczanie Rozwiązania",
       "description": "W Grupie Krayr starannie wybieramy idealnych kandydatów z naszego obszernego zasobu talentów, zapewniając dopasowanie do Twoich celów biznesowych. Nasz szczegółowy proces selekcji obejmuje weryfikację doświadczenia i umiejętności, a także przeprowadzanie kompleksowych rozmów kwalifikacyjnych zarówno online, jak i osobiście dla Twojej wygody.",
       "solutionDeliveryText": "Nasz proces dostarczania rozwiązania obejmuje skrupulatną weryfikację profilu kandydata, dopasowane rozmowy kwalifikacyjne i płynne wdrożenie zatrudnienia. Priorytetem jest dla nas dokładność i efektywność, aby idealnie dopasować się do Twoich potrzeb.",
-      "integrationText": "Nasi dedykowani kierownicy projektów ściśle współpracują z Twoimi przedstawicielami, aby zapewnić płynne przejście i zapewnić wsparcie dla nowych pracowników, wspierając udaną integrację z Twoim zespołem.",
+      "integrationText": "Nasi dedykowani kierownicy projektów ściśle współpracują z Twoimi przedstawicielami, aby zapewnić płynne przejście i wsparcie dla nowych pracowników, wspierając ich integrację z Twoim zespołem.",
       "includedInThisPhaseTitle": "Włączone w ten etap",
       "tagListItems": [
         "Szczegółowe kwestionariusze",
@@ -198,8 +192,8 @@
       ]
     },
     "deliverSection": {
-      "title": "Wsparcie Ciągłe",
-      "description": "Nasze zaangażowanie w Twoje sukcesy wykracza poza proces zatrudnienia. Zapewniamy ciągłe wsparcie, aby zapewnić płynne włączenie i trwały sukces nowych pracowników w Twojej firmie.",
+      "title": "Ciągłe wsparcie",
+      "description": "Zapewniamy ciągłe wsparcie, aby zapewnić płynne wdrożenie i trwały sukces nowych pracowników w Twojej firmie.",
       "supportProcessText": "Nasz kompleksowy proces wsparcia obejmuje regularne wizyty, sesje orientacyjne i szkoleniowe, doradztwo oraz organizowanie wydarzeń i spotkań. Środki te zapewniają, że nowi pracownicy dostosowują się szybko i efektywnie do Twojego środowiska biznesowego.",
       "successText": "Oferując ciągłe wsparcie, gwarantujemy, że Twoi nowi pracownicy będą się rozwijać i wnosić znaczący wkład w rozwój i sukces Twojej firmy.",
       "includedInThisPhaseTitle": "Włączone w ten etap",
@@ -211,13 +205,15 @@
       "comprehensiveIntegrationText": "Regularne wizyty, sesje orientacyjne, szkoleniowe oraz wydarzenia społeczne, aby zapewnić, że nowi pracownicy dostosowują się i rozwijają w Twojej firmie."
     }
   },
-
   "applicationForm": {
+    "subtitle":"Please fill the form to apply for the job",
     "firstName": "Imię",
     "lastName": "Nazwisko",
     "email": "Email",
     "phone": "Telefon",
     "cv": "Prześlij CV",
+    "message":"list motywacyjny.",
+    "messagePlaceholder":"Napisz krótki list motywacyjny.",
     "agreeToTerms": "Zgadzam się na przetwarzanie moich danych osobowych przez Grupa Krayr zgodnie z polityką prywatności",
     "cancel": "Anuluj",
     "submit": "Złóż aplikację",
@@ -268,17 +264,15 @@
     "TikTok": "TikTok",
     "LinkedIn": "LinkedIn"
   },
-
   "newsletter": {
     "title": "Zapisz się do naszego newslettera",
     "description": "Subskrybuj, aby otrzymywać najnowsze wiadomości, artykuły, zasoby i inspiracje.",
-    "placeHolder": "Napisz swoich Email"
+    "placeHolder": "Wpisz swój adres email"
   },
   "cookies": {
     "text": "Używamy plików cookie, aby poprawić komfort korzystania z naszej witryny. Korzystając z naszej witryny, użytkownik akceptuje stosowanie przez nas plików cookie.",
     "button": "Zgadzam się"
   },
-
   "jobCard": {
     "applyNow": "Aplikuj teraz",
     "applyFor": "Aplikuj na",
@@ -291,7 +285,6 @@
     "contractType": "Typ umowy",
     "location": "Lokalizacja"
   },
-
   "faq": {
     "searchPlaceholder": "Szukaj...",
     "prevButton": "Poprzednia",
@@ -314,41 +307,38 @@
       "15": "Jak Grupa Krayr wspiera relokację pracowników zagranicznych do Bułgarii?"
     },
     "answers": {
-      "1": "Outsourcing rozwiązań kadrowych w Polsce oferuje wiele korzyści, w tym efektywność kosztową, dostęp do wykwalifikowanej puli talentów oraz zmniejszenie obciążenia administracyjnego. Koszty pracy w Polsce są zazwyczaj niższe w porównaniu do Europy Zachodniej, co może pomóc firmom zaoszczędzić na wydatkach operacyjnych. Dodatkowo Polska dysponuje dobrze wykształconą i wykwalifikowaną siłą roboczą, szczególnie w dziedzinach takich jak IT, inżynieria i produkcja. Outsourcing pozwala również firmom skupić się na kluczowych działaniach, pozostawiając rekrutację i zadania administracyjne wyspecjalizowanym dostawcom.",
-      "2": "Zatrudnianie pracowników tymczasowych w Polsce polega na współpracy z agencjami zatrudnienia, które specjalizują się w zatrudnieniu tymczasowym. Agencje zajmują się rekrutacją, zgodnością z polskimi przepisami prawa pracy oraz zarządzaniem wynagrodzeniami. Firmy mogą uzyskać elastyczną siłę roboczą na krótkoterminowe potrzeby, takie jak sezonowe szczyty lub projekty. Ważne jest, aby wybrać agencję z dobrą reputacją i doświadczeniem w Twojej branży.",
-      "3": "Pracownicy zagraniczni w Polsce muszą przestrzegać kilku przepisów prawa pracy, w tym uzyskać odpowiednią wizę i pozwolenie na pracę. Kluczowe przepisy obejmują zgodność z minimalnymi standardami wynagrodzenia, godzinami pracy oraz prawami pracowników określonymi w Kodeksie Pracy. Ważne jest, aby pracodawcy upewnili się, że pracownicy zagraniczni mają ważne pozwolenia na pracę i przestrzegają wszystkich wymogów prawnych, aby uniknąć kar.",
-      "4": "Proces zatrudniania na stałe w Polsce obejmuje kilka kroków: określenie wymagań dotyczących stanowiska, pozyskiwanie kandydatów przez portale pracy lub agencje rekrutacyjne, przeprowadzanie rozmów kwalifikacyjnych i finalizowanie umów o pracę. Pracodawcy muszą również zapewnić zgodność z polskimi przepisami prawa pracy dotyczącymi umów o pracę, okresów próbnych i warunków wypowiedzenia. Zaleca się współpracę z lokalnymi ekspertami ds. rekrutacji, aby sprawnie przeprowadzić te procesy.",
-      "5": "Zapewnienie zgodności z polskim prawem imigracyjnym wymaga uzyskania odpowiednich wiz i pozwoleń na pracę dla pracowników zagranicznych. Pracodawcy powinni upewnić się, że wszelkie dokumenty są kompletne i aktualne, w tym umowy o pracę i pozwolenia na pobyt. Korzystne jest skonsultowanie się z specjalistami ds. imigracji lub doradcami prawnymi, aby upewnić się, że wszystkie wymogi prawne są spełnione i uniknąć problemów z organami państwowymi.",
-      "6": "Wyzwania związane z zatrudnianiem talentów z zagranicy dla firm w Polsce obejmują poruszanie się po skomplikowanych przepisach imigracyjnych, różnice kulturowe oraz zapewnienie zgodności z lokalnymi przepisami prawa pracy. Dodatkowo mogą wystąpić bariery językowe i potrzeba wsparcia w zakresie relokacji dla międzynarodowych pracowników. Współpraca z doświadczonymi agencjami zatrudnienia lub doradcami może pomóc w skutecznym rozwiązaniu tych wyzwań.",
-      "7": "Grupa Krayr wspiera firmy, zarządzając całym procesem relokacji pracowników zagranicznych. Obejmuje to uzyskiwanie wiz i pozwoleń na pracę, pomoc w zakwaterowaniu i organizacji codziennych spraw oraz programy orientacyjne, które pomagają pracownikom przystosować się do nowego środowiska. Naszym celem jest zapewnienie płynnego przejścia i integracji międzynarodowych pracowników.",
-      "8": "Branże, które najbardziej korzystają z rozwiązań kadrowych tymczasowych w Polsce, to produkcja, logistyka, IT i hotelarstwo. Sektory te często doświadczają zmienności popytu i wymagają elastycznych rozwiązań kadrowych, aby zarządzać okresami szczytowymi lub pracą projektową. Pracownicy tymczasowi pomagają utrzymać produktywność i zaspokoić potrzeby biznesowe bez długoterminowych zobowiązań.",
-      "9": "Najczęstsze rodzaje wiz roboczych dla pracowników zagranicznych w Polsce to pozwolenie na pracę typu A, które dotyczy zatrudnienia u konkretnego pracodawcy, oraz pozwolenie na pracę typu B, które dotyczy stanowisk kierowniczych. Dodatkowo dostępna jest karta niebieska dla wysoko wykwalifikowanych pracowników. Każdy typ wizy ma określone wymagania i procesy aplikacyjne.",
-      "10": "Aby znaleźć wiarygodne agencje zatrudnienia w Polsce, warto poszukać agencji z dobrą reputacją w Twojej branży, pozytywnymi opiniami klientów oraz jasnymi akredytacjami. Stowarzyszenia branżowe i sieci mogą również dostarczyć rekomendacji. Ważne jest, aby wybrać agencję, która rozumie lokalne przepisy prawa pracy i ma doświadczenie w zarządzaniu Twoimi specyficznymi potrzebami kadrowymi.",
-      "11": "Zatrudnianie pracowników zagranicznych w Bułgarii obejmuje kilka kroków w celu zapewnienia zgodności z lokalnymi przepisami. Po pierwsze, pracodawcy muszą uzyskać pozwolenie na pracę od Bułgarskiej Agencji Zatrudnienia. Wymaga to przedstawienia dowodów na kwalifikacje pracownika i upewnienia się, że nie ma odpowiednich bułgarskich kandydatów na dane stanowisko. Po uzyskaniu pozwolenia pracownik musi ubiegać się o wizę długoterminową w bułgarskim konsulacie w swoim kraju ojczystym. Pracodawcy muszą również przestrzegać bułgarskich przepisów prawa pracy, w tym zarejestrować pracownika w Narodowej Agencji Dochodów.",
-      "12": "Grupa Krayr specjalizuje się w zarządzaniu pełnym procesem legalizacji pracowników zagranicznych w Bułgarii. Obsługujemy aplikacje o pozwolenia na pracę i wizy długoterminowe, zapewniając zgodność z bułgarskimi przepisami imigracyjnymi. Nasze usługi obejmują weryfikację dokumentów, tłumaczenia i bieżące wsparcie w rozwiązywaniu problemów prawnych lub biurokratycznych, które mogą się pojawić.",
-      "13": "Zatrudnianie międzynarodowych talentów w Bułgarii oferuje wiele korzyści, w tym dostęp do różnorodnej i wykwalifikowanej siły roboczej, efektywności kosztowe oraz możliwość obsadzenia ról niszowych, które mogą być trudne do wypełnienia lokalnie. Konkurencyjne struktury wynagrodzeń w Bułgarii i korzystne warunki biznesowe czynią ją atrakcyjnym miejscem dla firm poszukujących rozszerzenia puli talentów.",
-      "14": "Grupa Krayr oferuje szereg rozwiązań kadrowych w Bułgarii, w tym outsourcing, pracę tymczasową, rozwiązania onsite i zatrudnienie na stałe. Oferujemy dostosowane rozwiązania do Twoich specyficznych potrzeb, czy to prace tymczasowe na okresy szczytowe, pracowników na długoterminowe role, czy outsourcing całkowitego zarządzania personelem. Nasza wiedza zapewnia, że znajdziesz odpowiednie talenty efektywnie i skutecznie.",
-      "15": "Grupa Krayr oferuje kompleksowe wsparcie w zakresie relokacji pracowników zagranicznych do Bułgarii. Nasze usługi obejmują pomoc w uzyskaniu niezbędnych wiz i pozwoleń na pracę, organizację zakwaterowania i pomoc pracownikom w adaptacji do nowego środowiska. Zapewniamy również wskazówki dotyczące integracji kulturowej, aby zapewnić płynne przejście do kultury pracy Twojej firmy."
+      "1": "Outsourcing rozwiązań kadrowych w Polsce przynosi liczne korzyści, w tym optymalizację kosztów, dostęp do wysoce wykwalifikowanej kadry oraz redukcję obciążenia administracyjnego. Koszty pracy w Polsce są niższe niż w Europie Zachodniej, co pozwala firmom na znaczne oszczędności operacyjne. Polska oferuje także wysoko wykształconą i kompetentną siłę roboczą, zwłaszcza w obszarach takich jak IT, inżynieria i produkcja. Outsourcing umożliwia skoncentrowanie się na kluczowych działaniach, podczas gdy procesy rekrutacji i administracji przejmuje wyspecjalizowany partner.",
+      "2": "Zatrudnianie pracowników tymczasowych w Polsce odbywa się poprzez współpracę z wyspecjalizowanymi agencjami zatrudnienia, które zajmują się rekrutacją, przestrzeganiem lokalnych przepisów prawa pracy oraz zarządzaniem wynagrodzeniami. Firmy mają możliwość pozyskania elastycznej siły roboczej do realizacji krótkoterminowych potrzeb, takich jak sezony wzmożonego popytu czy projekty. Kluczowe jest wybór agencji z ugruntowaną reputacją i doświadczeniem w branży.",
+      "3": "Zatrudnianie pracowników zagranicznych w Polsce wiąże się z przestrzeganiem przepisów prawa pracy, w tym uzyskaniem odpowiednich wiz i pozwoleń na pracę. Kluczowe przepisy obejmują zgodność z minimalnymi standardami wynagrodzenia, godzinami pracy oraz prawami pracowników zgodnie z Kodeksem Pracy. Pracodawcy muszą zapewnić, że pracownicy zagraniczni posiadają ważne pozwolenia na pracę i przestrzegają wszystkich wymogów prawnych, aby uniknąć potencjalnych sankcji.",
+      "4": "Proces zatrudniania na stałe w Polsce składa się z kilku kluczowych etapów: określenie wymagań stanowiskowych, pozyskiwanie kandydatów za pośrednictwem portali pracy lub agencji rekrutacyjnych, przeprowadzanie rozmów kwalifikacyjnych oraz finalizacja umów o pracę. Pracodawcy muszą również zapewnić zgodność z polskimi przepisami prawa pracy, obejmującymi umowy o pracę, okresy próbne oraz warunki wypowiedzenia. Współpraca z lokalnymi ekspertami ds. rekrutacji może znacząco usprawnić ten proces.",
+      "5": "Zapewnienie zgodności z polskim prawem imigracyjnym wymaga uzyskania odpowiednich wiz i pozwoleń na pracę dla pracowników zagranicznych. Pracodawcy powinni zadbać o kompletność i aktualność wszystkich dokumentów, takich jak umowy o pracę oraz pozwolenia na pobyt. Konsultacja z ekspertami ds. imigracji lub doradcami prawnymi jest zalecana, aby upewnić się, że wszystkie wymogi prawne są spełnione i uniknąć problemów z organami administracji publicznej.",
+      "6": "Wyzwania związane z zatrudnianiem talentów z zagranicy w Polsce obejmują poruszanie się po złożonych przepisach imigracyjnych, różnice kulturowe oraz zapewnienie zgodności z lokalnymi przepisami prawa pracy. Dodatkowo mogą pojawić się bariery językowe oraz potrzeba wsparcia w zakresie relokacji międzynarodowych pracowników. Współpraca z doświadczonymi agencjami zatrudnienia lub doradcami może skutecznie adresować te wyzwania.",
+      "7": "Grupa Krayr oferuje kompleksowe wsparcie w zakresie zarządzania procesem relokacji pracowników zagranicznych. Nasze usługi obejmują uzyskiwanie wiz i pozwoleń na pracę, pomoc w zakwaterowaniu oraz organizację codziennych spraw, a także programy orientacyjne wspierające adaptację pracowników do nowego środowiska. Naszym celem jest zapewnienie płynnego przejścia i skutecznej integracji międzynarodowych pracowników.",
+      "8": "Branże, które szczególnie korzystają z rozwiązań kadrowych tymczasowych w Polsce, to produkcja, logistyka, IT oraz hotelarstwo. Sektory te często zmagają się z fluktuacjami popytu i wymagają elastycznych rozwiązań kadrowych, aby efektywnie zarządzać okresami wzmożonego zapotrzebowania lub projektami. Pracownicy tymczasowi przyczyniają się do utrzymania wysokiej produktywności i zaspokajają bieżące potrzeby biznesowe, bez długoterminowych zobowiązań.",
+      "9": "W Polsce najczęściej występujące rodzaje wiz roboczych dla pracowników zagranicznych to pozwolenie na pracę typu A, odnoszące się do zatrudnienia u konkretnego pracodawcy, oraz pozwolenie na pracę typu B, przeznaczone dla stanowisk kierowniczych. Dodatkowo dostępna jest karta niebieska, skierowana do wysoko wykwalifikowanych pracowników. Każdy typ wizy wiąże się z określonymi wymaganiami i procedurami aplikacyjnymi.",
+      "10": "Aby znaleźć rzetelne agencje zatrudnienia w Polsce, warto zwrócić uwagę na agencje z ugruntowaną reputacją w danej branży, pozytywnymi opiniami klientów oraz odpowiednimi akredytacjami. Stowarzyszenia branżowe i sieci mogą również dostarczyć cennych rekomendacji. Kluczowe jest wybranie agencji, która dobrze rozumie lokalne przepisy prawa pracy i dysponuje doświadczeniem w zarządzaniu specyficznymi potrzebami kadrowymi.",
+      "11": "Zatrudnianie pracowników zagranicznych w Bułgarii wymaga przestrzegania kilku kroków w celu zapewnienia zgodności z lokalnymi przepisami. Pracodawcy muszą najpierw uzyskać pozwolenie na pracę od Bułgarskiej Agencji Zatrudnienia, co wiąże się z przedstawieniem dokumentów potwierdzających kwalifikacje pracownika oraz wykazaniem, że nie ma dostępnych bułgarskich kandydatów na dane stanowisko. Po uzyskaniu pozwolenia, pracownik musi aplikować o wizę długoterminową w bułgarskim konsulacie w swoim kraju. Dodatkowo, pracodawcy muszą przestrzegać bułgarskich przepisów prawa pracy, w tym zarejestrować pracownika w Narodowej Agencji Dochodów.",
+      "12": "Grupa Krayr specjalizuje się w kompleksowym zarządzaniu procesem legalizacji pracowników zagranicznych w Bułgarii. Nasze usługi obejmują obsługę aplikacji o pozwolenia na pracę oraz wizy długoterminowe, zapewniając pełną zgodność z bułgarskimi przepisami imigracyjnymi. W ramach naszych usług oferujemy także weryfikację dokumentów, tłumaczenia oraz bieżące wsparcie w zakresie rozwiązywania problemów prawnych i biurokratycznych.",
+      "13": "Zatrudnianie międzynarodowych talentów w Bułgarii przynosi liczne korzyści, w tym dostęp do zróżnicowanej i wykwalifikowanej siły roboczej, efektywność kosztową oraz możliwość obsadzenia ról niszowych, które mogą być trudne do wypełnienia lokalnie. Konkurencyjne struktury wynagrodzeń oraz korzystne warunki biznesowe czynią Bułgarię atrakcyjnym miejscem dla firm dążących do rozszerzenia puli talentów.",
+      "14": "Grupa Krayr dostarcza kompleksowe rozwiązania kadrowe w Bułgarii, obejmujące outsourcing, pracę tymczasową, usługi onsite oraz zatrudnienie na stałe. Oferujemy dostosowane rozwiązania w zależności od specyficznych potrzeb, takich jak prace tymczasowe w okresach szczytowych, długoterminowe zatrudnienie czy pełne zarządzanie personelem. Nasza wiedza i doświadczenie gwarantują skuteczne pozyskiwanie odpowiednich talentów.",
+      "15": "Grupa Krayr dostarcza kompleksowe wsparcie w zakresie relokacji pracowników zagranicznych do Bułgarii. Nasza oferta obejmuje pełną pomoc w uzyskaniu wymaganych wiz i pozwoleń na pracę, organizację zakwaterowania oraz wsparcie w procesie adaptacji do nowego środowiska. Dodatkowo, oferujemy doradztwo w zakresie integracji kulturowej, aby zapewnić płynne przejście i efektywne włączenie się pracowników do kultury pracy w Twojej firmie."
     }
   },
-
   "work": {
     "introEyebrow": "Nasza Praca",
     "introTitle": "Niezrównana wiedza branżowa.",
-    "introText": "Odkryj nasz kompleksowy pakiet rozwiązań dla pracowników, dostosowany do Twoich unikalnych potrzeb i napędzający rozwój Twojej firmy. Jesteśmy dumni z posiadania dźwigni w niektórych konkretnych branżach. Wierzymy w jakość, a nie ilość, dlatego angażujemy się w nasze doskonałe usługi w następujących branżach.",
-
+    "introText": "Odkryj naszą kompleksową ofertę rozwiązań kadrowych, dostosowaną do unikalnych potrzeb Twojej firmy, wspierającą jej rozwój. Specjalizujemy się w kluczowych branżach, zapewniając usługi najwyższej jakości. Nasze podejście opiera się na dążeniu do doskonałości w każdym aspekcie naszej działalności.",
     "block1": {
       "title": "Specjalistyczne spawanie i outsourcing procesów",
-      "description": "Usługi outsourcingu procesów Grupy Krayr są dostosowane do sektora spawalniczego. Nasi doświadczeni inżynierowie współpracują z klientami, aby zrozumieć ich specyficzne potrzeby i dostarczyć zespoły wykwalifikowanych spawaczy, koordynatorów i pomocników do efektywnego realizowania projektów. Nasze praktyczne podejście i ciągłe wsparcie zapewniają sukces projektu i satysfakcję klienta.",
-      "weldingProject": "Nasze zespoły spawalnicze są wyposażone w najnowsze narzędzia i techniki, aby dostarczać wysokiej jakości prace spełniające standardy branżowe. Outsourcingując swoje projekty spawalnicze do Grupy Krayr, zyskujesz dostęp do puli wykwalifikowanych profesjonalistów, którzy mogą precyzyjnie i z fachowością realizować skomplikowane zadania. Zapewniamy ciągłe wsparcie przez cały cykl życia projektu, gwarantując, że Twoje projekty zostaną ukończone na czas i w ramach budżetu.",
-      "blockquoteText": "Nasze projekty spawalnicze nigdy nie przebiegały sprawniej, odkąd rozpoczęliśmy współpracę z zespołem ekspertów Grupy Krayr"
+      "description": "Grupa Krayr oferuje specjalistyczne usługi outsourcingu procesów spawalniczych, które są precyzyjnie dostosowane do potrzeb sektora. Nasi wykwalifikowani inżynierowie współpracują ściśle z klientami, aby dostarczyć wyspecjalizowane zespoły spawaczy, koordynatorów i pomocników, zapewniając skuteczną realizację projektów. Nasze holistyczne podejście oraz stałe wsparcie gwarantują sukces i satysfakcję naszych klientów.",
+      "weldingProject": "Nasze zespoły spawalnicze korzystają z zaawansowanego sprzętu i nowoczesnych technik, aby dostarczać prace spełniające najwyższe standardy branżowe. Outsourcing projektów spawalniczych do Grupy Krayr umożliwia dostęp do wykwalifikowanych profesjonalistów zdolnych do precyzyjnego wykonywania skomplikowanych zadań. Gwarantujemy wsparcie na każdym etapie projektu, zapewniając terminowe i budżetowe ukończenie prac.",
+      "blockquoteText": "Nasze projekty spawalnicze zyskały nowy wymiar efektywności dzięki współpracy z ekspertami Grupy Krayr."
     },
-
     "block2": {
       "title": "Leasing pracowniczy w produkcji i wytwarzaniu",
       "description": "Nasza reputacja w zakresie doskonałości w branży produkcyjnej i wytwórczej opiera się na dostarczaniu niezawodnych i wykwalifikowanych pracowników. Nasze skupienie na dokładnym sprawdzaniu i szkoleniu zapewnia, że nasi pracownicy skutecznie przyczyniają się do realizacji Twoich celów produkcyjnych.",
-      "solutionDeliveryText": "Dzięki leasingowi pracowników z Grupy Krayr zyskujesz elastyczną siłę roboczą, którą można dostosować do wymagań Twoich harmonogramów produkcji. Nasz model leasingu zapewnia Ci siłę roboczą, której potrzebujesz, bez długoterminowych zobowiązań, co pozwala na skalowanie w górę lub w dół w zależności od Twoich potrzeb operacyjnych. Zajmujemy się wszystkimi zadaniami administracyjnymi, w tym płacami i zgodnością z przepisami, abyś mógł skupić się na tym, co robisz najlepiej – produkcji wysokiej jakości produktów.",
-      "includedInThisPhaseTitle": " Talenty, które możemy ci zapewnić",
+      "solutionDeliveryText": "Leasing pracowników z Grupy Krayr zapewnia Ci elastyczną siłę roboczą, którą można łatwo dopasować do wymagań produkcyjnych i harmonogramów. Nasze rozwiązanie pozwala na dostosowanie liczby pracowników do bieżących potrzeb, bez długoterminowych zobowiązań, umożliwiając skalowanie operacji zgodnie z wymaganiami. Zarządzamy wszystkimi aspektami administracyjnymi, w tym płacami i zgodnością z przepisami, co pozwala Ci skoncentrować się na efektywnej produkcji.",
+      "includedInThisPhaseTitle": "W ramach naszego leasingu pracowniczego oferujemy dostęp do takich talentów jak:",
       "tagListItems": [
         "Operatorzy maszyn",
         "Pracownicy linii montażowych",
@@ -359,8 +349,8 @@
     },
     "block3": {
       "title": "Ekspertyza w zakresie logistyki i magazynowania",
-      "description": "Efektywność i niezawodność są kluczowe w sektorze logistyki i magazynowania. Rozumiemy szybkie tempo tej branży i zapewniamy pracowników, którzy potrafią sprostać wymaganiom z precyzją i zaangażowaniem. Nasz zespół jest biegły w zarządzaniu złożonością operacji logistycznych, zapewniając nieprzerwane funkcjonowanie łańcucha dostaw.",
-      "solutionDeliveryText": "Szczycimy się naszą zdolnością do szybkiego dostosowywania się do Twoich specyficznych potrzeb, zapewniając Ci elastyczną siłę roboczą, która może rosnąć wraz z rozwojem Twojej działalności. Niezależnie od tego, czy potrzebujesz tymczasowych lub stałych pracowników, dodatkowego wsparcia w okresach szczytowych, czy specjalistycznych umiejętności na potrzeby konkretnych projektów, Grupa Krayr posiada zasoby, aby zapewnić sprawne funkcjonowanie Twoich operacji magazynowych i logistycznych.",
+      "description": "Efektywność i niezawodność to kluczowe wartości w sektorze logistyki i magazynowania. Nasze zrozumienie dynamicznego tempa tej branży pozwala nam dostarczać pracowników, którzy precyzyjnie i zaangażowanie realizują zadania, zapewniając płynne funkcjonowanie łańcucha dostaw.",
+      "solutionDeliveryText": "Nasza zdolność do szybkiego dostosowywania się do specyficznych potrzeb Twojej działalności pozwala nam dostarczać elastyczną siłę roboczą, która rośnie razem z Twoim biznesem. Niezależnie od tego, czy potrzebujesz pracowników tymczasowych, stałych, czy specjalistycznych umiejętności na okresy szczytowe lub projekty, Grupa Krayr zapewnia efektywne wsparcie dla Twoich operacji logistycznych i magazynowych.",
       "includedInThisPhaseTitle": "Nasze rozwiązania kadrowe obejmują",
       "tagListItems": [
         "pracownicy magazynowi",
@@ -372,30 +362,28 @@
       ]
     },
     "block4": {
-      "title": "Doskonalenie w zakresie personelu hotelarskiego",
-      "description": "W branży hotelarskiej kluczowe jest świadczenie wyjątkowej obsługi. Zapewniamy wysoko wykwalifikowany personel hotelarski, który doskonale sprawdza się w rolach takich jak zarządzanie hotelami, koordynacja wydarzeń i obsługa klienta. Nasz rygorystyczny proces selekcji gwarantuje, że do Twojego zespołu dołączają tylko najbardziej zaangażowani i profesjonalni kandydaci, poprawiając doświadczenie gości i utrzymując renomę Twojego obiektu. Niezależnie od tego, czy potrzebujesz personelu do obsługi gości, personelu kuchennego, czy zespołów sprzątających, Grupa Krayr ma doświadczenie, aby spełnić Twoje wymagania.",
-      "blockquoteText": "Rozwiązania kadrowe Grupy Krayr w sektorze hotelarskim znacznie poprawiły jakość naszych usług i zadowolenie klientów."
+      "title": "Doskonalenie Personelu Hotelarskiego",
+      "description": "W branży hotelarskiej kluczowe jest zapewnienie wyjątkowej obsługi. Grupa Krayr dostarcza wysoko wykwalifikowany personel, który sprawdza się w zarządzaniu hotelami, koordynacji wydarzeń i obsłudze klienta. Nasz rygorystyczny proces rekrutacji gwarantuje, że do Twojego zespołu dołączają jedynie zaangażowani i profesjonalni kandydaci, co poprawia doświadczenie gości i utrzymuje renomę obiektu. Oferujemy personel do obsługi gości, personel kuchenny oraz zespoły sprzątające, dostosowując nasze usługi do Twoich specyficznych potrzeb.",
+      "blockquoteText": "Rozwiązania kadrowe Grupy Krayr znacząco poprawiły jakość naszych usług oraz zadowolenie klientów."
     },
     "block5": {
-      "title": "Rozwiązania kadrowe dla rolnictwa",
-      "description": "W sektorze rolniczym pracownicy sezonowi i tymczasowi są niezbędni. Grupa Krayr dostarcza wykwalifikowanych pracowników rolnych, którzy mają doświadczenie w różnych zadaniach rolniczych. Nasi pracownicy dbają o to, aby Twoje operacje rolnicze przebiegały sprawnie, niezależnie od pory roku. Od sadzenia po zbiór, zapewniamy niezawodną siłę roboczą, która spełnia wymagania cykli rolniczych.",
-      "agroProject": "Rozumiemy unikalne wyzwania, przed którymi stoi branża rolnicza, w tym potrzebę terminowej i efektywnej pracy w kluczowych okresach. Nasz proces rekrutacji koncentruje się na pozyskiwaniu pracowników, którzy są nie tylko wykwalifikowani, ale także elastyczni, aby dostosować się do zmieniających się potrzeb operacji rolniczych. Współpracując z Grupą Krayr, zyskujesz dostęp do zaangażowanej siły roboczej, która może pomóc zwiększyć wydajność i zapewnić sukces Twoich przedsięwzięć rolniczych.",
-      "blockquoteText": "Nasza plantacja znacznie się rozwinęła po nawiązaniu współpracy z Grupą Krayr, ponieważ nie musimy martwić się o to, jak zatrudnić setki pracowników do pracy sezonowej. Świetna robota, jaką wykonaliście do tej pory!"
+      "title": "ozwiązania Kadrowe dla Branży Rolniczej",
+      "description": "W sektorze rolniczym niezbędni są pracownicy sezonowi i tymczasowi. Grupa Krayr dostarcza wykwalifikowanych pracowników rolnych z doświadczeniem w różnych zadaniach rolniczych. Gwarantujemy, że Twoje operacje rolnicze będą przebiegały sprawnie przez cały rok. Od sadzenia po zbiór, zapewniamy niezawodną siłę roboczą, która spełnia wymagania cykli rolniczych.",
+      "agroProject": "Rozumiemy unikalne wyzwania branży rolniczej, w tym potrzebę terminowej i efektywnej pracy w kluczowych okresach. Nasz proces rekrutacji koncentruje się na pozyskiwaniu pracowników, którzy są wykwalifikowani i elastyczni, aby dostosować się do zmieniających się potrzeb operacji rolniczych. Współpracując z Grupą Krayr, zyskujesz dostęp do zaangażowanej siły roboczej, która zwiększa wydajność i przyczynia się do sukcesu Twoich przedsięwzięć rolniczych.",
+      "blockquoteText": "Nasza plantacja znacznie się rozwinęła dzięki współpracy z Grupą Krayr, która skutecznie zajmuje się zatrudnieniem setek pracowników sezonowych. Doskonała jakość świadczonych usług jest godna pochwały!"
     }
   },
-
   "pricingSection": {
-    "eyebrow": "podawanie ceny",
+    "eyebrow": "Ceny",
     "sectionTitle": "Konkurencyjne i Przejrzyste Ceny",
-    "intro": "W Grupie Krayr oferujemy konkurencyjne i przejrzyste ceny dostosowane do unikalnych potrzeb Twojej firmy. Nasze elastyczne struktury cenowe zapewniają najlepszy stosunek jakości do ceny naszych kompleksowych rozwiązań kadrowych.",
+    "intro": "W Grupa Krayr oferujemy konkurencyjne i przejrzyste ceny, które są dostosowane do indywidualnych potrzeb Twojej firmy. Nasze elastyczne struktury cenowe gwarantują optymalny stosunek jakości do ceny naszych kompleksowych rozwiązań kadrowych..",
     "flexible": "Elastyczne Modele Cenowe",
-    "flexibledescription": "Wybierz spośród różnych planów cenowych dostosowanych do specyficznych wymagań Twojej branży, niezależnie od tego, czy chodzi o tymczasowe zatrudnienie, leasing pracowników, czy specjalistyczne outsourcing procesów.",
+    "flexibledescription": "Wybierz spośród różnorodnych planów cenowych, które są dostosowane do specyficznych wymagań Twojej branży, w tym tymczasowego zatrudnienia, leasingu pracowników oraz outsourcingu procesów.",
     "customizable": "Dostosowywane Pakiety",
-    "customizabledescription": "Oferujemy dostosowywane pakiety kadrowe, które pozwalają wybrać poziom wsparcia i liczbę pracowników, jakich potrzebujesz, zapewniając efektywność kosztową i skalowalność.",
+    "customizabledescription": "Oferujemy elastyczne pakiety kadrowe, które umożliwiają dostosowanie poziomu wsparcia oraz liczby pracowników do Twoich potrzeb, zapewniając efektywność kosztową i skalowalność.",
     "feetitle": "Brak Ukrytych Opłat",
-    "feedescription": "Nasze przejrzyste ceny oznaczają, że dokładnie wiesz, za co płacisz, bez ukrytych opłat i nieoczekiwanych kosztów."
+    "feedescription": "Nasze przejrzyste ceny gwarantują pełną transparentność – dokładnie wiesz, za co płacisz, bez ukrytych opłat i niespodziewanych kosztów."
   },
-
   "Blog": {
     "eyebrow": "Blog",
     "title": "Najświeższe artykuły i wiadomości",
@@ -410,3 +398,5 @@
     }
   }
 }
+
+
