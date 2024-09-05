@@ -1,7 +1,8 @@
 import {CookieConsent} from './components/CookieConsent';
 import Image from "next/image";
 import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
-import logoVedascoLight from '@/images/clients/vedasco/vedasco.svg'
+import logoVedascoLight from '@/images/clients/vedasco/logo-light.svg'
+import logoVedascoDark from '@/images/clients/vedasco/logo-dark.svg'
 import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
 import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
 import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
@@ -24,10 +25,10 @@ import { ContactSection } from './components/ContactSection';
 
 
 const industries = [
-  ['Unseal', logoUnseal],
   ['Green Life', logoGreenLife],
   ['Bright Path', logoBrightPath],
   ['North Adventures', logoNorthAdventures],
+  ['Mail Smirk',logoMailSmirk]
 
 ]
 function Industries() {

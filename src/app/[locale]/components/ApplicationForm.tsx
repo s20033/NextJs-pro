@@ -183,7 +183,7 @@ export function ApplicationForm({ onClose, jobTitle }: ApplicationFormProps) {
               onClick={() => setShowPrivacyPolicy(true)}
               className="text-teal-600 hover:text-teal-500 font-semibold"
             >
-              {t("privacyPolicyLink")}
+              {t("privacyPolicyTitle")}
             </button>
           </label>
           {errors.agreeToTerms && <p className="mt-1 text-sm text-red-600">{errors.agreeToTerms.message}</p>}

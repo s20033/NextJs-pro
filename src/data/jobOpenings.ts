@@ -1,38 +1,39 @@
 
 
 import logoPolixnovDark from '@/images/clients/polixnov/polix-dark.svg'
+import logoVedasco from '@/images/clients/vedasco/logo-dark.svg'
 
   // Job openings data
   export const jobOpenings = [
     {
-      title: 'Software Engineer',
-      company: 'TechPro Poland',
+      title: 'Operator/ka Wózków Widłowych ',
+      company: 'Polixnov Logistics',
       logo: logoPolixnovDark,
-      salary: '50-70 PLN',
-      contractType: 'Full-time',
-      location: 'Warsaw',
-      workType: 'Hybrid',
-      description: 'Develop innovative software solutions using modern technologies. Strong skills in React and Node.js required.',
+      salary: '25 PLN',
+      contractType: 'Pełny Etat',
+      location: 'Tychy',
+      workType: 'Stationary',
+      description: 'Doświadczenie w pracy na magazynie; Posiadane uprawnienia UDT.',
     },
     {
-      title: 'Data Scientist',
-      company: 'DataInsights',
-      logo: logoPolixnovDark,
-      salary: '60-80 PLN',
-      contractType: 'Full-time',
+      title: 'Operator maszyn',
+      company: 'Vedasco Uni LDA',
+      logo: logoVedasco,
+      salary: '22 PLN',
+      contractType: 'Pełny Etat',
       location: 'Krakow',
-      workType: 'Remote',
-      description: 'Analyze complex datasets and create predictive models. Expertise in Python and machine learning algorithms essential.',
+      workType: 'Stationary',
+      description: 'Doświadczenie w obsłudze maszyn pakujących. Pakowanie produktów kosmetycznych',
     },
     {
-      title: 'DevOps Engineer',
-      company: 'CloudScale',
+      title: 'Rekruter',
+      company: 'Grupa Krayr ',
       logo: logoPolixnovDark,
-      salary: '55-75 PLN',
-      contractType: 'Full-time',
-      location: 'Wroclaw',
+      salary: '35 PLN',
+      contractType: 'Pełny Etat',
+      location: 'Warszawa',
       workType: 'Hybrid',
-      description: 'Implement and manage CI/CD pipelines. Experience with AWS, Docker, and Kubernetes required.',
+      description: 'Monitorowanie i przeprowadzanie procesu rekrutacji. Doświadczenie w pracy w agencjach pracy',
     },
     {
       title: 'UX/UI Designer',

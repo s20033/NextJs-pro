@@ -177,8 +177,8 @@ function ContactDetails() {
         </h2>
         <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
           {[
-            ["polandLabel", "+48728987991"],
-            ["bulgariaLabel", "+359886243448"],
+            ["polandLabel", "+48 728 987 991"],
+            ["bulgariaLabel", "+359 844 311 327"],
           ].map(([label, phone]) => (
             <div key={phone}>
               <dt className="font-semibold text-neutral-950">{t(label)}</dt>

@@ -1,10 +1,13 @@
+'use client'
 import Link from 'next/link'
-
+import emailjs from '@emailjs/browser';
 import { Container } from './Container'
 import { FadeIn } from './FadeIn'
 import { Logo } from './Logo'
 import { socialMediaProfiles } from './SocialMedia'
 import { useLocale, useTranslations } from 'next-intl'
+import { useRef } from 'react';
+
 
 
 const navigation = [
@@ -82,9 +85,29 @@ function ArrowIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 function NewsletterForm() {
+  const form = useRef<HTMLFormElement | null>(null);
+
+  const sendEmail = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (form.current) {
+      emailjs.sendForm('service_aixzu6y', 'template_0jiinx7', form.current, 'w07if5kw3bnm_lOKS')
+        .then((result) => {
+          console.log(result.text);
+        }, (error) => {
+          console.log(error.text);
+        })
+        .finally(() => {
+          window.location.reload(); 
+        });
+    } else {
+      console.error('Form reference is not defined');
+    }
+  };
+
   const t = useTranslations("newsletter")
   return (
-    <form className="max-w-sm">
+    <form ref={form} onSubmit={sendEmail} className="max-w-sm">
       <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
         {t("title")}
       </h2>
@@ -96,6 +119,7 @@ function NewsletterForm() {
           type="email"
           placeholder={t("placeHolder")}
           autoComplete="email"
+          name='email'
           aria-label="Email address"
           className="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pl-6 pr-20 text-base/6 text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5"
         />
