@@ -20,7 +20,7 @@ export const CookieConsent = () => {
   };
 
   return isVisible ? (
-    <div className="fixed bottom-0 left-0 right-0 z-50 p-4 bg-teal-950 text-white">
+    <div className="fixed bottom-0 left-0 right-0 z-50 p-4 bg-customTeal text-white">
       <div className="flex justify-between items-center max-w-4xl mx-auto">
         <p className="text-sm">
           {t("text")}

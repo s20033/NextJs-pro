@@ -2,6 +2,7 @@ import { type Config } from 'tailwindcss'
 import defaultTheme from 'tailwindcss/defaultTheme'
 
 export default {
+
   content: ['./src/**/*.{js,jsx,mdx,ts,tsx}'],
   theme: {
     fontSize: {
@@ -28,6 +29,13 @@ export default {
           { fontVariationSettings: '"wdth" 125' },
         ],
       },
+      colors: {
+        customTeal: '#0C4C51',
+        customAmber: '#A64617',
+        customYellow: '#D68E3D',
+        customGray: '#868686',
+      },
+
     },
   },
   plugins: [],

@@ -243,7 +243,7 @@
   "contactSection": {
     "title": "Powiedz nam o swoich potrzebach",
     "subtitle": "Mamy dla Ciebie najlepszą ofertę",
-    "buttonText": "Powiedz Hej",
+    "buttonText": "Przywitaj się",
     "officesTitle": "Nasze biura"
   },
   "navigation": {
@@ -392,6 +392,7 @@
     "author": "Autor",
     "readMore": "Czytaj więcej",
     "readMoreAriaLabel": "Czytaj więcej: {title}",
+    "by":"przez",
     "metadata": {
       "title": "Blog",
       "description": "Bądź na bieżąco z najnowszymi wiadomościami branżowymi, gdy nasze zespoły marketingowe znajdują nowe sposoby na przetworzenie starych artykułów o trikach CSS."

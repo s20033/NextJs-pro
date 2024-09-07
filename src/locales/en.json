@@ -254,7 +254,7 @@
   "contactSection": {
     "title": "Tell us about your need",
     "subtitle": "We have the best offer for you",
-    "buttonText": "Say Hej",
+    "buttonText": "Say Hello",
     "officesTitle": "Our offices"
   },
 
@@ -411,6 +411,7 @@
     "author": "Author",
     "readMore": "Read more",
     "readMoreAriaLabel": "Read more: {title}",
+    "by":"by",
     "metadata": {
       "title": "Blog",
       "description": "Stay up-to-date with the latest industry news as our marketing teams finds new ways to re-purpose old CSS tricks articles."

@@ -34,13 +34,13 @@ const industries = [
 function Industries() {
   const t = useTranslations("Industries")
   return (
-    <div className="mt-24 rounded-4xl bg-teal-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
+    <div className="mt-24 rounded-4xl bg-customTeal py-20 sm:mt-32 sm:py-32 lg:mt-56">
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
           {t("title")}
           </h2>
-          <div className="h-px flex-auto bg-neutral-800" />
+          <div className="h-px flex-auto bg-neutral-200" />
         </FadeIn>
         <FadeInStagger faster>
           <ul
@@ -113,7 +113,7 @@ function Reasons() {
     <div className="relative mt-0 pt-24 sm:mt-32 sm:pt-32 lg:mt-0 lg:pt-40">
       <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-gradient-to-b from-neutral-50">
         <GridPattern
-          className="absolute inset-0 h-full w-full fill-neutral-100 stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
+          className="absolute inset-0 h-full w-full fill-neutral-200  stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
           yOffset={-270}
         />
       </div>
@@ -161,10 +161,11 @@ export default  function Home() {
     <CookieConsent/>
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
-          <h1 className="font-display text-5xl font-medium tracking-tight text-teal-900 [text-wrap:balance] sm:text-7xl">
+          <h1 className="font-display text-5xl font-medium tracking-tight text-customTeal [text-wrap:balance] sm:text-7xl">
             {t("headline")}
           </h1>
-          <p className="mt-6 text-xl text-gray-600">
+          <p className="mt-6 text-xl text-gray-500
+          ">
           {t("description")}
           </p>
         </FadeIn>

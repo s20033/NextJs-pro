@@ -99,7 +99,7 @@ function ExpertiseInOverseasHire() {
 function LegalizationServices() {
   const t = useTranslations("legalizationSection");
     return (
-      <div className="mt-24 rounded-4xl bg-teal-950 py-5 sm:mt-32 lg:mt-40 lg:py-32">
+      <div className="mt-24 rounded-4xl bg-customTeal py-5 sm:mt-32 lg:mt-40 lg:py-32">
         <SectionIntro
           eyebrow= {t("eyebrow")}
           title={t("title")}

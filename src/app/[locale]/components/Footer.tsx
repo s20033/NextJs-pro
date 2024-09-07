@@ -1,46 +1,46 @@
-'use client'
-import Link from 'next/link'
-import emailjs from '@emailjs/browser';
-import { Container } from './Container'
-import { FadeIn } from './FadeIn'
-import { Logo } from './Logo'
-import { socialMediaProfiles } from './SocialMedia'
-import { useLocale, useTranslations } from 'next-intl'
-import { useRef } from 'react';
-
-
+"use client";
+import Link from "next/link";
+import emailjs from "@emailjs/browser";
+import { Container } from "./Container";
+import { FadeIn } from "./FadeIn";
+import { Logo } from "./Logo";
+import { socialMediaProfiles } from "./SocialMedia";
+import { useLocale, useTranslations } from "next-intl";
+import { useRef } from "react";
+import React, { useState, useEffect } from "react";
+// import FaArrowUp from 'react-icons'
 
 const navigation = [
   {
-    title: 'work',
+    title: "work",
     links: [
-      { title: 'ourWork', href: '/work' },
-      { title: 'career', href: '/career' },
+      { title: "ourWork", href: "/work" },
+      { title: "career", href: "/career" },
       {
-        title: 'seeAll',
-        href: '/work',
+        title: "seeAll",
+        href: "/work",
       },
     ],
   },
   {
-    title: 'company',
+    title: "company",
     links: [
-      { title: 'about', href: '/about' },
-      { title: 'process', href: '/process' },
-      { title: 'blog', href: '/blog' },
-      { title: 'contactUs', href: '/contact' },
+      { title: "about", href: "/about" },
+      { title: "process", href: "/process" },
+      { title: "blog", href: "/blog" },
+      { title: "contactUs", href: "/contact" },
     ],
   },
   {
-    title: 'connect',
+    title: "connect",
     links: socialMediaProfiles,
   },
-]
+];
 
 function Navigation() {
-  const t = useTranslations('navigation')
-  const tSocial = useTranslations('socialMedia')
-  const localActiveLanguage = useLocale()
+  const t = useTranslations("navigation");
+  const tSocial = useTranslations("socialMedia");
+  const localActiveLanguage = useLocale();
 
   return (
     <nav>
@@ -54,12 +54,17 @@ function Navigation() {
               {section.links.map((link, linkIndex) => (
                 <li key={linkIndex} className="mt-4">
                   <Link
-                    href={link.href.startsWith('http')
-                      ? link.href
-                      : `/${localActiveLanguage}${link.href}`}
+                    href={
+                      link.href.startsWith("http")
+                        ? link.href
+                        : `/${localActiveLanguage}${link.href}`
+                    }
                     className="transition hover:text-neutral-950"
                   >
-                    {link.href.startsWith('http') ? tSocial(link.title) : t(link.title)}                    </Link>
+                    {link.href.startsWith("http")
+                      ? tSocial(link.title)
+                      : t(link.title)}{" "}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -67,11 +72,10 @@ function Navigation() {
         ))}
       </ul>
     </nav>
-  
-  )
+  );
 }
 
-function ArrowIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+function ArrowIcon(props: React.ComponentPropsWithoutRef<"svg">) {
   return (
     <svg viewBox="0 0 16 6" aria-hidden="true" {...props}>
       <path
@@ -81,7 +85,7 @@ function ArrowIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
         d="M16 3 10 .5v2H0v1h10v2L16 3Z"
       />
     </svg>
-  )
+  );
 }
 
 function NewsletterForm() {
@@ -89,37 +93,44 @@ function NewsletterForm() {
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (form.current) {
-      emailjs.sendForm('service_aixzu6y', 'template_0jiinx7', form.current, 'w07if5kw3bnm_lOKS')
-        .then((result) => {
-          console.log(result.text);
-        }, (error) => {
-          console.log(error.text);
-        })
+      emailjs
+        .sendForm(
+          "service_aixzu6y",
+          "template_0jiinx7",
+          form.current,
+          "w07if5kw3bnm_lOKS"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        )
         .finally(() => {
-          window.location.reload(); 
+          window.location.reload();
         });
     } else {
-      console.error('Form reference is not defined');
+      console.error("Form reference is not defined");
     }
   };
 
-  const t = useTranslations("newsletter")
+  const t = useTranslations("newsletter");
   return (
     <form ref={form} onSubmit={sendEmail} className="max-w-sm">
       <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
         {t("title")}
       </h2>
-      <p className="mt-4 text-sm text-neutral-700">
-      {t("description")}
-      </p>
+      <p className="mt-4 text-sm text-neutral-700">{t("description")}</p>
       <div className="relative mt-6">
         <input
           type="email"
           placeholder={t("placeHolder")}
           autoComplete="email"
-          name='email'
+          name="email"
           aria-label="Email address"
           className="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pl-6 pr-20 text-base/6 text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5"
         />
@@ -127,14 +138,61 @@ function NewsletterForm() {
           <button
             type="submit"
             aria-label="Submit"
-            className="flex aspect-square h-full items-center justify-center rounded-xl bg-emerald-950 text-white transition hover:bg-amber-700"
+            className="flex aspect-square h-full items-center justify-center rounded-xl bg-customTeal text-white transition hover:bg-customAmber"
           >
             <ArrowIcon className="w-4" />
           </button>
         </div>
       </div>
     </form>
-  )
+  );
+}
+
+export function ScrollToTopButton() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const toggleVisibility = () => {
+    if (window.scrollY > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisibility);
+    return () => {
+      window.removeEventListener("scroll", toggleVisibility);
+    };
+  }, []);
+
+  return (
+    <div className="fixed bottom-4 right-4">
+      {isVisible && (
+        <button
+          onClick={scrollToTop}
+          className="p-3 rounded-full bg-customTeal text-white shadow-lg hover:bg-customAmber transition-all duration-300"
+        >
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <path
+    fill="currentColor"
+    fillRule="evenodd"
+    clipRule="evenodd"
+    d="M8 0l6 6H2L8 0z"
+  />
+</svg>
+
+        </button>
+      )}
+    </div>
+  );
 }
 
 export function Footer() {
@@ -149,13 +207,15 @@ export function Footer() {
         </div>
         <div className="mb-20 mt-24 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
           <Link href="/" aria-label="Home">
-            <Logo className="h-8"  />
+            <Logo className="h-8" />
           </Link>
-          <p className="text-sm text-neutral-700">
+          <p className="text-sm text-customAmber">
             © Grupa Krayr. {new Date().getFullYear()}
           </p>
         </div>
+  
       </FadeIn>
+      <ScrollToTopButton />
     </Container>
-  )
+  );
 }

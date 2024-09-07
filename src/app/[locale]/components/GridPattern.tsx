@@ -42,6 +42,7 @@ export function GridPattern({
     [6, 2],
     [7, 4],
     [5, 5],
+    
   ]
 
   useEffect(() => {

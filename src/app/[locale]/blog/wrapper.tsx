@@ -17,6 +17,7 @@ export default async function BlogArticleWrapper({
   params: { locale: string }
 }) {
   const allArticles = await loadArticles(locale)
+
   const moreArticles = allArticles
     .filter(({ metadata }) => metadata !== article.metadata)
     .slice(0, 2)
@@ -29,7 +30,7 @@ export default async function BlogArticleWrapper({
       <Container as="article" className="mt-24 sm:mt-32 lg:mt-40">
          <FadeIn> 
           <header className="mx-auto flex max-w-5xl flex-col text-center">
-            <h1 className="mt-6 font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-6xl">
+            <h1 className="mt-6 font-display text-5xl font-medium tracking-tight text-customTeal [text-wrap:balance] sm:text-6xl">
               {article.title}
             </h1>
             <time
@@ -39,7 +40,7 @@ export default async function BlogArticleWrapper({
               {formatDate(article.date, locale)}
             </time>
             <p className="mt-6 text-sm font-semibold text-neutral-950">
-              by {article.author.name}, {article.author.role} 
+            &#9997; {article.author.name}, {article.author.role} 
             </p>
           </header>
        

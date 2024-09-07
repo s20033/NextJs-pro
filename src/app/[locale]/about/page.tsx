@@ -28,7 +28,7 @@ import { getTranslations } from "next-intl/server";
 function Culture() {
   const t = useTranslations("Culture");
   return (
-    <div className="mt-24 rounded-4xl bg-teal-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
+    <div className="mt-24 rounded-4xl bg-customTeal py-24 sm:mt-32 lg:mt-40 lg:py-32">
       <SectionIntro eyebrow="Our culture - 3Es" title={t("title")} invert>
         {/* <p>{t("hero")}</p> */}
       </SectionIntro>

@@ -33,7 +33,7 @@ export default function ChangeLanguage() {
             defaultValue={localActiveLanguage}
             onChange={onSelectChange}
             disabled={isPending}
-            className="block w-full rounded-md border border-gray-300 bg-white py-2 pl-3 pr-2 text-gray-900 shadow-sm ring-1 ring-black ring-opacity-5 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 sm:text-sm sm:leading-6"
+            className="block w-full rounded-md border border-gray-300 bg-gray-100 py-2 pl-3 pr-2 text-customTeal shadow-sm ring-1 ring-black ring-opacity-5 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 sm:text-sm sm:leading-6"
           >
             <option value="en">English</option>
             <option value="pl">Polish</option>
@@ -65,7 +65,7 @@ export default function ChangeLanguage() {
         </label>
 
         <div className="inline-flex divide-x divide-amber-400 rounded-md shadow-md border border-solid">
-          <div className="inline-flex items-center gap-x-1.5 rounded-l-md bg-white-600 px-3 py-2 text-dark-600">
+          <div className="inline-flex items-center gap-x-1.5 rounded-l-md bg-gray-100-600 px-3 py-2 text-dark-600">
             <svg
               width="28"
               height="28"
@@ -135,7 +135,7 @@ export default function ChangeLanguage() {
           </div>
           <button
             type="button"
-            className="inline-flex items-center rounded-l-none rounded-r-md bg-amber-600 p-2 hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-600 focus:ring-offset-2 focus:ring-offset-gray-50"
+            className="inline-flex items-center rounded-l-none rounded-r-md bg-amber-600 p-2 hover:bg-customAmber focus:outline-none focus:ring-2 focus:ring-amber-600 focus:ring-offset-2 focus:ring-offset-gray-50"
             aria-haspopup="listbox"
             aria-expanded={isOpen}
             aria-labelledby="language-switch"
@@ -159,7 +159,7 @@ export default function ChangeLanguage() {
 
         {isOpen && (
           <ul
-            className="absolute right-0 z-10 mt-2 w-32 origin-top-right divide-y divide-gray-200 overflow-hidden rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+            className="absolute right-0 z-10 mt-2 w-32 origin-top-right divide-y divide-gray-200 overflow-hidden rounded-md bg-gray-100 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
             role="listbox"
             aria-labelledby="language-switch"
           >

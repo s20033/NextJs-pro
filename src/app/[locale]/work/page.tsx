@@ -10,7 +10,6 @@ import { Container } from "../components/Container";
 import { FadeIn, FadeInStagger } from "../components/FadeIn";
 import { PageIntro } from "../components/PageIntro";
 import { formatDate } from "@/lib/formatDate";
-import { type CaseStudy, type MDXEntry, loadCaseStudies } from "@/lib/mdx";
 import { StylizedImage } from "../components/StylizedImage";
 import imageLaptop from "@/images/services/welding.jpg";
 import imageMeeting from "@/images/services/production.jpg";
@@ -181,7 +180,7 @@ function Block1() {
       </p>
     
     <Blockquote
-      author={{ name: "Debra Fiscal", role: "CEO of Alstom" }}
+      author={{ name: "Lucas Alves", role: "Plant Manager" }}
       className="mt-12"
     >
        {t("blockquoteText")}
@@ -339,7 +338,7 @@ function Block4() {
       </div>
 
       <Blockquote
-        author={{ name: "John Doe", role: "HR Manager Hayatt Residency" }}
+        author={{ name: "Здравелин Смърдански", role: "Manager" }}
         className="mt-12"
       >
 {t("blockquoteText")}
@@ -377,7 +376,7 @@ function Block5() {
         </div>
   
         <Blockquote
-          author={{ name: "John Doe", role: "HR Manager Polona Fruits" }}
+          author={{ name: "Iwan Symanski", role: "HR Manager" }}
           className="mt-12"
         >
           {t("blockquoteText")}

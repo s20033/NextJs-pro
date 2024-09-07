@@ -52,13 +52,13 @@ export function JobListings({ jobOpenings }: JobListingsProps) {
       <div className="mt-4 flex justify-between">
       <Button 
               onClick={prevPage}
-              className="px-4 py-2 bg-teal-950 text-white rounded hover:bg-amber-700"
+              className="px-4 py-2 bg-customTeal text-white rounded hover:bg-customAmber"
             >
               {t("prevButton")}
               </Button>
               <Button 
               onClick={nextPage}
-              className="px-4 py-2 bg-teal-950 text-white rounded hover:bg-amber-700"
+              className="px-4 py-2 bg-customTeal text-white rounded hover:bg-customAmber"
             >
               {t("nextButton")}
               </Button>

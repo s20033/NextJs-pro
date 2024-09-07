@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import Fuse from 'fuse.js';
 import { Metadata } from 'next';
@@ -8,72 +8,9 @@ import { Button } from './Button';
 import { useTranslations } from 'next-intl';
 
 type FAQItem = {
-  question: string;
-  answer: string;
+  questionKey: string;
+  answerKey: string;
 };
-
-// const faqs: FAQItem[] = [
-//   {
-//     question: "What are the benefits of outsourcing staffing solutions in Poland?",
-//     answer: "Outsourcing staffing solutions in Poland offers numerous benefits including cost efficiency, access to a skilled talent pool, and reduced administrative burden. Polish labor costs are generally lower compared to Western Europe, which can help companies save on operational expenses. Additionally, Poland boasts a well-educated and skilled workforce, particularly in fields such as IT, engineering, and manufacturing. Outsourcing also allows businesses to focus on core activities while leaving recruitment and administrative tasks to specialized providers.",
-//   },
-//   {
-//     question: "How can I hire temporary workers in Poland?",
-//     answer: "Hiring temporary workers in Poland involves partnering with staffing agencies that specialize in temporary placements. Agencies handle recruitment, compliance with Polish labor laws, and payroll management. Businesses can access a flexible workforce for short-term needs such as seasonal peaks or specific projects. It’s essential to choose an agency with a good reputation and experience in your industry.",
-//   },
-//   {
-//     question: "What are the key labor laws affecting foreign workers in Poland?",
-//     answer: "Foreign workers in Poland must adhere to several labor laws, including obtaining the appropriate work visa and permit. Key regulations include compliance with minimum wage standards, working hours, and employee rights as outlined in the Polish Labor Code. It is crucial for employers to ensure that foreign workers have valid work permits and comply with all legal requirements to avoid penalties.",
-//   },
-//   {
-//     question: "What is the process for permanent hiring in Poland?",
-//     answer: "Permanent hiring in Poland involves several steps: defining job requirements, sourcing candidates through job boards or recruitment agencies, conducting interviews, and finalizing employment contracts. Employers must also ensure compliance with Polish labor laws regarding employment contracts, probation periods, and termination conditions. It is advisable to work with local recruitment experts to navigate these processes efficiently.",
-//   },
-//   {
-//     question: "How do I ensure compliance with Polish immigration laws for foreign employees?",
-//     answer: "Ensuring compliance with Polish immigration laws requires obtaining the correct work visas and permits for foreign employees. Employers should verify that all documentation is complete and up-to-date, including work contracts and residence permits. It is beneficial to consult with immigration specialists or legal advisors to ensure all legal requirements are met and to avoid any issues with the authorities.",
-//   },
-//   {
-//     question: "What are the challenges of hiring overseas talent for companies in Poland?",
-//     answer: "Challenges of hiring overseas talent for companies in Poland include navigating complex immigration regulations, cultural differences, and ensuring compliance with local labor laws. Additionally, there may be language barriers and the need for relocation support for international hires. Partnering with experienced staffing agencies or consultants can help address these challenges effectively.",
-//   },
-//   {
-//     question: "How does Grupa Krayr support businesses with the relocation of foreign employees to Poland?",
-//     answer: "Grupa Krayr supports businesses by managing the entire relocation process for foreign employees. This includes obtaining work visas and permits, assisting with housing and settling-in arrangements, and providing orientation programs to help employees adapt to their new environment. Our goal is to ensure a smooth transition and integration for international staff.",
-//   },
-//   {
-//     question: "What industries benefit most from temporary staffing solutions in Poland?",
-//     answer: "Industries that benefit most from temporary staffing solutions in Poland include manufacturing, logistics, IT, and hospitality. These sectors often experience fluctuating demand and require flexible staffing solutions to manage peak periods or project-based work. Temporary staffing helps maintain productivity and meet business needs without long-term commitments.",
-//   },
-//   {
-//     question: "What are the most common types of work visas for foreign employees in Poland?",
-//     answer: "The most common types of work visas for foreign employees in Poland include the Type A work permit, which is for employment with a specific employer, and the Type B work permit, which is for managerial positions. Additionally, the Blue Card is available for highly skilled workers. Each visa type has specific requirements and application processes.",
-//   },
-//   {
-//     question: "How can I find reliable staffing agencies in Poland?",
-//     answer: "To find reliable staffing agencies in Poland, consider looking for agencies with a strong track record in your industry, positive client reviews, and clear accreditation. Industry associations and networks can also provide recommendations. It’s important to choose an agency that understands local labor laws and has experience managing your specific staffing needs.",
-//   },
-//   {
-//     question: "What is the process for hiring foreign workers in Bulgaria?",
-//     answer: "Hiring foreign workers in Bulgaria involves several steps to ensure compliance with local regulations. First, employers must obtain a work permit from the Bulgarian Employment Agency. This requires providing proof of the employee’s qualifications and ensuring there are no suitable Bulgarian candidates for the position. After securing the permit, the employee must apply for a long-term visa at the Bulgarian consulate in their home country. Employers must also comply with Bulgarian labor laws, including registering the employee with the National Revenue Agency.",
-//   },
-//   {
-//     question: "How can Grupa Krayr assist with the legalization of foreign workers in Bulgaria?",
-//     answer: "Grupa Krayr specializes in managing the complete legalization process for foreign workers in Bulgaria. We handle the application for work permits and long-term visas, ensuring compliance with Bulgarian immigration laws. Our services include document verification, translation, and ongoing support to address any legal or bureaucratic issues that may arise.",
-//   },
-//   {
-//     question: "What are the benefits of hiring international talent in Bulgaria?",
-//     answer: "Hiring international talent in Bulgaria offers several benefits, including access to a diverse and skilled workforce, cost efficiencies, and the ability to fill niche roles that may be hard to fill locally. Bulgaria’s competitive wage structures and favorable business environment make it an attractive destination for companies looking to expand their talent pool.",
-//   },
-//   {
-//     question: "What types of staffing solutions does Grupa Krayr offer in Bulgaria?",
-//     answer: "Grupa Krayr offers a range of staffing solutions in Bulgaria, including outsourcing, temporary work, onsite solutions, and permanent hire. We provide tailored solutions to meet your specific needs, whether you require temporary staffing for peak periods, permanent employees for long-term roles, or outsourcing for complete workforce management. Our expertise ensures that you find the right talent efficiently and effectively.",
-//   },
-//   {
-//     question: "How does Grupa Krayr support the relocation of foreign workers to Bulgaria?",
-//     answer: "Grupa Krayr offers comprehensive relocation support for foreign workers moving to Bulgaria. Our services include assistance with obtaining the necessary visas and work permits, arranging accommodation, and helping employees adapt to their new environment. We also provide guidance on cultural integration to ensure a smooth transition into your company’s work culture.",
-//   },
-// ];
 
 export const metadata: Metadata = {
   title: "FAQs - Grupa Krayr",
@@ -84,7 +21,7 @@ export const metadata: Metadata = {
 const FAQSection: React.FC = () => {
   const t = useTranslations()
 
-  const faqs = [
+  const faqs: FAQItem[] = [
     { questionKey: '1', answerKey: '1' },
     { questionKey: '2', answerKey: '2' },
     { questionKey: '3', answerKey: '3' },
@@ -100,18 +37,29 @@ const FAQSection: React.FC = () => {
     { questionKey: '13', answerKey: '13' },
     { questionKey: '14', answerKey: '14' },
     { questionKey: '15', answerKey: '15' },
-  ]
+  ];
 
   const [searchTerm, setSearchTerm] = useState('');
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
   const [currentPage, setCurrentPage] = useState(0);
 
-  const fuse = new Fuse(faqs, {
+  const translatedFaqs = useMemo(() => faqs.map(faq => ({
+    question: t(`faq.questions.${faq.questionKey}`),
+    answer: t(`faq.answers.${faq.answerKey}`),
+    originalQuestionKey: faq.questionKey,
+    originalAnswerKey: faq.answerKey,
+  })), [t]);
+
+  const fuse = useMemo(() => new Fuse(translatedFaqs, {
     keys: ['question', 'answer'],
     threshold: 0.3,
-  });
+  }), [translatedFaqs]);
 
-  const results = searchTerm ? fuse.search(searchTerm).map(result => result.item) : faqs;
+  const results = useMemo(() => {
+    if (!searchTerm) return translatedFaqs;
+    return fuse.search(searchTerm).map(result => result.item);
+  }, [searchTerm, fuse, translatedFaqs]);
+
   const pageSize = 3;
   const pageCount = Math.ceil(results.length / pageSize);
 
@@ -129,7 +77,8 @@ const FAQSection: React.FC = () => {
 
   useEffect(() => {
     setExpandedIndex(null);
-  }, [currentPage]);
+    setCurrentPage(0);
+  }, [searchTerm]);
 
   const displayedFAQs = results.slice(currentPage * pageSize, (currentPage + 1) * pageSize);
 
@@ -150,7 +99,7 @@ const FAQSection: React.FC = () => {
             <div 
               key={actualIndex} 
               className={`border border-gray-200 rounded transition-colors duration-300 ${
-                expandedIndex === actualIndex ? '' : 'hover:bg-emerald-950 hover:text-white'
+                expandedIndex === actualIndex ? '' : 'hover:bg-customTeal hover:text-white'
               }`}
             >
               <button
@@ -158,8 +107,7 @@ const FAQSection: React.FC = () => {
                 onClick={() => toggleExpand(actualIndex)}
               >
                 <span className={`text-lg font-medium ${expandedIndex === actualIndex ? 'text-gray-900' : ''}`}>
-                {t(`faq.questions.${faq.questionKey}`)}
-
+                  {faq.question}
                 </span>
                 <motion.div
                   initial={false}
@@ -187,8 +135,8 @@ const FAQSection: React.FC = () => {
                   }}
                   transition={{ duration: 0.3, ease: 'easeInOut' }}
                 >
-                  <div className="p-4 border-t border-gray-200 bg-white">
-                    <p className="text-gray-700">{t(`faq.answers.${faq.answerKey}`)}</p>
+                  <div className="p-4 border-t border-gray-200 bg-gray-100">
+                    <p className="text-gray-700">{faq.answer}</p>
                   </div>
                 </motion.div>
               )}
@@ -197,19 +145,18 @@ const FAQSection: React.FC = () => {
         })}
       </div>
       <div className="mt-4 flex justify-between">
-      <Button 
-              onClick={prevPage}
-              className="px-4 py-2 bg-emerald-950 text-white rounded hover:bg-amber-700"
-            >
-              {t("faq.prevButton")}
-              </Button>
-              <Button 
-              onClick={nextPage}
-              className="px-4 py-2 bg-emerald-950 text-white rounded hover:bg-amber-700"
-            >
-              {t("faq.nextButton")}
-              </Button>
-            
+        <Button 
+          onClick={prevPage}
+          className="px-4 py-2 bg-customTeal text-white rounded hover:bg-customAmber"
+        >
+          {t("faq.prevButton")}
+        </Button>
+        <Button 
+          onClick={nextPage}
+          className="px-4 py-2 bg-customTeal text-white rounded hover:bg-customAmber"
+        >
+          {t("faq.nextButton")}
+        </Button>
       </div>
     </section>
   );

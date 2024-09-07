@@ -112,7 +112,6 @@ const [isSubmitting, setIsSubmitting] = useState(false);
                 {t("subject")}
               </legend>
               <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2">
-                {/* The name is 'subject' so it will be sent as the email subject */}
                 <RadioInput label={t("cooperation")} name="subject" value="Cooperation" />
                 <RadioInput label={t("career")} name="subject" value="Career" />
                 <RadioInput
@@ -205,10 +204,6 @@ function ContactDetails() {
   );
 }
 
-// export const metadata: Metadata = {
-//   title: "Contact Us",
-//   description: "Let’s work together. We can’t wait to hear from you.",
-// };
 
 export default function Contact() {
   const t = useTranslations("ContactPage");
